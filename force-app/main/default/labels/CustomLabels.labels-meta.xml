@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Approved_Quote_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Approved Quote Status</shortDescription>
+        <value>Processed</value>
+    </labels>
+    <labels>
+        <fullName>Budget</fullName>
+        <categories>Quote</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Budget %</shortDescription>
+        <value>0.25</value>
+    </labels>
+    <labels>
+        <fullName>Check_Request_Payment_Record_Type_Id_CA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Check Request Payment Record Type Id(CA)</shortDescription>
+        <value>0121N0000012lCyQAI</value>
+    </labels>
+    <labels>
+        <fullName>Check_Request_Payment_Record_Type_Id_US</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Check Request Payment Record Type Id(US)</shortDescription>
+        <value>0121N0000012lCzQAI</value>
+    </labels>
+    <labels>
+        <fullName>Check_Request_Reimbursement_Record_Type_Id_CA</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Check Request Reimbursement Record Type Id(CA)</shortDescription>
+        <value>0121N0000012lD0QAI</value>
+    </labels>
+    <labels>
+        <fullName>Check_Request_Reimbursement_Record_Type_Id_US</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Check Request Reimbursement Record Type Id(US)</shortDescription>
+        <value>0121N0000012lD1QAI</value>
+    </labels>
+    <labels>
+        <fullName>FST_CA_RecTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FST CA RecTypeId</shortDescription>
+        <value>0121N0000012lD2QAI</value>
+    </labels>
+    <labels>
+        <fullName>FST_US_RecTypeId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FST US RecTypeId</shortDescription>
+        <value>0121N0000012lD3QAI</value>
+    </labels>
+    <labels>
+        <fullName>Overall_Margin</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Overall Margin</shortDescription>
+        <value>18</value>
+    </labels>
+    <labels>
+        <fullName>Shipped_Opportunity_Task_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Shipped Opportunity Task Subject</shortDescription>
+        <value>Product installation</value>
+    </labels>
+    <labels>
+        <fullName>Total_Value_of_Quote_in_Excess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Total Value of Quote in Excess</shortDescription>
+        <value>10000000</value>
+    </labels>
+</CustomLabels>

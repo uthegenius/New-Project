@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promo_Code__c</fullName>
+    <description>This will be to track the promo against the EDI/Manual order cases. For now this is manual but future needs to be associated with actual promo quotes.</description>
+    <externalId>false</externalId>
+    <label>Promo Code</label>
+    <length>2</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

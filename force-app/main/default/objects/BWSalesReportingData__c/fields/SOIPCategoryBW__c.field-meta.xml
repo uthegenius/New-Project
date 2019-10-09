@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SOIPCategoryBW__c</fullName>
+    <externalId>false</externalId>
+    <label>SOIP Category BW</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BLS</fullName>
+                <default>false</default>
+                <label>BLS</label>
+            </value>
+            <value>
+                <fullName>CHINAWARE</fullName>
+                <default>false</default>
+                <label>CHINAWARE</label>
+            </value>
+            <value>
+                <fullName>COMMERCIAL SYSTEMS</fullName>
+                <default>false</default>
+                <label>COMMERCIAL SYSTEMS</label>
+            </value>
+            <value>
+                <fullName>DXV BLS</fullName>
+                <default>false</default>
+                <label>DXV BLS</label>
+            </value>
+            <value>
+                <fullName>DXV CHINAWARE</fullName>
+                <default>false</default>
+                <label>DXV CHINAWARE</label>
+            </value>
+            <value>
+                <fullName>DXV FAUCETS</fullName>
+                <default>false</default>
+                <label>DXV FAUCETS</label>
+            </value>
+            <value>
+                <fullName>FAUCETS</fullName>
+                <default>false</default>
+                <label>FAUCETS</label>
+            </value>
+            <value>
+                <fullName>FIAT</fullName>
+                <default>false</default>
+                <label>FIAT</label>
+            </value>
+            <value>
+                <fullName>FLUSH VALVES</fullName>
+                <default>false</default>
+                <label>FLUSH VALVES</label>
+            </value>
+            <value>
+                <fullName>GROHE CORE</fullName>
+                <default>false</default>
+                <label>GROHE CORE</label>
+            </value>
+            <value>
+                <fullName>GROHE PROJECT</fullName>
+                <default>false</default>
+                <label>GROHE PROJECT</label>
+            </value>
+            <value>
+                <fullName>SAFETY TUBS</fullName>
+                <default>false</default>
+                <label>SAFETY TUBS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

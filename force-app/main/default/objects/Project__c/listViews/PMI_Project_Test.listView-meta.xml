@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PMI_Project_Test</fullName>
+    <columns>NAME</columns>
+    <columns>Project_Owner__c</columns>
+    <columns>State__c</columns>
+    <columns>City__c</columns>
+    <columns>Total_Project_Value__c</columns>
+    <columns>Remaining_Value__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Project_Owner_Int_Name_Ext_Acc__c</field>
+        <operation>equals</operation>
+        <value>PMI Sales</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Open,In Progress</value>
+    </filters>
+    <label>PMI Active Projects</label>
+    <sharedTo>
+        <portalRole>PMISalesPartnerUser</portalRole>
+    </sharedTo>
+</ListView>

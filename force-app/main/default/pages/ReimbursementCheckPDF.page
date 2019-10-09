@@ -1,0 +1,209 @@
+<apex:page renderAs="pdf" cache="false" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false" showHeader="false" sidebar="false" StandardController="Check_Request__c">
+
+<head>
+<style type="text/css">
+
+@page { 
+    size: letter portrait;
+    
+    margin-top: 100px;
+    margin-bottom: 150px;
+    
+    @top-left {
+        content: element(header_left);
+    }
+    
+    @top-center {
+        content: element(header_center);
+    }
+    
+    @top-right {
+        content: element(header_right);
+    }
+    
+    @bottom-left {
+        content: element(footer_left);
+    }
+    
+    @bottom-center {
+        content: element(footer_center);
+    }
+    
+    @bottom-right {
+        content: element(footer_right);
+    }
+}
+
+table {page-break-after:auto}
+tr    { page-break-inside:avoid; page-break-after:auto }
+td    { page-break-inside:avoid; page-break-after:auto }
+
+
+
+
+.header_left {
+    text-align: left;
+    position: running(header_left);
+   
+    padding:5px 0px 10px 0px; 
+    margin:10px 0px 10px 0px; 
+}
+
+.header_center{
+    text-align: center;
+    position: running(header_center);
+    
+    padding:5px 0px 10px 0px; 
+        margin:10px 0px 10px 0px; 
+}
+
+.header_right {
+
+    position: running(header_right);
+    padding:22px 0px 8px 0px;
+   
+    margin:8px 0px 7px 0px; 
+    text-align:center; 
+    font-family: calibri, Arial, Helvetica, sans-serif; 
+  }
+
+.footer_center
+          { 
+          position: running(footer_center);
+          border:1px solid #fff;
+
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-left: 0px;
+          margin-bottom: 0px;
+          padding:0px 0px 0px 0px;
+          height:20px;
+          } 
+
+.pageNumber:before {
+    content: counter(page); 
+}
+
+.pageCount:before {
+    content: counter(pages);  
+}
+
+</style>
+<apex:image url="{!$Resource.LIXIL_Logo}" width="250" height="50"/>
+</head>
+
+   
+<body style="border: 0px solid #000000;">
+            
+        <div id="mainDiv">
+
+
+    <!-- Content -->
+   <h1 style=" margin:10px 0px 0px 0px; padding:5px; font-size:14px; border-bottom:3px solid #5E002F; font-family: calibri, Arial, Helvetica, sans-serif;">&nbsp; Check Request</h1>
+   <br/>
+  <table border="0"  cellspacing="0" cellpadding="0" width="100%" style="padding:0px; border-bottom:0px solid #b0345a; border-right:0px solid #b0345a;margin:10px 0px 10px 0px; text-align:left; font-family: calibri, Arial, Helvetica, sans-serif; font-size:11px;">
+   <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;; border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4">Details</td>
+    </tr>
+     <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Check Request Type: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Check_Request__c.RecordType.Name}"/></td>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Check Request Name: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Check_Request__c.Name}"/> </td>
+    </tr>
+     <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Check Request Date: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.Date__c  }"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Check Request Reason: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.Reason__c}"/></td> 
+    </tr>
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Case Number: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.Case_ID__r.CaseNumber}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Contact Name: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.Consumer_Contact__r.Name}"/></td> 
+    </tr>
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Approver Name: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.Actual_Approver_Name__c}"/></td> 
+    </tr>
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;; border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4">Financial Details</td>
+    </tr>
+     <tr>
+         <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Name on Check: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Check_Request__c.Name_on_Check__c}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Check Request Amount: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Check_Request__c.Amount__c}"/> </td>
+    </tr>
+     <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Deliver Check To: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Check_Request__c.Deliver_Check_To__c}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Check Number: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.Check_Number__c}"/></td> 
+    </tr>
+    
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;; border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4">Address</td>
+    </tr>
+     <tr>
+         <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Street: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Check_Request__c.Street__c}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>City: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Check_Request__c.City__c}"/> </td>
+    </tr>
+     <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>State: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.State__c}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Zip/Postal Code: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.Zip_Postal_Code__c}"/></td> 
+    </tr>
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Country: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Check_Request__c.Country__c}"/></td> 
+    </tr>
+    <!--
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;; border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4">Approval Details</td>
+    </tr>
+     <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Approver 1: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputText value="{!Check_Request__c.Approved_By_Approver_1__r.FirstName + ' '+ Check_Request__c.Approved_By_Approver_1__r.LastName}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Approver 2: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputText value="{!Check_Request__c.Approved_By_Approver_2__r.FirstName + ' '+ Check_Request__c.Approved_By_Approver_2__r.LastName}"/></td> 
+    </tr>
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Approver 3: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputText value="{!Check_Request__c.Approved_By_Approver_3__r.FirstName + ' '+ Check_Request__c.Approved_By_Approver_3__r.LastName}"/></td> 
+    </tr>-->
+    
+   </table>
+<br></br>
+
+<h1 style=" margin:10px 0px 0px 0px; padding:5px; font-size:14px; border-bottom:2px solid #5E002F; font-family: calibri, Arial, Helvetica, sans-serif;">Product Category Charges</h1>
+    <table border="0"  cellspacing="0" cellpadding="0" width="100%" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #5f87c1; padding:0px 0px 10px 0px; margin:10px 0px 10px 0px; text-align:left; font-family: calibri, Arial, Helvetica, sans-serif; font-size:11px;">
+        <tr>
+
+         <td valign="top" width="25%" align="center" style="background-color:#4f90b6; border-top:0px solid #8E8E8E; border-right:0px solid #8E8E8E; border-left:0px solid #8E8E8E; border-bottom:0px solid #8E8E8E; color:#fff; padding:3px 1px;">Product Category Charge</td>
+         <td valign="top" width="15%" align="center" style="background-color:#4f90b6; border-top:0px solid #8E8E8E; border-right:0px solid #8E8E8E; border-left:0px solid #8E8E8E; border-bottom:0px solid #8E8E8E; color:#fff; padding:3px 1px;">Account Number</td>
+         <td valign="top" width="15%" align="center" style="background-color:#4f90b6; border-top:0px solid #8E8E8E; border-right:0px solid #8E8E8E; border-left:0px solid #8E8E8E; border-bottom:0px solid #8E8E8E; color:#fff; padding:3px 1px;">Bus.Area</td>
+         <td valign="top" width="15%" align="center" style="background-color:#4f90b6; border:0px solid #8E8E8E; color:#fff; padding:3px 1px;">Internal Order</td>
+         <td valign="top" width="15%" align="center" style="background-color:#4f90b6; border:0px solid #8E8E8E; color:#fff; padding:3px 1px;">SKU</td>
+         <td valign="top" width="15%" align="center" style="background-color:#4f90b6; border:0px solid #8E8E8E; color:#fff; padding:3px 1px;">DC</td>
+        </tr>
+     <apex:repeat value="{!Check_Request__c.Product_Category_Charges__r}" var="PCC">
+        <tr>
+           
+            <td valign="top" align="center" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; border-bottom:0px solid #b0345a; padding:5px 2px;"><apex:OutputField value="{!PCC.Product_Category_Charge__c}" style="font-color:black;"/></td>
+            <td valign="top" align="center" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; border-bottom:0px solid #b0345a; padding:5px 2px;"><apex:OutputField value="{!PCC.Account_Number__c}" style="font-color:black;"/></td>
+             <td valign="top" align="center" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; border-bottom:0px solid #b0345a; padding:5px 2px;"><apex:OutputField value="{!PCC.Bus_Area__c}" style="font-color:black;"/></td>
+            <td valign="top" align="center" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; border-bottom:0px solid #b0345a; padding:5px 2px;"><apex:OutputField value="{!PCC.Internal_Order__c}" style="font-color:black;"/></td>
+            <td valign="top" align="center" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; border-bottom:0px solid #b0345a; padding:5px 2px;"><apex:OutputField value="{!PCC.SKU__c}" style="font-color:black;"/></td>
+            <td valign="top" align="center" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; border-bottom:0px solid #b0345a; padding:5px 2px;"><apex:OutputField value="{!PCC.DC__c}" style="font-color:black;"/></td>
+        </tr>
+      </apex:repeat> 
+</table>
+</div>
+
+    </body>
+</apex:page>

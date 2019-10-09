@@ -1,0 +1,120 @@
+<apex:page showHeader="false">
+    
+    <style type="text/css">
+        .form-wrap {
+        background: #fff;
+        margin: 10px;
+        padding: 0 0 15px;
+        text-align: left;
+        border: 1px solid #01af40;
+        border-radius: 10px; 
+        overflow: hidden;
+        }
+        .form-wrap h3 {
+        color: #fff;
+        display: block;
+        background: #01af40;
+        padding: 10px 15px;
+        font-size: 17px;
+        margin: 0px;
+        text-transform: uppercase;
+        }
+        .form-wrap input {
+        background: #f3f3f3;
+        font-size: 13px;
+        width: 100%;
+        border-radius: 5px;
+        margin: 0 0 15px;
+        padding: 10px 15px;
+        }
+        input, select {
+        border: none;
+        outline: none;
+        }
+        .form-wrap .wrap {
+        padding: 20px 50px 20px 20px;
+        }
+        .form-wrap .cust-btn {
+        text-transform: uppercase;
+        font-size: 13px;
+        color: #fff;
+        padding: 7px 15px;
+        width: auto;
+        border-radius: 20px;
+        }
+        .green-btn {
+        background: #01af40 !important;
+        }
+    </style>    
+    <script>
+    (function() { 
+        function handlePageLoad() {
+            var endpointMatcher = new RegExp("[\\?\\&]endpoint=([^&#]*)");
+            document.getElementById('prechatForm').setAttribute('action', decodeURIComponent(endpointMatcher.exec(document.location.search)[1]));
+        } if (window.addEventListener) {
+            window.addEventListener('load', handlePageLoad, false);
+        } else { 
+            window.attachEvent('onload', handlePageLoad, false);
+        }
+    })(); 
+    </script>
+    
+    <form method='post' id='prechatForm'> 
+        <div class="form-wrap">
+            <!-- Creates an auto-query for a matching Contact 
+            record’s  Email field based on the 
+            value of the liveagent.prechat:Email field  -->
+            <h3>Start Chat</h3>
+            <div class="wrap">
+                <!-- Detail inputs -->
+                First Name: <input type="text" name="liveagent.prechat:contactFirstName" /><br />
+                Last Name: <input type="text" name="liveagent.prechat:contactLastName" /><br />
+                Email: <input type="text" name="liveagent.prechat:contactEmail" /><br />
+                Case Number: <input type="text" name="liveagent.prechat:caseNumber" /><br />
+                Subject: <input type="text" name="liveagent.prechat:caseSubject" /><br />
+                
+                <!-- Map the detail inputs to the Contact fields -->
+                <input type="hidden" name="liveagent.prechat.findorcreate.map:Contact" value="FirstName,contactFirstName;LastName,contactLastName;Email,contactEmail;" />
+                
+                <input type="hidden" name="liveagent.prechat.findorcreate.map:Case" value="Origin,caseOrigin;Subject,caseSubject;CaseNumber,caseNumber;" />
+                
+                <!--<input type="hidden" name="liveagent.prechat.findorcreate.map:Case" value="CaseNumber,caseNumber;" />-->
+                
+                <!-- Try to find the Contact by email (exact match) -->
+                <input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Contact" value="Email,true;" />
+                <input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Contact" value="Email,true;" />
+                <input type="hidden" name="liveagent.prechat.findorcreate.map.doFind:Case" value="CaseNumber,true;" />
+                <input type="hidden" name="liveagent.prechat.findorcreate.map.isExactMatch:Case" value="CaseNumber,true;" />
+                
+                <!-- If the Contact is not found, then create one with the following fields set -->
+                <input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Contact" value="FirstName,true;LastName,true;Email,true;" />
+                
+                
+                
+                <input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Case" value="Origin,true;Subject,true;" />
+                
+                <!-- Save the Contact on the Live Chat Transcript's Contact Loookup -->
+                <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Contact" value="Contact" />
+                
+                <!-- Show the Contact when it is found or created -->
+                <input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Contact" value="true" />
+                <input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Case" value="true" />
+                
+                <!-- Create a Case every time -->
+                <input type="hidden" name="liveagent.prechat:caseOrigin" value="Chat" />
+                <!--<input type="hidden" name="liveagent.prechat.findorcreate.map:Case" value="Origin,caseOrigin;Subject,caseSubject;CaseNumber,caseNumber;" />-->
+                <!--<input type="hidden" name="liveagent.prechat.findorcreate.map.doCreate:Case" value="Origin,true;Subject,true;CaseNumber,true" />-->
+                <input type="hidden" name="liveagent.prechat.findorcreate.saveToTranscript:Case" value="Case" />
+                <!--<input type="hidden" name="liveagent.prechat.findorcreate.showOnCreate:Case" value="true" />-->
+                <input type="hidden" name="liveagent.prechat.save:Case" value="Case" /> 
+                <!-- <input type="hidden" name="liveagent.prechat.save:Case" value="Case" /> -->
+                
+                <!-- Link the Contact to the Case -->
+                <input type= "hidden" name="liveagent.prechat.findorcreate.linkToEntity:Contact" value="Case,ContactId;" />
+                
+                <input type='submit' value='Request Chat' id="prechat_submit" class="cust-btn green-btn" />
+            </div>
+        </div>
+        
+    </form> 
+</apex:page>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recalculation_only_allowed_on_update</fullName>
+    <active>true</active>
+    <description>This rule will make sure that user cannot mark the recalculation check box true on insert.</description>
+    <errorConditionFormula>AND( 
+    ISNEW(),  
+    Recalculate_Assignment__c 
+)</errorConditionFormula>
+    <errorDisplayField>Recalculate_Assignment__c</errorDisplayField>
+    <errorMessage>Recalculation can only used after record has been created.</errorMessage>
+</ValidationRule>

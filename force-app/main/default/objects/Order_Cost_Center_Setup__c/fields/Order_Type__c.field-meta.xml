@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Order Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A/S Acrylics-860060-ZWCR</fullName>
+                <default>false</default>
+                <label>A/S Acrylics-860060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>A/S Chinaware-840060-ZWCR</fullName>
+                <default>false</default>
+                <label>A/S Chinaware-840060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>A/S Fittings-820060-ZWCR</fullName>
+                <default>false</default>
+                <label>A/S Fittings-820060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>A/S Furnitures-870060-ZWCR</fullName>
+                <default>false</default>
+                <label>A/S Furnitures-870060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>A/S Metals-850060-ZWCR</fullName>
+                <default>false</default>
+                <label>A/S Metals-850060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>Alberta-19994058-ZCRS</fullName>
+                <default>false</default>
+                <label>Alberta-19994058-ZCRS</label>
+            </value>
+            <value>
+                <fullName>British Columbia-19994059-ZCRS</fullName>
+                <default>false</default>
+                <label>British Columbia-19994059-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Credit Card-97444000-ZCRS</fullName>
+                <default>false</default>
+                <label>Credit Card-97444000-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Credit Memo-974440000-CR</fullName>
+                <default>false</default>
+                <label>Credit Memo-974440000-CR</label>
+            </value>
+            <value>
+                <fullName>DTC Warranty-380300-FD</fullName>
+                <default>false</default>
+                <label>DTC Warranty-380300-FD</label>
+            </value>
+            <value>
+                <fullName>DXV Acrylics-950060-ZWCR</fullName>
+                <default>false</default>
+                <label>DXV Acrylics-950060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>DXV Chinaware-930060-ZWCR</fullName>
+                <default>false</default>
+                <label>DXV Chinaware-930060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>DXV Fittings-940060-ZWCR</fullName>
+                <default>false</default>
+                <label>DXV Fittings-940060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>FG 1 to 5 years-220209-ZWCR</fullName>
+                <default>false</default>
+                <label>FG 1 to 5 years-220209-ZWCR</label>
+            </value>
+            <value>
+                <fullName>FG 6 to 10 years-220210-FD</fullName>
+                <default>false</default>
+                <label>FG 6 to 10 years-220210-FD</label>
+            </value>
+            <value>
+                <fullName>Good Will-220211-FD</fullName>
+                <default>false</default>
+                <label>Good Will-220211-FD</label>
+            </value>
+            <value>
+                <fullName>Grohe-890060-ZWCR</fullName>
+                <default>false</default>
+                <label>Grohe-890060-ZWCR</label>
+            </value>
+            <value>
+                <fullName>Manitoba-19994056-ZCRS</fullName>
+                <default>false</default>
+                <label>Manitoba-19994056-ZCRS</label>
+            </value>
+            <value>
+                <fullName>New Brunswick-19994052-ZCRS</fullName>
+                <default>false</default>
+                <label>New Brunswick-19994052-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Newfoundland-19994055-ZCRS</fullName>
+                <default>false</default>
+                <label>Newfoundland-19994055-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Non-Grohe-400211-FD</fullName>
+                <default>false</default>
+                <label>Non-Grohe-400211-FD</label>
+            </value>
+            <value>
+                <fullName>Nova Scotia-19994053-ZCRS</fullName>
+                <default>false</default>
+                <label>Nova Scotia-19994053-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Nunavut-19994061-ZCRS</fullName>
+                <default>false</default>
+                <label>Nunavut-19994061-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Ontario-19994050-ZCRS</fullName>
+                <default>false</default>
+                <label>Ontario-19994050-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Parts in SAP-974440000-ZCRS</fullName>
+                <default>false</default>
+                <label>Parts in SAP-974440000-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Parts in SAP-978880000-ZCRS</fullName>
+                <default>false</default>
+                <label>Parts in SAP-978880000-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Parts not in SAP-974440000-DR</fullName>
+                <default>false</default>
+                <label>Parts not in SAP-974440000-DR</label>
+            </value>
+            <value>
+                <fullName>Parts not in SAP-978880000-DR</fullName>
+                <default>false</default>
+                <label>Parts not in SAP-978880000-DR</label>
+            </value>
+            <value>
+                <fullName>Prince Edward Island-19994054-ZCRS</fullName>
+                <default>false</default>
+                <label>Prince Edward Island-19994054-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Quebec-19994051-ZCRS</fullName>
+                <default>false</default>
+                <label>Quebec-19994051-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Saskatchewan-19994057-ZCRS</fullName>
+                <default>false</default>
+                <label>Saskatchewan-19994057-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Yukon (North West Territories)-19994060-ZCRS</fullName>
+                <default>false</default>
+                <label>Yukon (North West Territories)-19994060-ZCRS</label>
+            </value>
+            <value>
+                <fullName>Prog Eng. Test-430410-FD</fullName>
+                <default>false</default>
+                <label>Prog Eng. Test-430410-FD</label>
+            </value>
+            <value>
+                <fullName>Non-Grohe-400209-FD</fullName>
+                <default>false</default>
+                <label>Non-Grohe-400209-FD</label>
+            </value>
+            <value>
+                <fullName>Non-Grohe-140300-FD</fullName>
+                <default>false</default>
+                <label>Non-Grohe-140300-FD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VR_Assignment_Type_User</fullName>
+    <active>true</active>
+    <description>OR(
+TEXT( Assignment_Type__c ) = &#39;User&#39; &amp;&amp; 
+ISBLANK(Account__c ) &amp;&amp; 
+!ISBLANK(User__c ) ,
+
+NOT(TEXT( Assignment_Type__c ) = &#39;Account&#39; &amp;&amp; !ISBLANK(Account__c ) &amp;&amp; ISBLANK(User__c ) ))</description>
+    <errorConditionFormula>IF(TEXT( Assignment_Type__c ) = &#39;User&#39;,NOT(
+ISBLANK(Account__c ) &amp;&amp; 
+!ISBLANK(User__c )),FALSE)</errorConditionFormula>
+    <errorDisplayField>Assignment_Type__c</errorDisplayField>
+    <errorMessage>Invalid assignment is define. Please note that there should be define a user when assignment type user is selected.</errorMessage>
+</ValidationRule>

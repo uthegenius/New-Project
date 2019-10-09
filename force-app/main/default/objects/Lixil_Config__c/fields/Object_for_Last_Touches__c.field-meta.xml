@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Object_for_Last_Touches__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Comma separated list of object that will run to capture last touch dates.</inlineHelpText>
+    <label>Object for Last Touches</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

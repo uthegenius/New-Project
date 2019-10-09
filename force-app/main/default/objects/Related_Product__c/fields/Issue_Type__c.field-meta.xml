@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Type__c</fullName>
+    <description>This field will be used to track issue against the order product</description>
+    <externalId>false</externalId>
+    <label>Issue Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACC: Blocked</fullName>
+                <default>false</default>
+                <label>ACC: Blocked</label>
+            </value>
+            <value>
+                <fullName>ACC: Drop-Ship Address Is Incomplete</fullName>
+                <default>false</default>
+                <label>ACC: Drop-Ship Address Is Incomplete</label>
+            </value>
+            <value>
+                <fullName>ACC: Invalid Zip Code</fullName>
+                <default>false</default>
+                <label>ACC: Invalid Zip Code</label>
+            </value>
+            <value>
+                <fullName>ACC: Missing EDI Partner Profile</fullName>
+                <default>false</default>
+                <label>ACC: Missing EDI Partner Profile</label>
+            </value>
+            <value>
+                <fullName>ACC: Region/State Not Defined in Country</fullName>
+                <default>false</default>
+                <label>ACC: Region/State Not Defined in Country</label>
+            </value>
+            <value>
+                <fullName>ACC: Ship-To Cannot Be Used</fullName>
+                <default>false</default>
+                <label>ACC: Ship-To Cannot Be Used</label>
+            </value>
+            <value>
+                <fullName>ACC: Sold-To Not Extended In Sales Area</fullName>
+                <default>false</default>
+                <label>ACC: Sold-To Not Extended In Sales Area</label>
+            </value>
+            <value>
+                <fullName>GIS: Invalid Account</fullName>
+                <default>false</default>
+                <label>GIS: Invalid Account</label>
+            </value>
+            <value>
+                <fullName>JQ: Being used/Locked in CRM</fullName>
+                <default>false</default>
+                <label>JQ: Being used/Locked in CRM</label>
+            </value>
+            <value>
+                <fullName>JQ: Date is Expired/Invalid</fullName>
+                <default>false</default>
+                <label>JQ: Date is Expired/Invalid</label>
+            </value>
+            <value>
+                <fullName>JQ: Incomplete Job Quote in CRM</fullName>
+                <default>false</default>
+                <label>JQ: Incomplete Job Quote in CRM</label>
+            </value>
+            <value>
+                <fullName>JQ: Item Is Not On Referenced JQ</fullName>
+                <default>false</default>
+                <label>JQ: Item Is Not On Referenced JQ</label>
+            </value>
+            <value>
+                <fullName>JQ: Quantity is Higher Than Allowed</fullName>
+                <default>false</default>
+                <label>JQ: Quantity is Higher Than Allowed</label>
+            </value>
+            <value>
+                <fullName>JQ: Reference Number is Invalid</fullName>
+                <default>false</default>
+                <label>JQ: Reference Number is Invalid</label>
+            </value>
+            <value>
+                <fullName>JQ: Sold-to Not The Same As On Order</fullName>
+                <default>false</default>
+                <label>JQ: Sold-to Not The Same As On Order</label>
+            </value>
+            <value>
+                <fullName>MAT: Deliver Complete, Mixed Fit/Fix</fullName>
+                <default>false</default>
+                <label>MAT: Deliver Complete, Mixed Fit/Fix</label>
+            </value>
+            <value>
+                <fullName>MAT: Discontinued</fullName>
+                <default>false</default>
+                <label>MAT: Discontinued</label>
+            </value>
+            <value>
+                <fullName>MAT: Exclusive</fullName>
+                <default>false</default>
+                <label>MAT: Exclusive</label>
+            </value>
+            <value>
+                <fullName>MAT: Inactive</fullName>
+                <default>false</default>
+                <label>MAT: Inactive</label>
+            </value>
+            <value>
+                <fullName>MAT: Invalid Product Id</fullName>
+                <default>false</default>
+                <label>MAT: Invalid Product Id</label>
+            </value>
+            <value>
+                <fullName>MAT: Missing Accounting Data</fullName>
+                <default>false</default>
+                <label>MAT: Missing Accounting Data</label>
+            </value>
+            <value>
+                <fullName>MAT: Missing Pricing Procedure</fullName>
+                <default>false</default>
+                <label>MAT: Missing Pricing Procedure</label>
+            </value>
+            <value>
+                <fullName>MAT: Not allowed in Cust. Portfolio</fullName>
+                <default>false</default>
+                <label>MAT: Not allowed in Cust. Portfolio</label>
+            </value>
+            <value>
+                <fullName>MAT: Not Extended In Sales Area</fullName>
+                <default>false</default>
+                <label>MAT: Not Extended In Sales Area</label>
+            </value>
+            <value>
+                <fullName>MAT: Not Extended to Plant on Order</fullName>
+                <default>false</default>
+                <label>MAT: Not Extended to Plant on Order</label>
+            </value>
+            <value>
+                <fullName>MAT: Production Hold</fullName>
+                <default>false</default>
+                <label>MAT: Production Hold</label>
+            </value>
+            <value>
+                <fullName>MAT: Sales Blocked with Delivery</fullName>
+                <default>false</default>
+                <label>MAT: Sales Blocked with Delivery</label>
+            </value>
+            <value>
+                <fullName>MAT: Underdevelopment</fullName>
+                <default>false</default>
+                <label>MAT: Underdevelopment</label>
+            </value>
+            <value>
+                <fullName>MAT: Water Compliance TX/CA</fullName>
+                <default>false</default>
+                <label>MAT: Water Compliance TX/CA</label>
+            </value>
+            <value>
+                <fullName>PO: Duplicate</fullName>
+                <default>false</default>
+                <label>PO: Duplicate</label>
+            </value>
+            <value>
+                <fullName>PO: Mixed Product for Del. Complete Acct.</fullName>
+                <default>false</default>
+                <label>PO: Mixed Product for Del. Complete Acct.</label>
+            </value>
+            <value>
+                <fullName>PO: Order Deleted</fullName>
+                <default>false</default>
+                <label>PO: Order Deleted</label>
+            </value>
+            <value>
+                <fullName>PO: Unable to Process Change</fullName>
+                <default>false</default>
+                <label>PO: Unable to Process Change</label>
+            </value>
+            <value>
+                <fullName>SAP: Error</fullName>
+                <default>false</default>
+                <label>SAP: Error</label>
+            </value>
+            <value>
+                <fullName>SAP: Missing Material Configuration</fullName>
+                <default>false</default>
+                <label>SAP: Missing Material Configuration</label>
+            </value>
+            <value>
+                <fullName>SAP: Run Time Error - Batch Job</fullName>
+                <default>false</default>
+                <label>SAP: Run Time Error - Batch Job</label>
+            </value>
+            <value>
+                <fullName>TBD: Other (Don&#39;t Use)</fullName>
+                <default>false</default>
+                <label>TBD: Other (Don&#39;t Use)</label>
+            </value>
+            <value>
+                <fullName>ZZ: Mark for Deletion</fullName>
+                <default>false</default>
+                <label>ZZ: Mark for Deletion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

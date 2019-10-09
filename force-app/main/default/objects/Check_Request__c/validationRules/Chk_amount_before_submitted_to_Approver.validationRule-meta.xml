@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chk_amount_before_submitted_to_Approver</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  Ready_for_Approval__c , 
+OR( IsBlank( Amount__c), 
+ Amount__c &lt;= 0 ) 
+)</errorConditionFormula>
+    <errorMessage>Please enter the Amount to be approved.</errorMessage>
+</ValidationRule>

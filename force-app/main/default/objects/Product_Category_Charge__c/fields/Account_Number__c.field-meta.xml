@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Number__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Number</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Category_Charge__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>330087</fullName>
+                <default>false</default>
+                <label>330087</label>
+            </value>
+            <value>
+                <fullName>335010</fullName>
+                <default>false</default>
+                <label>335010</label>
+            </value>
+            <value>
+                <fullName>335022</fullName>
+                <default>false</default>
+                <label>335022</label>
+            </value>
+            <value>
+                <fullName>628004</fullName>
+                <default>false</default>
+                <label>628004</label>
+            </value>
+            <value>
+                <fullName>636007</fullName>
+                <default>false</default>
+                <label>636007</label>
+            </value>
+            <value>
+                <fullName>550021</fullName>
+                <default>false</default>
+                <label>550021</label>
+            </value>
+            <value>
+                <fullName>335037</fullName>
+                <default>false</default>
+                <label>335037</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>FITTINGS/REPAIR PARTS</controllingFieldValue>
+            <controllingFieldValue>SOURCEDWARE</controllingFieldValue>
+            <controllingFieldValue>CHINAWARE - TIFFIN</controllingFieldValue>
+            <controllingFieldValue>ACRYLIC</controllingFieldValue>
+            <controllingFieldValue>AMERICAST</controllingFieldValue>
+            <controllingFieldValue>ENAMEL STEEL</controllingFieldValue>
+            <valueName>335010</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FITTINGS/REPAIR PARTS</controllingFieldValue>
+            <controllingFieldValue>Grohe Plumbing</controllingFieldValue>
+            <controllingFieldValue>Grohe Warranty</controllingFieldValue>
+            <controllingFieldValue>SOURCEDWARE</controllingFieldValue>
+            <controllingFieldValue>STEEL TUBS (LABOR)</controllingFieldValue>
+            <controllingFieldValue>STEEL TUBS (MISC)</controllingFieldValue>
+            <controllingFieldValue>Shower Door</controllingFieldValue>
+            <controllingFieldValue>AMERICAST  (MISC)</controllingFieldValue>
+            <controllingFieldValue>CHAMPION TOILETS (LABOR)</controllingFieldValue>
+            <controllingFieldValue>CHINA AFWALLS (LABOR)</controllingFieldValue>
+            <controllingFieldValue>CHINAWARE - TIFFIN</controllingFieldValue>
+            <controllingFieldValue>Crane Acrylics</controllingFieldValue>
+            <controllingFieldValue>Crane Chinaware</controllingFieldValue>
+            <controllingFieldValue>Crane ES</controllingFieldValue>
+            <controllingFieldValue>DXV Acrylics</controllingFieldValue>
+            <controllingFieldValue>DXV Chinaware</controllingFieldValue>
+            <controllingFieldValue>DXV Fittings</controllingFieldValue>
+            <controllingFieldValue>A/S Acrylics</controllingFieldValue>
+            <controllingFieldValue>A/S Chinaware</controllingFieldValue>
+            <controllingFieldValue>A/S Fittings/Repair Parts</controllingFieldValue>
+            <controllingFieldValue>A/S Furnitures</controllingFieldValue>
+            <controllingFieldValue>A/S Metals &amp; Americast</controllingFieldValue>
+            <controllingFieldValue>ACRYLIC</controllingFieldValue>
+            <controllingFieldValue>All Grohe</controllingFieldValue>
+            <controllingFieldValue>AMERICAST</controllingFieldValue>
+            <controllingFieldValue>AMERICAST  (LABOR)</controllingFieldValue>
+            <controllingFieldValue>ENAMEL STEEL</controllingFieldValue>
+            <controllingFieldValue>Fiat</controllingFieldValue>
+            <valueName>335037</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe Plumbing</controllingFieldValue>
+            <controllingFieldValue>CHAMPION TOILETS (LABOR)</controllingFieldValue>
+            <valueName>636007</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe Warranty</controllingFieldValue>
+            <valueName>335022</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STEEL TUBS (LABOR)</controllingFieldValue>
+            <controllingFieldValue>STEEL TUBS (MISC)</controllingFieldValue>
+            <controllingFieldValue>AMERICAST  (MISC)</controllingFieldValue>
+            <controllingFieldValue>CHINA AFWALLS (LABOR)</controllingFieldValue>
+            <controllingFieldValue>AMERICAST  (LABOR)</controllingFieldValue>
+            <valueName>628004</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Walk In Bath</controllingFieldValue>
+            <controllingFieldValue>Crane Acrylics</controllingFieldValue>
+            <controllingFieldValue>Crane Chinaware</controllingFieldValue>
+            <controllingFieldValue>Crane ES</controllingFieldValue>
+            <controllingFieldValue>DXV Acrylics</controllingFieldValue>
+            <controllingFieldValue>DXV Chinaware</controllingFieldValue>
+            <controllingFieldValue>DXV Fittings</controllingFieldValue>
+            <controllingFieldValue>A/S Acrylics</controllingFieldValue>
+            <controllingFieldValue>A/S Chinaware</controllingFieldValue>
+            <controllingFieldValue>A/S Fittings/Repair Parts</controllingFieldValue>
+            <controllingFieldValue>A/S Furnitures</controllingFieldValue>
+            <controllingFieldValue>A/S Metals &amp; Americast</controllingFieldValue>
+            <controllingFieldValue>All Grohe</controllingFieldValue>
+            <controllingFieldValue>Fiat</controllingFieldValue>
+            <valueName>550021</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

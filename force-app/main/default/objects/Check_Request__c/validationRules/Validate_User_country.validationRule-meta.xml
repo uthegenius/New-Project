@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_User_country</fullName>
+    <active>false</active>
+    <errorConditionFormula>IsBlank(TEXT($User.Region__c))</errorConditionFormula>
+    <errorMessage>Please have country specified on user details before saving Check Request. Please contact your administrator for this.</errorMessage>
+</ValidationRule>

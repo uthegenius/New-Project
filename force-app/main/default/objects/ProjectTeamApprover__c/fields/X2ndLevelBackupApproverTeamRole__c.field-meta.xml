@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X2ndLevelBackupApproverTeamRole__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Role of the Member who will be approving the record and added as Team Member</inlineHelpText>
+    <label>2nd Level Backup Approver Team Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pricing Approver</fullName>
+                <default>false</default>
+                <label>Pricing Approver</label>
+            </value>
+            <value>
+                <fullName>Sales Support Specialist</fullName>
+                <default>false</default>
+                <label>Sales Support Specialist</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

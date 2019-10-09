@@ -1,0 +1,17 @@
+.THIS .slds-form-element {
+    margin-top: -13px !important;
+}
+
+.THIS .slds-table {
+    height: 220px !important;
+}
+
+.THIS .clsTop {
+    top: 190px !important;
+    height: 30px !important;
+}								
+
+.THIS .clsAlertMessage {
+    font-size: 14px !important;
+    
+}

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Sub_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Sub Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Type__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Product_Sub_Type</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>DXV AT100</controllingFieldValue>
+            <controllingFieldValue>DXV AT200</controllingFieldValue>
+            <valueName>Smart Toilet Seat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DXV AT100</controllingFieldValue>
+            <controllingFieldValue>DXV AT200</controllingFieldValue>
+            <valueName>SPALET Seat Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DXV AT100</controllingFieldValue>
+            <controllingFieldValue>DXV AT200</controllingFieldValue>
+            <valueName>SPALET Bowl Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DXV AT100</controllingFieldValue>
+            <controllingFieldValue>Selectronic Product</controllingFieldValue>
+            <valueName>Manual Flush FV&#39;s</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DXV AT100</controllingFieldValue>
+            <controllingFieldValue>Selectronic Product</controllingFieldValue>
+            <valueName>Selectronic Flush Valves</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DXV AT100</controllingFieldValue>
+            <controllingFieldValue>Selectronic Product</controllingFieldValue>
+            <valueName>Selectronic Faucets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <valueName>Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <valueName>Bath/Shower</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <valueName>Commercial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <valueName>DMTF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <valueName>Kitchen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <valueName>LAVY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <valueName>Spectra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <valueName>WHL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fittings</controllingFieldValue>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Bidet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>ActiFresh</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Vormax Plus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Tank Trim</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Conglom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>ActiVate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>VorMax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>ActiClean</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Bath Tub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Kitchen Sink</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Lavatory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Shower Enclosures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Toilet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Urinal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fixtures</controllingFieldValue>
+            <valueName>Commercial Bowls and PA Tanks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>00 - No Fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>01 - Surface Finish faults</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>03 - Incomplete</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>04 - Breaks/Cracks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>05 - Restricted flow / flow Time</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>06 - Control function faulty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>07 - Seized / stiff / jammed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>08 - Leakage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>09 - Corrosion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>11 - Noisy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>12 - Packaging and transport damage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>13 - Cannot be assembled</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>14 - Wrong parts supplied</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>15 - Fault caused by 3rd party</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>16 - Parameter settings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>17 - Electrical faults</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>18 - Exchanged due to recall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>19 - Loose / Not fixable</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>20 - Clearance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>21 - Reaction Time / Response Characteristics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>22 - Continuous Flow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>23 - Unclear / Cloudy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>24 - Synchronization fault</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe</controllingFieldValue>
+            <valueName>25 - Color Deviation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Faucet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Air System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Acrylic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Gel Coat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Missing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Door System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Small Access Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Jet System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Large Access Panels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Minute Drain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Safety Tubs</controllingFieldValue>
+            <valueName>Waste / Overflow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Surface Problem</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Silicone Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Glue Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Seal Leak</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Damaged</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Bad Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Kinked Pipe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Missing Component</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Out of Dimension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Glued Jet Nozzle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Velcro Not Sticking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Others</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Part Request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Whirlpool</controllingFieldValue>
+            <valueName>Tub Design/Layout /Advertising Issue</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

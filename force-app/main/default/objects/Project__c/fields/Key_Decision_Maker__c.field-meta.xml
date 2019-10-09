@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Decision_Maker__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Project inside sales contact, copied over the quote on layout</description>
+    <externalId>false</externalId>
+    <label>Key Decision Maker</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Projects</relationshipLabel>
+    <relationshipName>Projects</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

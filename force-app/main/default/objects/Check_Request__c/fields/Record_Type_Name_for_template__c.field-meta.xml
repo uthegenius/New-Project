@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Type_Name_for_template__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(RecordType.DeveloperName=&#39;Payment_CA&#39;|| RecordType.DeveloperName=&#39;Payment_US&#39;,&#39;Payment&#39;,&#39;	Reimbursement&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Record Type Name for template</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

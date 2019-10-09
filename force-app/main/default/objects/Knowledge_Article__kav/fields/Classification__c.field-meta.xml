@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Classification__c</fullName>
+    <externalId>false</externalId>
+    <label>Classification Deleted</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Toilet</fullName>
+                <default>false</default>
+                <label>Toilet</label>
+            </value>
+            <value>
+                <fullName>Bath</fullName>
+                <default>false</default>
+                <label>Bath</label>
+            </value>
+            <value>
+                <fullName>Bazaar Voice</fullName>
+                <default>false</default>
+                <label>Bazaar Voice</label>
+            </value>
+            <value>
+                <fullName>Kitchen Faucet</fullName>
+                <default>false</default>
+                <label>Kitchen Faucet</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

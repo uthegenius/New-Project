@@ -1,0 +1,27 @@
+<aura:component>
+    <aura:attribute name="email" type="EmailMessage"/>  
+    <aura:attribute name="onclick" type="Aura.Action"/>
+    <article class="slds-card">        
+        <div class="slds-card__header slds-grid">            
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <span class="slds-icon_container slds-icon-standard-email" title="{!v.email.Parent.CaseNumber}">
+                        <lightning:icon iconName="standard:email" size="larg" />
+                    </span>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <a href="#" onclick="{!c.handleCaseClick}" class="slds-card__header-link slds-truncate" title="{!v.email.Parent.CaseNumber}">
+                            <span>Case: {!v.email.Parent.CaseNumber} - {!v.email.Parent.Subject}</span>
+                        </a><br/>
+                        <a href="#" onclick="{!c.handleClick}" class="slds-card__header-link slds-truncate" title="{!v.email.Subject}">
+                            <span>Emai: {!v.email.Subject}</span> 
+                        </a>              
+                        
+                    </h2>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">{!v.email.TextBody}</div>        
+    </article>
+</aura:component>

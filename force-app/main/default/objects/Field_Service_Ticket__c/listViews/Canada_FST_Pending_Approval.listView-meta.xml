@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canada_FST_Pending_Approval</fullName>
+    <columns>Received_On__c</columns>
+    <columns>NAME</columns>
+    <columns>Case_ID__c</columns>
+    <columns>Approved__c</columns>
+    <columns>Business_Name__c</columns>
+    <columns>Field_Service_Agent__c</columns>
+    <columns>Product__c</columns>
+    <columns>Related_Case_Owner_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Field_Service_Ticket__c.FST_CA</value>
+    </filters>
+    <filters>
+        <field>Approved__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>Canada FST (Pending Approval)</label>
+</ListView>

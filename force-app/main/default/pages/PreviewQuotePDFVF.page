@@ -1,0 +1,26 @@
+<apex:page standardController="Quote" Extensions="BoxIntegrationUtil" showHeader="false" renderAs="pdf" applyBodyTag="false" applyHtmlTag="false">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <body>
+        
+            
+        <!-- following fields are added to avoid SObject row was retrieved via SOQL without querying the requested field -->
+        <apex:outputText value="{!Quote.Final_Quote__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.QuoteNumber}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.Name}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.City__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.State__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.Project_Type__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.ExpirationDate}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.Owner.Name}" rendered="false"></apex:outputText>
+		<apex:outputText value="{!Quote.Opportunity.Account.Name}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Account.Parent.Name}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.CreatedDate}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.Initial_Specification_Fixtures__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.Fixture_Competitor__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.Initial_Specification_Faucets__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Project__r.Faucet_Competitor__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Account.Brand__c}" rendered="false"></apex:outputText>
+        
+        <apex:include pageName="{!IF((Quote.Final_Quote__c), 'CreateFQPDFVF', 'CreateMQPDFVF')}" />
+    </body>
+</apex:page>

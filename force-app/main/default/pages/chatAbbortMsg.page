@@ -1,0 +1,435 @@
+<apex:page showHeader="false" >
+    <style>
+        html {
+        padding: 20px;
+        }
+        
+        body {
+        background-color: #f5f5f5;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        margin: 0;
+        }
+        body button, body .x-btn, body .btn, body .btnDisabled,body .btnCancel , body .menuButton .menuButtonButton
+        {
+            color: #fff;
+            margin: 1px;
+            padding: 2px 3px;
+            border: 1px solid #b5b5b5;
+            border-bottom-color: #7f7f7f;
+            background: black;
+            font-weight: bold;
+            font-size: .9em;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+        }
+       
+        #waitingMessage {
+        color: black;
+        margin-top: -230px;
+        width: 90%;
+        vertical-align: middle;
+        text-align: center;
+        display: none;
+        font-size:20px;
+        }
+        
+        #liveAgentClientChat.liveAgentStateWaiting #waitingMessage {
+        display: table;
+        }
+        
+        .liveAgentSaveButton {
+        float: left;
+        }
+        
+        .liveAgentEndButton {
+        float: right;
+        }
+        
+        .liveAgentSendButton {
+        font-family: "proxima_nova_sbold", "proxima_nova_sbold_cyrillic", Helvetica, Arial, sans-serif;
+       background-color: #6D7391;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    margin: 5px 10px 5px 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 2px 8px;
+        }
+         
+        .liveAgentSaveButton:hover, .liveAgentCancelButton:hover {
+    background-color: #8B8FA7;
+        }
+        .liveAgentEndButton:hover {
+    background-color: #D54858;
+}
+        .liveAgentEndButton  {
+        font-family: "proxima_nova_sbold", "proxima_nova_sbold_cyrillic", Helvetica, Arial, sans-serif;
+      float: right;
+    border-radius: 3px;
+    background-color: #C14251;
+    display: inline-block;
+    color: #fff;
+    margin: 5px 10px 5px 10px;
+    font-size: 1em;
+    padding: 2px 8px;
+        }
+        .liveAgentSaveButton{
+        font-family: "proxima_nova_sbold", "proxima_nova_sbold_cyrillic", Helvetica, Arial, sans-serif;
+       background-color: #6D7391;
+    color: #fff;
+    display: inline-block;
+    float: left;
+    margin: 5px 10px 5px 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 2px 8px;
+        }
+        
+        
+        
+        .liveAgentSaveButton, .liveAgentEndButton {
+        z-index: 2;
+        width: 85px;
+        height: 20px;
+        bottom: 5px;
+        }
+        
+        .liveAgentChatInput {
+        height: 30px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #000;
+        font-family: "proxima_nova_sbold", "proxima_nova_sbold_cyrillic", Helvetica, Arial, sans-serif;
+        line-height: 1.5rem;
+        padding: 1px 0 px 0px;
+        background: #fff;
+        display: block;
+        /*display: inline-block;*/
+        width: 115%;
+        }
+        
+        .liveAgentSendButton {
+        /*display: block;*/
+        width: 60px;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: -67px;
+        background: #6dad3f;
+        background-image: -webkit-gradient(linear, left top, left bottom, left, right);
+        background-image: -webkit-linear-gradient(top, #6dad3f, #498d1a);
+        background-image: -moz-linear-gradient(top, #6dad3f, #498d1a);
+        background-image: -ms-linear-gradient(top, #6dad3f, #498d1a);
+        background-image: -o-linear-gradient(top, #6dad3f, #498d1a);
+        background-image: linear-gradient(to bottom, #6dad3f, #498d1a);
+        -webkit-appearance: push-button;
+        color: #fff;
+        line-height: 1.5rem;
+        }
+        
+        #liveAgentChatLog {
+        padding-top: 12px
+        padding-right: 15px;
+        padding-left: 15px;
+        width: auto;
+        height: auto;
+        top: 0;
+        position: absolute;
+        overflow-y: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: none;
+        }
+        
+        .client {
+        text-align: right;
+        }
+        
+        span.client + span {
+        text-align: right;
+        }
+        
+        #liveAgentChatLogText .name {
+        font-weight: 600;
+        font-size: 1em;
+        line-height: 1.2;
+        display: block;
+        white-space: pre;
+        margin-top:15px;
+        }
+        
+        #liveAgentChatLogText p {
+        /*line-height: 1.3 !important;*/
+        /*font-weight: 200 !important; !*makes font thin *!*/
+        /*font-size: 1em !important;*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        word-break: normal;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        }
+        
+        #liveAgentChatLogText .bubble {
+        position: relative;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0.2em 0em 0.4em 0em;
+        padding: 8px 10px 8px 10px;
+        border: 1px solid #E2E8ED;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        max-width: 90%;
+        }
+        
+        /*#liveAgentChatLogText .operator, #liveAgentChatLogText .client, #liveAgentChatLogText .system {*/
+        /*margin-bottom: 10px;*/
+        /*clear: both;*/
+        /*position: relative;*/
+        /*width: 100%;*/
+        /*-webkit-box-sizing: border-box;*/
+        /*-moz-box-sizing: border-box;*/
+        /*box-sizing: border-box;*/
+        /*}*/
+        
+        #liveAgentChatLogText .timestamp {
+        font-size: 0.75em;
+        color: #929A9D;
+        text-transform: uppercase;
+        }
+        #liveAgentChatLogText .messageText {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding: 8px 10px 8px 10px;
+        border: 1px solid #E2E8ED;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        max-width: 90%;
+        }
+        
+        .operator .messageText {
+        float: left;
+        background-color: rgba(178, 204, 231, 0.21);
+        
+        }
+        
+        .client .messageText {
+        float: right;
+        background-color: #FFFFFF;
+        /*background-color: rgba(204,234,182,0.21);*/
+        }
+        
+        span.system {
+        padding: 2px 10px;
+        clear: both;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        font-style: italic;
+        color: #6b7173;
+        line-height: 1.5 !important;
+        display: block;
+        text-align: center;
+        }
+        
+       
+        
+        #liveAgentChatLogText p {
+        /*line-height: 1.3 !important;*/
+        /*font-weight: 200 !important; !*makes font thin *!*/
+        /*font-size: 1em !important;*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        word-break: normal;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        }
+        
+        #liveAgentChatLogText .bubble {
+        position: relative;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0.2em 0em 0.4em 0em;
+        padding: 8px 10px 8px 10px;
+        border: 1px solid #E2E8ED;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        max-width: 90%;
+        }
+        
+        #liveAgentChatLogText .operator, #liveAgentChatLogText .client, #liveAgentChatLogText .system {
+        clear: both;
+        position: relative;
+        /*width: 100%;*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+        #liveAgentChatLogText .messageText {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding: 8px 10px 8px 10px;
+        border: 1px solid #E2E8ED;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        max-width: 90%;
+        }
+        
+        .operator .messageText {
+        float: left;
+        background-color: rgba(178, 204, 231, 0.21);
+        
+        }
+        
+        .client .messageText {
+        float: right;
+        background-color: #FFFFFF;
+        /*background-color: rgba(204,234,182,0.21);*/
+        }
+        
+        span.system {
+        padding: 2px 10px;
+        clear: both;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        font-style: italic;
+        color: #6b7173;
+        line-height: 1.5 !important;
+        display: block;
+        text-align: center;
+        }
+        
+        #liveAgentChatLogText p {
+        /*line-height: 1.3 !important;*/
+        /*font-weight: 200 !important; !*makes font thin *!*/
+        /*font-size: 1em !important;*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        word-break: normal;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        }
+        
+        #liveAgentChatLogText .bubble {
+        position: relative;
+        display: -moz-inline-stack;
+        display: inline-block;
+        margin: 0.2em 0em 0.4em 0em;
+        padding: 8px 10px 8px 10px;
+        border: 1px solid #E2E8ED;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        max-width: 90%;
+        }
+        #liveAgentChatLogText .toolbar
+        {
+            height: 30px;
+            background-color: #333;
+             
+            
+        }
+        #toolbar
+        {
+            height: 30px;
+            background-color: #333;
+            
+             
+        }
+        #liveAgentChatLogText .operator, #liveAgentChatLogText .client, #liveAgentChatLogText .system {
+        clear: both;
+        position: relative;
+        /*width: 100%;*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+        #toolbar{
+            background-color:black;
+        }
+        
+    </style>
+    <script>
+    function CloseChatWindow() {
+    SfdcApp.LiveAgent.Chasitor.cancelChat();
+    window.parent.close();
+    }    
+    </script>
+    
+    <div style="top: 0; left: 0; right: 0; bottom: 0; position: absolute;">
+        <liveAgent:clientChat >
+             
+           <div id="toolbar">
+              <div id="header_text"><span id="clientChatWindow:j_id1:j_id2:text" style="color:white; margin-left:7px">Connecting to Agent...</span>
+                    </div>
+                <liveAgent:clientChatSaveButton />
+            <liveAgent:clientChatEndButton />
+            </div>
+            <div style="top: 25px; left: 5px; right: 5px; bottom: 5px; position: absolute; z-index:
+                        0;">
+                <div style="font-size:15px; height: 90%;  width: 90%; vertical-align: middle; text-align: center;">
+                    <!--<liveAgent:clientChatAlertMessage agentsUnavailableLabel="Sorry, no agents are available to assist you. Please contact us via email at grohecustomercare@lixilamericas.com" />-->
+                 <!---   <liveAgent:clientChatAlertMessage agentsUnavailableLabel="{!IF(($CurrentPage.parameters.id=='5731N000000TawE'),'Sorry, no agents are available to assist you. Please contact us via email at MFDCCTech@lixilamericas.com',
+                                                                                IF(($CurrentPage.parameters.id=='5731N000000Tawx'),'Sorry, no agents are available to assist you. Please contact us via email at Cust_response@lixilamericas.com',
+                                                                                IF(($CurrentPage.parameters.id=='5731N000000TawE'),'Sorry, no agents are available to assist you. Please contact us via email at MFDCCTech@lixilamericas.com',
+                                                                                IF(($CurrentPage.parameters.id=='5731N000000TawE'),'Sorry, no agents are available to assist you. Please contact us via email at MFDCCTech@lixilamericas.com',
+                                                                                    'Sorry, no agents are available to assist you. Please contact us via email at MFDCCTech@lixilamericas.com'))))}" />
+                
+                ------>
+                
+              <!--Email Address Updated By Surabhi -->
+                
+              <liveAgent:clientChatAlertMessage agentsUnavailableLabel="{!IF(($CurrentPage.parameters.id=='5731N000000TawE'),'Sorry, no agents are available to assist you. Please contact us via email at BP_Support@lixil.com',
+                                                                                IF(($CurrentPage.parameters.id=='5731N000000Tawx'),'Sorry, no agents are available to assist you. Please contact us via email at Cust_response@lixilamericas.com',
+                                                                                IF(($CurrentPage.parameters.id=='5731N000000TawE'),'Sorry, no agents are available to assist you. Please contact us via email at BP_Support@lixil.com',
+                                                                                IF(($CurrentPage.parameters.id=='5731N000000TawE'),'Sorry, no agents are available to assist you. Please contact us via email at BP_Support@lixil.com',
+                                                                                    'Sorry, no agents are available to assist you. Please contact us via email at BP_Support@lixil.com'))))}" />  
+                </div>
+                
+                <liveAgent:clientChatStatusMessage />
+                <table id="waitingMessage" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td>Please wait while you are connected to an available agent.
+                          
+                        </td>
+                       
+                        <button class="liveAgentCancelButton" style="background:black; color:white;width:99%; height:25px"
+                                                                       onclick="CloseChatWindow();" title="Cancel Chat">Cancel Chat</button>
+                    </tr>
+                </table>
+                <div style="top: 0; right: 0; bottom: 41px; left: 0; padding: 0; position: absolute;
+                            word-wrap: break-word; z-index: 0;">
+                    <liveAgent:clientChatLog id="clntCatalog" rendered="true" showTimeStamp="true" agentTypingLabel="Agent is Typing..."/>
+                </div>
+                <liveAgent:clientChatQueuePosition />
+                <div style="position: absolute; height: auto; right: 0; bottom: 0; left: 0; margin-right:
+                            67px;">
+                    <liveagent:clientChatInput /><liveAgent:clientChatSendButton />
+                </div>
+            </div>
+        </liveAgent:clientChat>
+    </div>
+</apex:page>

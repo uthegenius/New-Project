@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Order__c</fullName>
+    <externalId>false</externalId>
+    <label>Internal Order</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Category_Charge__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>#22041</fullName>
+                <default>false</default>
+                <label>#22041</label>
+            </value>
+            <value>
+                <fullName>#22042</fullName>
+                <default>false</default>
+                <label>#22042</label>
+            </value>
+            <value>
+                <fullName>#22043</fullName>
+                <default>false</default>
+                <label>#22043</label>
+            </value>
+            <value>
+                <fullName>#22044</fullName>
+                <default>false</default>
+                <label>#22044</label>
+            </value>
+            <value>
+                <fullName>#22201</fullName>
+                <default>false</default>
+                <label>#22201</label>
+            </value>
+            <value>
+                <fullName>#24381</fullName>
+                <default>false</default>
+                <label>#24381</label>
+            </value>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>STEEL TUBS (LABOR)</controllingFieldValue>
+            <valueName>#22041</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STEEL TUBS (MISC)</controllingFieldValue>
+            <valueName>#22042</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMERICAST  (MISC)</controllingFieldValue>
+            <valueName>#22044</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHAMPION TOILETS (LABOR)</controllingFieldValue>
+            <valueName>#24381</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHINA AFWALLS (LABOR)</controllingFieldValue>
+            <valueName>#22201</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMERICAST  (LABOR)</controllingFieldValue>
+            <valueName>#22043</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

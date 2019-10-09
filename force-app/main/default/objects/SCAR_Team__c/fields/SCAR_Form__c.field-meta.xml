@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SCAR_Form__c</fullName>
+    <description>SCAR form Id</description>
+    <externalId>false</externalId>
+    <label>SCAR Form</label>
+    <referenceTo>SCAR__c</referenceTo>
+    <relationshipLabel>Section 1 - Scar Team</relationshipLabel>
+    <relationshipName>SCAR_Team</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

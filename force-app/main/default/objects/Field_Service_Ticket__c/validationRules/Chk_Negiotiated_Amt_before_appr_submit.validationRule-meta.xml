@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chk_Negiotiated_Amt_before_appr_submit</fullName>
+    <active>true</active>
+    <description>Validates if the negotiated amt is entered before approval submission.</description>
+    <errorConditionFormula>AND(  Is_Ready_for_Approval__c , 
+  OR( IsBlank( Negotiated_Labor_Cost__c ),
+      Negotiated_Labor_Cost__c &lt;= 0 )
+   )</errorConditionFormula>
+    <errorDisplayField>Negotiated_Labor_Cost__c</errorDisplayField>
+    <errorMessage>Please enter Negotiated Labor Cost to be approved.</errorMessage>
+</ValidationRule>

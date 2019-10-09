@@ -1,0 +1,149 @@
+<aura:component access="global" controller="ConfirmationModalCtrl">
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="callType" type="String" default="OSS" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="isLoading" type="boolean" default="false"/>
+    
+    <header class="slds-modal__header">
+        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">
+            <aura:if isTrue="{!v.callType=='OSS'}">
+                Submit to SAP Confirmation
+                <aura:set attribute="else">
+                    <aura:if isTrue="{!v.callType=='SSS'}">
+                        Order Simulator
+                        <aura:set attribute="else">
+                            <aura:if isTrue="{!v.callType=='GSD'}">
+                                Get Shipping Detail Confirmation
+                                <aura:set attribute="else">
+                                    <aura:if isTrue="{!v.callType=='DSS'}">
+                                        Submit to SAP Confirmation
+                                        <aura:set attribute="else">
+                                            <aura:if isTrue="{!v.callType=='RPR'}">
+                                                Price Review Confirmation
+                                                <aura:set attribute="else">
+                                                    <aura:if isTrue="{!v.callType=='FQ'}">
+                                                        Final Quote Confirmation
+                                                        <aura:set attribute="else">
+                                                            <aura:if isTrue="{!v.callType=='PR'}">
+                                                                Price Review Confirmation
+                                                                <aura:set attribute="else">
+                                                                    <aura:if isTrue="{!v.callType=='SA'}">
+                                                                        Submit for Approval Confirmation
+                                                                        <aura:set attribute="else">
+                                                                            <aura:if isTrue="{!v.callType=='STS'}">
+                                                                                Submit to SAP Confirmation
+                                                                                <aura:set attribute="else">
+                                                                                    Not Defined
+                                                                                </aura:set>
+                                                                            </aura:if>
+                                                                        </aura:set>
+                                                                    </aura:if>
+                                                                </aura:set>
+                                                            </aura:if>
+                                                        </aura:set>
+                                                    </aura:if>
+                                                </aura:set>
+                                            </aura:if>
+                                        </aura:set>
+                                    </aura:if>
+                                </aura:set>
+                            </aura:if>
+                        </aura:set>
+                    </aura:if>
+                </aura:set>
+            </aura:if>
+        </h2>        
+    </header>
+    <aura:if isTrue="{!v.isLoading}">  
+        <aura:if isTrue="{!v.callType!='DSS'}">
+            <div aura:id="spinnerId" class="slds-spinner_container">
+                <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                    <span class="slds-assistive-text"></span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+            <aura:set attribute="else">            
+                <div aura:id="spinnerId2" class="slds-spinner_container">
+                    <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                        <span class="slds-assistive-text"></span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                </div>
+                
+            </aura:set>
+        </aura:if>
+    </aura:if>
+    <aura:if isTrue="{!v.callType=='SSS'}">
+        Order Simulator is executing.
+    </aura:if>  
+    <aura:if isTrue="{!v.callType!='SSS'}">
+        <!--###### MODAL BOX BODY Part Start######-->
+        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+            <p><b>
+                <aura:if isTrue="{!v.callType=='OSS'}">
+                    Are you sure you want to send order to SAP?
+                    <aura:set attribute="else">
+                        <aura:if isTrue="{!v.callType=='SSS'}">
+                            Order Simulator is executing.
+                            <aura:set attribute="else">
+                                <aura:if isTrue="{!v.callType=='GSD'}">
+                                    Are you sure you want to get latest order  shipping details?
+                                    <aura:set attribute="else">
+                                        <aura:if isTrue="{!v.callType=='DSS'}">
+                                            Are you sure you want to send defect return to SAP?
+                                            <aura:set attribute="else">
+                                                <aura:if isTrue="{!v.callType=='RPR'}">
+                                                    This is a FQ quote, Are you sure you want get price review information again?
+                                                    <aura:set attribute="else">
+                                                        <aura:if isTrue="{!v.callType=='FQ'}">
+                                                            Are you sure you want to mark this quote as FQ?
+                                                            <aura:set attribute="else">
+                                                                <aura:if isTrue="{!v.callType=='PR'}">
+                                                                    Are you sure you want to get price review information?
+                                                                    <aura:set attribute="else">
+                                                                        <aura:if isTrue="{!v.callType=='SA'}">
+                                                                            Are you sure you want to submit this quote for approval?
+                                                                            <aura:set attribute="else">
+                                                                                <aura:if isTrue="{!v.callType=='STS'}">
+                                                                                    Are you sure you want to submit the quote to SAP?
+                                                                                    <aura:set attribute="else">
+                                                                                        Not Defined
+                                                                                    </aura:set>
+                                                                                </aura:if>
+                                                                            </aura:set>
+                                                                        </aura:if>
+                                                                    </aura:set>
+                                                                </aura:if>
+                                                            </aura:set>
+                                                        </aura:if>
+                                                    </aura:set>
+                                                </aura:if>
+                                            </aura:set>
+                                        </aura:if>
+                                    </aura:set>
+                                </aura:if>
+                            </aura:set>
+                        </aura:if>
+                    </aura:set>
+                </aura:if>
+                
+                </b>
+            </p>  
+            
+        </div>
+        <!--###### MODAL BOX FOOTER Part Start ######-->
+        
+        <footer class="slds-modal__footer">
+            <lightning:button variant="neutral" 
+                              label="No"
+                              title="No"
+                              onclick="{!c.closeModel }"/>
+            <lightning:button variant="brand" 
+                              label="Yes"
+                              title="Yes"
+                              onclick="{!c.submitToSAP }"/>
+        </footer>        
+    </aura:if>
+</aura:component>

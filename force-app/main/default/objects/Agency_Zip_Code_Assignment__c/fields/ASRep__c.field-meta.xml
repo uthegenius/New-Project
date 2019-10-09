@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ASRep__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field will be used to show which Account is the ASRep for the current zip code and region</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ASRep Account</inlineHelpText>
+    <label>ASRep</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>ASRep_Account</relationshipLabel>
+    <relationshipName>ASRep_Account</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

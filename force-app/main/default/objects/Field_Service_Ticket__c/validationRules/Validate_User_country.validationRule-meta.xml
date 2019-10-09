@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_User_country</fullName>
+    <active>true</active>
+    <description>Validate if the current user&#39;s country is set before saving FST record.</description>
+    <errorConditionFormula>IsBlank(TEXT($User.Region__c))</errorConditionFormula>
+    <errorMessage>Please have country specified on user details before saving Field Service Ticket. Please contact your administrator for this.</errorMessage>
+</ValidationRule>

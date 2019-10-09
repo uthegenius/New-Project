@@ -1,0 +1,248 @@
+<apex:page renderAs="pdf" cache="false" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false" showHeader="false" sidebar="false" StandardController="Field_Service_Ticket__c">
+
+<html><head>
+<style type="text/css">
+
+span.cls_002{font-family:Times,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Times,serif;font-size:16.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Times,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Courier New,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Courier New,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: underline}
+div.cls_008{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}
+span.cls_006{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Times,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Times,serif;font-size:12.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+ 
+@page { 
+    size: letter portrait;
+    
+    margin-top: 100px;
+    margin-bottom: 150px;
+    
+    @top-left {
+        content: element(header_left);
+    }
+    
+    @top-center {
+        content: element(header_center);
+    }
+    
+    @top-right {
+        content: element(header_right);
+    }
+    
+    @bottom-left {
+        content: element(footer_left);
+    }
+    
+    @bottom-center {
+        content: element(footer_center);
+    }
+    
+    @bottom-right {
+        content: element(footer_right);
+    }
+}
+
+table {page-break-after:auto}
+tr    { page-break-inside:avoid; page-break-after:auto }
+td    { page-break-inside:avoid; page-break-after:auto }
+
+
+
+
+.header_left {
+    text-align: left;
+    position: running(header_left);
+   
+    padding:5px 0px 10px 0px; 
+    margin:10px 0px 10px 0px; 
+}
+
+.header_center{
+    text-align: center;
+    position: running(header_center);
+    
+    padding:5px 0px 10px 0px; 
+        margin:10px 0px 10px 0px; 
+}
+
+.header_right {
+
+    position: running(header_right);
+    padding:22px 0px 8px 0px;
+   
+    margin:8px 0px 7px 0px; 
+    text-align:center; 
+    font-family: calibri, Arial, Helvetica, sans-serif; 
+  }
+
+.footer_center
+          { 
+          position: running(footer_center);
+          border:1px solid #fff;
+
+          margin-top: 0px;
+          margin-right: 0px;
+          margin-left: 0px;
+          margin-bottom: 0px;
+          padding:0px 0px 0px 0px;
+          height:20px;
+          } 
+
+.pageNumber:before {
+    content: counter(page); 
+}
+
+.pageCount:before {
+    content: counter(pages);  
+}
+
+   
+ 
+</style>
+    <apex:image url="{!$Resource.LIXIL_Logo}" width="250" height="50"/>
+
+</head>
+    
+<body style="border: 0px solid #000000;">
+       <!-- List<Field_Service_Ticket__c> fstApprovedlist = new List<Field_Service_Ticket__c>();
+        fstApprovedlist=[Select id, Field_Service_Agent__r.Name,Received_On__c,Case_ID__r.Contact.Name,Case_ID__r.Contact.Id, State__c,Street__c,   
+                         Zip_Postal_Code__c,Product__r.StockKeepingUnit,Product__r.Description,Case_ID__r.Owner.Name From Field_Service_Ticket__c where Id In :fstid ];  -->
+    
+            
+        <div id="mainDiv">
+
+
+    <!-- Content -->
+   <h1 style=" margin:10px 0px 0px 0px; padding:5px; font-size:14px; border-bottom:3px solid #5E002F; font-family: calibri, Arial, Helvetica, sans-serif;">&nbsp; Field Service Ticket</h1>
+   <br/>
+  <table border="0"  cellspacing="0" cellpadding="0" width="100%" style="padding:0px; border-bottom:0px solid #b0345a; border-right:0px solid #b0345a;margin:10px 0px 10px 0px; text-align:left; font-family: calibri, Arial, Helvetica, sans-serif; font-size:11px;">
+   <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;; border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4">Details</td>
+    </tr>
+     <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Ticket No: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Name}"/></td>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>CCC Rep Assigned: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Related_Case_Owner_Name__c}"/> </td>
+    </tr>
+      
+      <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Field Service Agent: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Field_Service_Agent_Name__c }"/></td>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Field Service Agent Address: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Field_Service_Agent_Address__c}"/> </td>
+    </tr>
+      
+     <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Recd On: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.Received_On__c}"/></td> 
+    
+         <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Business Name: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.Business_Name__c}"/></td> 
+    </tr>
+      
+       
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;;border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4">Owner Details</td>
+    </tr>
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;;border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4"><br/></td>
+    </tr>
+        
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Owner: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Home_Owner_Name__c}"/></td>   
+   <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Consumer: </b></td> 
+         <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.Related_Case_Contact_Name__c}"/></td>
+    </tr>      
+      
+          
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Mobile: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Case_ID__r.Contact.Phone}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Telephone: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.Case_ID__r.Contact.Phone}"/></td> 
+    </tr>
+     
+      
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;;border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4">Address</td>
+    </tr>
+      
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Street: </b></td> 
+        <td valign="top" align="left" colspan="3" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Street__c}"/></td> 
+    </tr>
+      
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>City: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.City__c}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>State: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.State__c}"/></td> 
+    </tr>
+     
+        <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>ZIP:</b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Zip_Postal_Code__c}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Country: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.Country__c}"/></td> 
+    </tr>
+      
+      
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;;border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4">Product Details</td>
+    </tr>
+      
+      
+    <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Product Number:</b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Product__r.ProductCode}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Product Description: </b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.Product__r.Description}"/></td> 
+    </tr>
+     
+        <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Manufacturing Date/Serial No:</b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Product__r.CreatedDate}"/></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Distributor Info:</b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.Product__r.Distribution_Channel_Code__c}"/></td> 
+    </tr>
+      
+      <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Problem Details:</b></td> 
+        <td valign="top" align="left" colspan="3" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><apex:outputField value="{!Field_Service_Ticket__c.Problem_Details__c}"/></td> 
+      </tr>
+      <tr>
+     
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b></b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"></td> 
+    </tr>
+      
+       <tr>
+     
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b></b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"></td> 
+    </tr>
+      
+      
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;;border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4"></td>
+    </tr>
+      
+    <tr>
+        <td valign="top" width="100%" align="left" style="background-color:#8ec3e2;;border-top:0px solid #b0345a; border-left:0px solid #b0345a; color:#fff; padding:3px 1px;" colspan="4"></td>
+    </tr>
+      <tr>
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Info By CCC Agent:</b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" >{!Field_Service_Ticket__c.Field_Service_Agent__r.Name}</td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;" ><b>Remarks</b></td> 
+        <td valign="top" align="left" style="border-top:0px solid #b0345a; border-right:0px solid #b0345a; border-left:0px solid #b0345a; padding:3px 1px;"><apex:outputField value="{!Field_Service_Ticket__c.Case_ID__r.Comments}"/></td> 
+    </tr>
+            </table></div>   
+</body></html>
+</apex:page>

@@ -1,0 +1,143 @@
+<apex:page standardController="Quote" Extensions="BoxIntegrationUtil"  showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" renderAs="PDF">
+    <head>
+        <style>
+            @page { margin: 0px 0px 0px 0px; }
+        table {-fs-table-paginate: paginate;}
+        body {
+            padding:0px;
+            margin:0px;
+        } 
+         thead {display: table-header-group;}           
+        #mainDiv {
+            padding:25px 25px 25px 25px;
+            margin:25px 150px 25px 25px;
+            border: 0px solid #000000;
+            width: 87%;
+            height: 9.5in;
+        }    
+           table {display: table-header-group;}
+      </style>
+    </head>
+    <body style="border: 0px solid #000000;">
+        <apex:image url="{!URLFOR($Resource.Influencer_Quote_Title, 'Infuencer_Quote_Title.jpg')}" style="width: 8.5in; height: 11in; text-align: center; display: block; margin: 0px; padding: 0px;"/>
+        <div id="mainDiv">
+            <apex:outputText value="{!Quote.Final_Quote__c}" rendered="false"></apex:outputText>
+            <apex:outputText value="{!Quote.Opportunity.Account.Brand__c}" rendered="false"></apex:outputText>
+            
+            
+            
+            <apex:image url="{!if(strLogoType='ALL', URLFOR($Resource.Brand_logos, '/IQ_TriBrandedImage.jpg'), if(strLogoType='GROHE', URLFOR($Resource.Brand_logos, '/IQ_GroheLogo.jpg'), ''))}" style="text-align: center;}" />        
+            
+                               
+            <table width="100%"  style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+                <tr>
+                    <td width="35%"><b>Quote Number</b></td>
+                    <!-- feedback day 3, 78 switch from QuoteNumber to Unique_ID__c -->
+                    <td><b>: {!Quote.Unique_ID__c}</b></td>
+                </tr>
+                <tr>
+                    <td width="35%"><b>Quote Version</b></td>
+                    <td><b>: {!Quote.Version__c}</b></td>
+                </tr>           
+                <tr><td>&nbsp;</td></tr>   
+                <tr>
+                    <td><b>Job Name</b></td>
+                    <!--td>: {!Quote.Opportunity.Project__r.Name} </td-->
+                    <td>: {!Quote.Opportunity.Name} </td>
+                </tr>
+                <tr>
+                    <td><b>City/State </b></td>
+                    <td>: {!Quote.Opportunity.Project__r.City__c}, {!Quote.Opportunity.Project__r.State__c}</td>
+                </tr>
+
+                <tr><td>&nbsp;</td></tr>   
+                <tr>            
+                    <td><b>Submit Date</b></td>
+                    <td>: <apex:outputText value="{0,date,dd' 'MMMMM' 'yyyy}">
+                            <apex:param value="{!Quote.CreatedDate}" /> 
+                          </apex:outputText>
+                    </td>
+                </tr>
+                <tr>                
+                    <td><b>Expire Date</b></td>
+                    <td>: <apex:outputText value="{0,date,dd' 'MMMMM' 'yyyy}">
+                            <apex:param value="{!Quote.ExpirationDate}" />
+                          </apex:outputText>
+                    </td>
+                </tr>
+    
+                
+                <tr><td>&nbsp;</td></tr>
+                <tr>                
+                    <td><b>Submitter</b></td>
+                    <td>: {!Quote.Opportunity.Owner.Name}</td> 
+                </tr>
+    
+                   
+            </table>
+            
+            <br/><br/>
+            <div style="font-size: 11px; display: block;">&#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; </div>
+            <p style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+                <apex:image value="{!URLFOR($Resource.lixil_icons, 'fa-righ-hand.png')}"/> <b>This is an influencer Quote. This document provides estimated value per the specification below, however, final pricing will be determined through standard purchase chain processes.</b>
+            </p>
+     
+            <div style="font-size: 11px; display: block;">&#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; &#42; </div>        
+            <br/> 
+    
+            <table width="100%" border="0" cellspadding="0" cellspacing="0" style="font-size: 11px; font-family: Sans-Serif, Arial; display: table;">
+                <thead>
+                <tr>
+                    <td style="white-space:pre; text-align: center; vertical-align: top; border: 1px solid #000000;">
+    Location 
+    Code
+                    </td>
+                    <td style="text-align: center; border: 1px solid #000000;">Alternate</td>
+                    <td style="text-align: center; border: 1px solid #000000;">Line No.</td>
+                    <td style="text-align: center; border: 1px solid #000000;">Brand</td>
+                    <td style="text-align: center; border: 1px solid #000000;">Material</td>
+                    <td style="text-align: center; border: 1px solid #000000;">Material Description</td>
+                    <td style="text-align: center; border: 1px solid #000000;">Quantity</td>
+                    <td style="text-align: center; border: 1px solid #000000;">Budget Amount</td>
+                    <td style="text-align: center; border: 1px solid #000000;">Budget Ext. Amount</td>
+
+                </tr> 
+                </thead>
+                <tbody>
+                <apex:repeat value="{!listIQLI}" var="fqli">
+                    <tr>
+                        <td style="border: 1px solid #000000;">{!fqli.Location__c}</td>
+                        <td style="border: 1px solid #000000;">{!fqli.AlternateProduct__c}</td>
+                        <td style="border: 1px solid #000000;">{!fqli.Line_Number__c}</td>
+                        <td style="border: 1px solid #000000;">{!fqli.Product2.Brand__c}</td>
+                        <td style="border: 1px solid #000000;">{!fqli.Product2.ProductCode}</td>
+                        <td style="border: 1px solid #000000;">{!fqli.Product2.Description}</td>
+                        <td style="text-align: right; border: 1px solid #000000; text-align: left !important;">{!ROUND(fqli.Quantity,0)}</td>
+                        <td style="text-align: right; border: 1px solid #000000; text-align: left !important;">&#36; <apex:outputText value="{0,number,###,###.00}"><apex:param value="{!if(isNull(fqli.Budget_Price__c),0, fqli.Budget_Price__c)}"/></apex:outputText></td>
+                        <td style="text-align: right; border: 1px solid #000000; text-align: left !important;">&#36; {!if(isNull(fqli.Budget_Total__c),0, fqli.Budget_Total__c)}</td>
+
+                    </tr>    
+                </apex:repeat>
+                <tr>
+                    <td colspan="9">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ffffff">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    
+                    <td>&nbsp;</td>
+                    <td colspan="4" style="text-align: right;"><b>Total Budget Ext. Amount:</b>  &#36; {!if(isNull(totalQuotedValue),0, totalQuotedValue)}</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                    </tbody>
+            </table>
+            
+            <br/>
+        </div>
+
+    </body>
+</apex:page>

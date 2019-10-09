@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" controller="CheckBoxFolder_Controller">
+    <ltng:require styles="{!$Resource.multilineToastCSS}" />
+    <aura:attribute name="obj" type="CheckBoxFolder_Controller"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />    
+</aura:component>

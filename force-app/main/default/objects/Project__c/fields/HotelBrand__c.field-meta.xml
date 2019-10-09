@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HotelBrand__c</fullName>
+    <description>Project hotel brand</description>
+    <externalId>false</externalId>
+    <label>Hotel Brand</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>HotelGroup__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>21c Museum Hotels</fullName>
+                <default>false</default>
+                <label>21c Museum Hotels</label>
+            </value>
+            <value>
+                <fullName>Accor Company</fullName>
+                <default>false</default>
+                <label>Accor Company</label>
+            </value>
+            <value>
+                <fullName>Ace Hotel Group</fullName>
+                <default>false</default>
+                <label>Ace Hotel Group</label>
+            </value>
+            <value>
+                <fullName>AC Hotel</fullName>
+                <default>false</default>
+                <label>AC Hotel</label>
+            </value>
+            <value>
+                <fullName>Affinia</fullName>
+                <default>false</default>
+                <label>Affinia</label>
+            </value>
+            <value>
+                <fullName>Affordable Suites of America</fullName>
+                <default>false</default>
+                <label>Affordable Suites of America</label>
+            </value>
+            <value>
+                <fullName>AJ Capital Partners</fullName>
+                <default>false</default>
+                <label>AJ Capital Partners</label>
+            </value>
+            <value>
+                <fullName>Aloft Hotels</fullName>
+                <default>false</default>
+                <label>Aloft Hotels</label>
+            </value>
+            <value>
+                <fullName>Andaz</fullName>
+                <default>false</default>
+                <label>Andaz</label>
+            </value>
+            <value>
+                <fullName>Ascend Collection</fullName>
+                <default>false</default>
+                <label>Ascend Collection</label>
+            </value>
+            <value>
+                <fullName>Autograph Hotel</fullName>
+                <default>false</default>
+                <label>Autograph Hotel</label>
+            </value>
+            <value>
+                <fullName>Baymont</fullName>
+                <default>false</default>
+                <label>Baymont</label>
+            </value>
+            <value>
+                <fullName>Best Western</fullName>
+                <default>false</default>
+                <label>Best Western</label>
+            </value>
+            <value>
+                <fullName>Best Western Hotels &amp; Resorts</fullName>
+                <default>false</default>
+                <label>Best Western Hotels &amp; Resorts</label>
+            </value>
+            <value>
+                <fullName>Best Western Plus</fullName>
+                <default>false</default>
+                <label>Best Western Plus</label>
+            </value>
+            <value>
+                <fullName>Best Western Premier</fullName>
+                <default>false</default>
+                <label>Best Western Premier</label>
+            </value>
+            <value>
+                <fullName>Budget Host</fullName>
+                <default>false</default>
+                <label>Budget Host</label>
+            </value>
+            <value>
+                <fullName>Budget Suites of America</fullName>
+                <default>false</default>
+                <label>Budget Suites of America</label>
+            </value>
+            <value>
+                <fullName>Cabot Lodge</fullName>
+                <default>false</default>
+                <label>Cabot Lodge</label>
+            </value>
+            <value>
+                <fullName>Cambria Suites</fullName>
+                <default>false</default>
+                <label>Cambria Suites</label>
+            </value>
+            <value>
+                <fullName>Candlewood Suites</fullName>
+                <default>false</default>
+                <label>Candlewood Suites</label>
+            </value>
+            <value>
+                <fullName>Canopy</fullName>
+                <default>false</default>
+                <label>Canopy</label>
+            </value>
+            <value>
+                <fullName>Carlton</fullName>
+                <default>false</default>
+                <label>Carlton</label>
+            </value>
+            <value>
+                <fullName>Carlton Hotel Collection</fullName>
+                <default>false</default>
+                <label>Carlton Hotel Collection</label>
+            </value>
+            <value>
+                <fullName>Centric</fullName>
+                <default>false</default>
+                <label>Centric</label>
+            </value>
+            <value>
+                <fullName>Choice Hotels International</fullName>
+                <default>false</default>
+                <label>Choice Hotels International</label>
+            </value>
+            <value>
+                <fullName>citizenM Hotels</fullName>
+                <default>false</default>
+                <label>citizenM Hotels</label>
+            </value>
+            <value>
+                <fullName>Clarion Hotel</fullName>
+                <default>false</default>
+                <label>Clarion Hotel</label>
+            </value>
+            <value>
+                <fullName>Clarion Inn</fullName>
+                <default>false</default>
+                <label>Clarion Inn</label>
+            </value>
+            <value>
+                <fullName>Club Med</fullName>
+                <default>false</default>
+                <label>Club Med</label>
+            </value>
+            <value>
+                <fullName>Club Quarters</fullName>
+                <default>false</default>
+                <label>Club Quarters</label>
+            </value>
+            <value>
+                <fullName>Coast Hotels</fullName>
+                <default>false</default>
+                <label>Coast Hotels</label>
+            </value>
+            <value>
+                <fullName>Cobblestone</fullName>
+                <default>false</default>
+                <label>Cobblestone</label>
+            </value>
+            <value>
+                <fullName>Comfort Inn</fullName>
+                <default>false</default>
+                <label>Comfort Inn</label>
+            </value>
+            <value>
+                <fullName>Comfort Suites</fullName>
+                <default>false</default>
+                <label>Comfort Suites</label>
+            </value>
+            <value>
+                <fullName>Conrad Hotels</fullName>
+                <default>false</default>
+                <label>Conrad Hotels</label>
+            </value>
+            <value>
+                <fullName>Country Garden Phoenix Hotels</fullName>
+                <default>false</default>
+                <label>Country Garden Phoenix Hotels</label>
+            </value>
+            <value>
+                <fullName>Country Inns &amp; Suites</fullName>
+                <default>false</default>
+                <label>Country Inns &amp; Suites</label>
+            </value>
+            <value>
+                <fullName>Courtyard by Marriott</fullName>
+                <default>false</default>
+                <label>Courtyard by Marriott</label>
+            </value>
+            <value>
+                <fullName>Crowne Plaza</fullName>
+                <default>false</default>
+                <label>Crowne Plaza</label>
+            </value>
+            <value>
+                <fullName>Curio</fullName>
+                <default>false</default>
+                <label>Curio</label>
+            </value>
+            <value>
+                <fullName>Days Inn</fullName>
+                <default>false</default>
+                <label>Days Inn</label>
+            </value>
+            <value>
+                <fullName>Delta</fullName>
+                <default>false</default>
+                <label>Delta</label>
+            </value>
+            <value>
+                <fullName>Design</fullName>
+                <default>false</default>
+                <label>Design</label>
+            </value>
+            <value>
+                <fullName>Disney Hotels</fullName>
+                <default>false</default>
+                <label>Disney Hotels</label>
+            </value>
+            <value>
+                <fullName>Distinction Hotels</fullName>
+                <default>false</default>
+                <label>Distinction Hotels</label>
+            </value>
+            <value>
+                <fullName>DoubleTree</fullName>
+                <default>false</default>
+                <label>DoubleTree</label>
+            </value>
+            <value>
+                <fullName>Dream Hotel Group</fullName>
+                <default>false</default>
+                <label>Dream Hotel Group</label>
+            </value>
+            <value>
+                <fullName>Drury Hotels</fullName>
+                <default>false</default>
+                <label>Drury Hotels</label>
+            </value>
+            <value>
+                <fullName>Econo Lodge</fullName>
+                <default>false</default>
+                <label>Econo Lodge</label>
+            </value>
+            <value>
+                <fullName>Edition</fullName>
+                <default>false</default>
+                <label>Edition</label>
+            </value>
+            <value>
+                <fullName>Element</fullName>
+                <default>false</default>
+                <label>Element</label>
+            </value>
+            <value>
+                <fullName>Embassy Suites</fullName>
+                <default>false</default>
+                <label>Embassy Suites</label>
+            </value>
+            <value>
+                <fullName>Even Hotels</fullName>
+                <default>false</default>
+                <label>Even Hotels</label>
+            </value>
+            <value>
+                <fullName>Evergreen</fullName>
+                <default>false</default>
+                <label>Evergreen</label>
+            </value>
+            <value>
+                <fullName>Extended Stay Hotels</fullName>
+                <default>false</default>
+                <label>Extended Stay Hotels</label>
+            </value>
+            <value>
+                <fullName>Fairfield Inn</fullName>
+                <default>false</default>
+                <label>Fairfield Inn</label>
+            </value>
+            <value>
+                <fullName>Fairmont</fullName>
+                <default>false</default>
+                <label>Fairmont</label>
+            </value>
+            <value>
+                <fullName>Four Points</fullName>
+                <default>false</default>
+                <label>Four Points</label>
+            </value>
+            <value>
+                <fullName>G6 Hospitality</fullName>
+                <default>false</default>
+                <label>G6 Hospitality</label>
+            </value>
+            <value>
+                <fullName>Gaylord</fullName>
+                <default>false</default>
+                <label>Gaylord</label>
+            </value>
+            <value>
+                <fullName>Grand America Hotels &amp; Resort</fullName>
+                <default>false</default>
+                <label>Grand America Hotels &amp; Resort</label>
+            </value>
+            <value>
+                <fullName>Grand Hyatt</fullName>
+                <default>false</default>
+                <label>Grand Hyatt</label>
+            </value>
+            <value>
+                <fullName>Great Wolf Lodge</fullName>
+                <default>false</default>
+                <label>Great Wolf Lodge</label>
+            </value>
+            <value>
+                <fullName>Grupo Sol Melia</fullName>
+                <default>false</default>
+                <label>Grupo Sol Melia</label>
+            </value>
+            <value>
+                <fullName>Hampshire Hospitality</fullName>
+                <default>false</default>
+                <label>Hampshire Hospitality</label>
+            </value>
+            <value>
+                <fullName>Hampton Inn</fullName>
+                <default>false</default>
+                <label>Hampton Inn</label>
+            </value>
+            <value>
+                <fullName>Hard Rock</fullName>
+                <default>false</default>
+                <label>Hard Rock</label>
+            </value>
+            <value>
+                <fullName>Hawthorn</fullName>
+                <default>false</default>
+                <label>Hawthorn</label>
+            </value>
+            <value>
+                <fullName>Hilton Garden Inn</fullName>
+                <default>false</default>
+                <label>Hilton Garden Inn</label>
+            </value>
+            <value>
+                <fullName>Hilton Hotels &amp; Resorts</fullName>
+                <default>false</default>
+                <label>Hilton Hotels &amp; Resorts</label>
+            </value>
+            <value>
+                <fullName>Hilton Worldwide</fullName>
+                <default>false</default>
+                <label>Hilton Worldwide</label>
+            </value>
+            <value>
+                <fullName>Holiday Inn</fullName>
+                <default>false</default>
+                <label>Holiday Inn</label>
+            </value>
+            <value>
+                <fullName>Holiday Inn Express</fullName>
+                <default>false</default>
+                <label>Holiday Inn Express</label>
+            </value>
+            <value>
+                <fullName>Home 2 Suites</fullName>
+                <default>false</default>
+                <label>Home 2 Suites</label>
+            </value>
+            <value>
+                <fullName>Homewood Suites</fullName>
+                <default>false</default>
+                <label>Homewood Suites</label>
+            </value>
+            <value>
+                <fullName>Hotel Indigo</fullName>
+                <default>false</default>
+                <label>Hotel Indigo</label>
+            </value>
+            <value>
+                <fullName>Howard Johnson</fullName>
+                <default>false</default>
+                <label>Howard Johnson</label>
+            </value>
+            <value>
+                <fullName>Hyatt</fullName>
+                <default>false</default>
+                <label>Hyatt</label>
+            </value>
+            <value>
+                <fullName>Hyatt House</fullName>
+                <default>false</default>
+                <label>Hyatt House</label>
+            </value>
+            <value>
+                <fullName>Hyatt Place</fullName>
+                <default>false</default>
+                <label>Hyatt Place</label>
+            </value>
+            <value>
+                <fullName>Hyatt Regency</fullName>
+                <default>false</default>
+                <label>Hyatt Regency</label>
+            </value>
+            <value>
+                <fullName>InnSuites Hotels</fullName>
+                <default>false</default>
+                <label>InnSuites Hotels</label>
+            </value>
+            <value>
+                <fullName>InterContinental</fullName>
+                <default>false</default>
+                <label>InterContinental</label>
+            </value>
+            <value>
+                <fullName>Intercontinental Hotels Group</fullName>
+                <default>false</default>
+                <label>Intercontinental Hotels Group</label>
+            </value>
+            <value>
+                <fullName>InTown Suites</fullName>
+                <default>false</default>
+                <label>InTown Suites</label>
+            </value>
+            <value>
+                <fullName>JW Marriott</fullName>
+                <default>false</default>
+                <label>JW Marriott</label>
+            </value>
+            <value>
+                <fullName>Kempinski Hotels</fullName>
+                <default>false</default>
+                <label>Kempinski Hotels</label>
+            </value>
+            <value>
+                <fullName>Kimpton</fullName>
+                <default>false</default>
+                <label>Kimpton</label>
+            </value>
+            <value>
+                <fullName>Knights Inn</fullName>
+                <default>false</default>
+                <label>Knights Inn</label>
+            </value>
+            <value>
+                <fullName>Langham Hotels International</fullName>
+                <default>false</default>
+                <label>Langham Hotels International</label>
+            </value>
+            <value>
+                <fullName>Laquinta Inn</fullName>
+                <default>false</default>
+                <label>Laquinta Inn</label>
+            </value>
+            <value>
+                <fullName>Le Meridien</fullName>
+                <default>false</default>
+                <label>Le Meridien</label>
+            </value>
+            <value>
+                <fullName>Loews brand</fullName>
+                <default>false</default>
+                <label>Loews brand</label>
+            </value>
+            <value>
+                <fullName>Loews Hotels Company</fullName>
+                <default>false</default>
+                <label>Loews Hotels Company</label>
+            </value>
+            <value>
+                <fullName>Loews Sapphire Falls Resort</fullName>
+                <default>false</default>
+                <label>Loews Sapphire Falls Resort</label>
+            </value>
+            <value>
+                <fullName>Luxury Collection</fullName>
+                <default>false</default>
+                <label>Luxury Collection</label>
+            </value>
+            <value>
+                <fullName>Mainstay</fullName>
+                <default>false</default>
+                <label>Mainstay</label>
+            </value>
+            <value>
+                <fullName>Mama Shelter</fullName>
+                <default>false</default>
+                <label>Mama Shelter</label>
+            </value>
+            <value>
+                <fullName>Mandarin Oriental Hotel Group</fullName>
+                <default>false</default>
+                <label>Mandarin Oriental Hotel Group</label>
+            </value>
+            <value>
+                <fullName>Marriott</fullName>
+                <default>false</default>
+                <label>Marriott</label>
+            </value>
+            <value>
+                <fullName>Marriott International</fullName>
+                <default>false</default>
+                <label>Marriott International</label>
+            </value>
+            <value>
+                <fullName>Microtel</fullName>
+                <default>false</default>
+                <label>Microtel</label>
+            </value>
+            <value>
+                <fullName>Millennium &amp; Copthorne Global</fullName>
+                <default>false</default>
+                <label>Millennium &amp; Copthorne Global</label>
+            </value>
+            <value>
+                <fullName>Montage Hotels</fullName>
+                <default>false</default>
+                <label>Montage Hotels</label>
+            </value>
+            <value>
+                <fullName>Moxy</fullName>
+                <default>false</default>
+                <label>Moxy</label>
+            </value>
+            <value>
+                <fullName>Nobu Hotels</fullName>
+                <default>false</default>
+                <label>Nobu Hotels</label>
+            </value>
+            <value>
+                <fullName>Novotel</fullName>
+                <default>false</default>
+                <label>Novotel</label>
+            </value>
+            <value>
+                <fullName>NYLO Hotels</fullName>
+                <default>false</default>
+                <label>NYLO Hotels</label>
+            </value>
+            <value>
+                <fullName>OMNI Hotels &amp; Resorts</fullName>
+                <default>false</default>
+                <label>OMNI Hotels &amp; Resorts</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Outrigger Hotels Company</fullName>
+                <default>false</default>
+                <label>Outrigger Hotels Company</label>
+            </value>
+            <value>
+                <fullName>Park Hyatt</fullName>
+                <default>false</default>
+                <label>Park Hyatt</label>
+            </value>
+            <value>
+                <fullName>Park Inn</fullName>
+                <default>false</default>
+                <label>Park Inn</label>
+            </value>
+            <value>
+                <fullName>Park Plaza</fullName>
+                <default>false</default>
+                <label>Park Plaza</label>
+            </value>
+            <value>
+                <fullName>Protea</fullName>
+                <default>false</default>
+                <label>Protea</label>
+            </value>
+            <value>
+                <fullName>Pullman</fullName>
+                <default>false</default>
+                <label>Pullman</label>
+            </value>
+            <value>
+                <fullName>Quality Inn</fullName>
+                <default>false</default>
+                <label>Quality Inn</label>
+            </value>
+            <value>
+                <fullName>Radisson</fullName>
+                <default>false</default>
+                <label>Radisson</label>
+            </value>
+            <value>
+                <fullName>Radisson Blu</fullName>
+                <default>false</default>
+                <label>Radisson Blu</label>
+            </value>
+            <value>
+                <fullName>Radisson Hotel Group</fullName>
+                <default>false</default>
+                <label>Radisson Hotel Group</label>
+            </value>
+            <value>
+                <fullName>Radisson Red</fullName>
+                <default>false</default>
+                <label>Radisson Red</label>
+            </value>
+            <value>
+                <fullName>Ramada Inn</fullName>
+                <default>false</default>
+                <label>Ramada Inn</label>
+            </value>
+            <value>
+                <fullName>Red Lion Hotels Company</fullName>
+                <default>false</default>
+                <label>Red Lion Hotels Company</label>
+            </value>
+            <value>
+                <fullName>Renaissance</fullName>
+                <default>false</default>
+                <label>Renaissance</label>
+            </value>
+            <value>
+                <fullName>Residence Inn by Marriott</fullName>
+                <default>false</default>
+                <label>Residence Inn by Marriott</label>
+            </value>
+            <value>
+                <fullName>Ritz-Carlton</fullName>
+                <default>false</default>
+                <label>Ritz-Carlton</label>
+            </value>
+            <value>
+                <fullName>Rosewood Hotel Group</fullName>
+                <default>false</default>
+                <label>Rosewood Hotel Group</label>
+            </value>
+            <value>
+                <fullName>Sandals</fullName>
+                <default>false</default>
+                <label>Sandals</label>
+            </value>
+            <value>
+                <fullName>Shangri-La Hotels &amp; Resorts</fullName>
+                <default>false</default>
+                <label>Shangri-La Hotels &amp; Resorts</label>
+            </value>
+            <value>
+                <fullName>Sheraton Hotels and Resorts</fullName>
+                <default>false</default>
+                <label>Sheraton Hotels and Resorts</label>
+            </value>
+            <value>
+                <fullName>Shilo Inn</fullName>
+                <default>false</default>
+                <label>Shilo Inn</label>
+            </value>
+            <value>
+                <fullName>Silver Cloud</fullName>
+                <default>false</default>
+                <label>Silver Cloud</label>
+            </value>
+            <value>
+                <fullName>Sleep Inn</fullName>
+                <default>false</default>
+                <label>Sleep Inn</label>
+            </value>
+            <value>
+                <fullName>Sonesta International Hotels Corporation</fullName>
+                <default>false</default>
+                <label>Sonesta International Hotels Corporation</label>
+            </value>
+            <value>
+                <fullName>Springhill Suites</fullName>
+                <default>false</default>
+                <label>Springhill Suites</label>
+            </value>
+            <value>
+                <fullName>St. Regis</fullName>
+                <default>false</default>
+                <label>St. Regis</label>
+            </value>
+            <value>
+                <fullName>Staybridge Suites</fullName>
+                <default>false</default>
+                <label>Staybridge Suites</label>
+            </value>
+            <value>
+                <fullName>Super 8</fullName>
+                <default>false</default>
+                <label>Super 8</label>
+            </value>
+            <value>
+                <fullName>Tapestry</fullName>
+                <default>false</default>
+                <label>Tapestry</label>
+            </value>
+            <value>
+                <fullName>The Oberoi Group</fullName>
+                <default>false</default>
+                <label>The Oberoi Group</label>
+            </value>
+            <value>
+                <fullName>The Peninsula Hotel</fullName>
+                <default>false</default>
+                <label>The Peninsula Hotel</label>
+            </value>
+            <value>
+                <fullName>Town Place Suites</fullName>
+                <default>false</default>
+                <label>Town Place Suites</label>
+            </value>
+            <value>
+                <fullName>Travel Inn Hotels</fullName>
+                <default>false</default>
+                <label>Travel Inn Hotels</label>
+            </value>
+            <value>
+                <fullName>Travellodge</fullName>
+                <default>false</default>
+                <label>Travellodge</label>
+            </value>
+            <value>
+                <fullName>Tribute</fullName>
+                <default>false</default>
+                <label>Tribute</label>
+            </value>
+            <value>
+                <fullName>Tru by Hilton</fullName>
+                <default>false</default>
+                <label>Tru by Hilton</label>
+            </value>
+            <value>
+                <fullName>Trump Hotel Collection</fullName>
+                <default>false</default>
+                <label>Trump Hotel Collection</label>
+            </value>
+            <value>
+                <fullName>Tryp</fullName>
+                <default>false</default>
+                <label>Tryp</label>
+            </value>
+            <value>
+                <fullName>Two Roads Hospitality</fullName>
+                <default>false</default>
+                <label>Two Roads Hospitality</label>
+            </value>
+            <value>
+                <fullName>Vagabond Inn</fullName>
+                <default>false</default>
+                <label>Vagabond Inn</label>
+            </value>
+            <value>
+                <fullName>Waldorf Astoria Hotels &amp; Resorts</fullName>
+                <default>false</default>
+                <label>Waldorf Astoria Hotels &amp; Resorts</label>
+            </value>
+            <value>
+                <fullName>Wanda Hotels &amp; Resorts</fullName>
+                <default>false</default>
+                <label>Wanda Hotels &amp; Resorts</label>
+            </value>
+            <value>
+                <fullName>Warwick Hotels</fullName>
+                <default>false</default>
+                <label>Warwick Hotels</label>
+            </value>
+            <value>
+                <fullName>Westin</fullName>
+                <default>false</default>
+                <label>Westin</label>
+            </value>
+            <value>
+                <fullName>Westmark</fullName>
+                <default>false</default>
+                <label>Westmark</label>
+            </value>
+            <value>
+                <fullName>Westmont Hospitality Group</fullName>
+                <default>false</default>
+                <label>Westmont Hospitality Group</label>
+            </value>
+            <value>
+                <fullName>W  Hotels</fullName>
+                <default>false</default>
+                <label>W  Hotels</label>
+            </value>
+            <value>
+                <fullName>Wingate</fullName>
+                <default>false</default>
+                <label>Wingate</label>
+            </value>
+            <value>
+                <fullName>Wyndham</fullName>
+                <default>false</default>
+                <label>Wyndham</label>
+            </value>
+            <value>
+                <fullName>Wyndham Extra Holidays</fullName>
+                <default>false</default>
+                <label>Wyndham Extra Holidays</label>
+            </value>
+            <value>
+                <fullName>Wyndham Garden Hotels</fullName>
+                <default>false</default>
+                <label>Wyndham Garden Hotels</label>
+            </value>
+            <value>
+                <fullName>Wyndham Grand Collection</fullName>
+                <default>false</default>
+                <label>Wyndham Grand Collection</label>
+            </value>
+            <value>
+                <fullName>Wyndham Hotels &amp; Resorts</fullName>
+                <default>false</default>
+                <label>Wyndham Hotels &amp; Resorts</label>
+            </value>
+            <value>
+                <fullName>Wyndham Vacation Resort</fullName>
+                <default>false</default>
+                <label>Wyndham Vacation Resort</label>
+            </value>
+            <value>
+                <fullName>Wyndham Worldwide</fullName>
+                <default>false</default>
+                <label>Wyndham Worldwide</label>
+            </value>
+            <value>
+                <fullName>Yotel</fullName>
+                <default>false</default>
+                <label>Yotel</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>The Sebel</controllingFieldValue>
+            <controllingFieldValue>Hotel F1</controllingFieldValue>
+            <controllingFieldValue>Aparthotel Adagio</controllingFieldValue>
+            <controllingFieldValue>Aparthotel Adagio Access</controllingFieldValue>
+            <controllingFieldValue>all seasons</controllingFieldValue>
+            <controllingFieldValue>ibis</controllingFieldValue>
+            <controllingFieldValue>ibis budget</controllingFieldValue>
+            <controllingFieldValue>ibis Styles</controllingFieldValue>
+            <controllingFieldValue>Caesar</controllingFieldValue>
+            <controllingFieldValue>Mercure</controllingFieldValue>
+            <controllingFieldValue>MGallery by Sofitel</controllingFieldValue>
+            <controllingFieldValue>Novotel</controllingFieldValue>
+            <controllingFieldValue>Novotel Suites</controllingFieldValue>
+            <controllingFieldValue>Pullman</controllingFieldValue>
+            <controllingFieldValue>Etap</controllingFieldValue>
+            <controllingFieldValue>Fairmont</controllingFieldValue>
+            <controllingFieldValue>Quay</controllingFieldValue>
+            <controllingFieldValue>Raffles</controllingFieldValue>
+            <controllingFieldValue>Formule 1</controllingFieldValue>
+            <controllingFieldValue>Grand Mercure</controllingFieldValue>
+            <controllingFieldValue>Sofitel</controllingFieldValue>
+            <controllingFieldValue>Swissotel</controllingFieldValue>
+            <valueName>Accor Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>The Unbound Collection</controllingFieldValue>
+            <controllingFieldValue>Andaz</controllingFieldValue>
+            <controllingFieldValue>Hyatt</controllingFieldValue>
+            <controllingFieldValue>Hyatt Centric</controllingFieldValue>
+            <controllingFieldValue>Hyatt House</controllingFieldValue>
+            <controllingFieldValue>Hyatt Place</controllingFieldValue>
+            <controllingFieldValue>Hyatt Regency</controllingFieldValue>
+            <controllingFieldValue>Hyatt Zilara</controllingFieldValue>
+            <controllingFieldValue>Hyatt Ziva</controllingFieldValue>
+            <controllingFieldValue>Park Hyatt</controllingFieldValue>
+            <controllingFieldValue>Grand Hyatt</controllingFieldValue>
+            <valueName>Hyatt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Holiday Inn</controllingFieldValue>
+            <controllingFieldValue>Holiday Inn Express</controllingFieldValue>
+            <controllingFieldValue>Holiday Inn Garden Court</controllingFieldValue>
+            <controllingFieldValue>Holiday Inn Select</controllingFieldValue>
+            <controllingFieldValue>Hotel Indigo</controllingFieldValue>
+            <controllingFieldValue>ANA</controllingFieldValue>
+            <controllingFieldValue>Avid Hotels</controllingFieldValue>
+            <controllingFieldValue>InterContinental</controllingFieldValue>
+            <controllingFieldValue>InterContinental Hotels Group (IHG)</controllingFieldValue>
+            <controllingFieldValue>Candlewood Suites</controllingFieldValue>
+            <controllingFieldValue>Kimpton</controllingFieldValue>
+            <controllingFieldValue>Crowne Plaza</controllingFieldValue>
+            <controllingFieldValue>EVEN Hotels</controllingFieldValue>
+            <controllingFieldValue>Staybridge Suites</controllingFieldValue>
+            <valueName>Intercontinental Hotels Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Thompson Hotels</controllingFieldValue>
+            <controllingFieldValue>Alila</controllingFieldValue>
+            <controllingFieldValue>Joie De Vivre</controllingFieldValue>
+            <controllingFieldValue>Destination Hotels</controllingFieldValue>
+            <valueName>Two Roads Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Time Hotels</controllingFieldValue>
+            <controllingFieldValue>Dream Hotels</controllingFieldValue>
+            <valueName>Dream Hotel Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TownePlace Suites</controllingFieldValue>
+            <controllingFieldValue>Tribute Portfolio</controllingFieldValue>
+            <controllingFieldValue>aloft Hotel</controllingFieldValue>
+            <controllingFieldValue>AC Hotels by Marriott</controllingFieldValue>
+            <controllingFieldValue>African Pride</controllingFieldValue>
+            <controllingFieldValue>Autograph Collection</controllingFieldValue>
+            <controllingFieldValue>Westin</controllingFieldValue>
+            <controllingFieldValue>W Hotel</controllingFieldValue>
+            <controllingFieldValue>Bulgari</controllingFieldValue>
+            <controllingFieldValue>JW Marriott</controllingFieldValue>
+            <controllingFieldValue>Le Meridien</controllingFieldValue>
+            <controllingFieldValue>Luxury Collection</controllingFieldValue>
+            <controllingFieldValue>Marriott</controllingFieldValue>
+            <controllingFieldValue>Marriott Conference Center</controllingFieldValue>
+            <controllingFieldValue>Marriott Executive Apartment</controllingFieldValue>
+            <controllingFieldValue>Courtyard</controllingFieldValue>
+            <controllingFieldValue>MOXY</controllingFieldValue>
+            <controllingFieldValue>Delta Hotel</controllingFieldValue>
+            <controllingFieldValue>Protea Hotel</controllingFieldValue>
+            <controllingFieldValue>Edition</controllingFieldValue>
+            <controllingFieldValue>element</controllingFieldValue>
+            <controllingFieldValue>Fairfield Inn</controllingFieldValue>
+            <controllingFieldValue>Four Points by Sheraton</controllingFieldValue>
+            <controllingFieldValue>Gaylord</controllingFieldValue>
+            <controllingFieldValue>Renaissance</controllingFieldValue>
+            <controllingFieldValue>Residence Inn</controllingFieldValue>
+            <controllingFieldValue>Ritz-Carlton</controllingFieldValue>
+            <controllingFieldValue>Sheraton Hotel</controllingFieldValue>
+            <controllingFieldValue>Springhill Suites</controllingFieldValue>
+            <controllingFieldValue>St Regis</controllingFieldValue>
+            <valueName>Marriott International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trademark Hotel Collection</controllingFieldValue>
+            <controllingFieldValue>Travelodge</controllingFieldValue>
+            <controllingFieldValue>AmericInn</controllingFieldValue>
+            <controllingFieldValue>Howard Johnson</controllingFieldValue>
+            <controllingFieldValue>Tryp by Wyndham</controllingFieldValue>
+            <controllingFieldValue>Baymont</controllingFieldValue>
+            <controllingFieldValue>Wingate by Wyndham</controllingFieldValue>
+            <controllingFieldValue>Wyndham</controllingFieldValue>
+            <controllingFieldValue>Wyndham Garden Hotel</controllingFieldValue>
+            <controllingFieldValue>Wyndham Grand</controllingFieldValue>
+            <controllingFieldValue>Knights Inn</controllingFieldValue>
+            <controllingFieldValue>La Quinta Inns &amp; Suites</controllingFieldValue>
+            <controllingFieldValue>Microtel Inn &amp; Suites by Wyndham</controllingFieldValue>
+            <controllingFieldValue>Days Hotel</controllingFieldValue>
+            <controllingFieldValue>Days Inn</controllingFieldValue>
+            <controllingFieldValue>Dazzler</controllingFieldValue>
+            <controllingFieldValue>Dolce Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Esplendor</controllingFieldValue>
+            <controllingFieldValue>Ramada</controllingFieldValue>
+            <controllingFieldValue>Super 8</controllingFieldValue>
+            <controllingFieldValue>Hawthorn Suites by Wyndham</controllingFieldValue>
+            <valueName>Wyndham Worldwide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Home2 Suites</controllingFieldValue>
+            <controllingFieldValue>Homewood Suites</controllingFieldValue>
+            <controllingFieldValue>Tru by Hilton</controllingFieldValue>
+            <controllingFieldValue>Waldorf Astoria</controllingFieldValue>
+            <controllingFieldValue>Canopy by Hilton</controllingFieldValue>
+            <controllingFieldValue>Conrad</controllingFieldValue>
+            <controllingFieldValue>Curio Collection</controllingFieldValue>
+            <controllingFieldValue>DoubleTree</controllingFieldValue>
+            <controllingFieldValue>DoubleTree Club</controllingFieldValue>
+            <controllingFieldValue>Embassy Suites</controllingFieldValue>
+            <controllingFieldValue>Hampton</controllingFieldValue>
+            <controllingFieldValue>Tapestry Collection</controllingFieldValue>
+            <controllingFieldValue>Hilton</controllingFieldValue>
+            <controllingFieldValue>Hilton Garden Inn</controllingFieldValue>
+            <controllingFieldValue>Hilton Grand Vacations</controllingFieldValue>
+            <valueName>Hilton Worldwide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traders Hotel</controllingFieldValue>
+            <controllingFieldValue>Hotel Jen</controllingFieldValue>
+            <controllingFieldValue>Shangri-La</controllingFieldValue>
+            <valueName>Shangri-La Hotels &amp; Resorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Travel Inn</controllingFieldValue>
+            <valueName>Travel Inn Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>America`s Best Inn</controllingFieldValue>
+            <controllingFieldValue>Americas Best Value Inn</controllingFieldValue>
+            <controllingFieldValue>Hotel RL</controllingFieldValue>
+            <controllingFieldValue>3 Palms</controllingFieldValue>
+            <controllingFieldValue>Jameson Inn</controllingFieldValue>
+            <controllingFieldValue>Canadas Best Value Inn</controllingFieldValue>
+            <controllingFieldValue>Lexington</controllingFieldValue>
+            <controllingFieldValue>Chinas Best Value Inn</controllingFieldValue>
+            <controllingFieldValue>Country Hearth Inn</controllingFieldValue>
+            <controllingFieldValue>Red Lion Hotel</controllingFieldValue>
+            <controllingFieldValue>Red Lion Inn &amp; Suites</controllingFieldValue>
+            <controllingFieldValue>Settle Inn</controllingFieldValue>
+            <controllingFieldValue>GuestHouse Inn</controllingFieldValue>
+            <valueName>Red Lion Hotels Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>art&#39;otel</controllingFieldValue>
+            <controllingFieldValue>Country Inn &amp; Suites</controllingFieldValue>
+            <controllingFieldValue>Park Inn</controllingFieldValue>
+            <controllingFieldValue>Park Plaza</controllingFieldValue>
+            <controllingFieldValue>Quorvus Collection</controllingFieldValue>
+            <controllingFieldValue>Radisson</controllingFieldValue>
+            <controllingFieldValue>Radisson Blu</controllingFieldValue>
+            <controllingFieldValue>Radisson RED</controllingFieldValue>
+            <valueName>Radisson Hotel Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ascend Collection</controllingFieldValue>
+            <controllingFieldValue>Value Place</controllingFieldValue>
+            <controllingFieldValue>WoodSpring Suites</controllingFieldValue>
+            <controllingFieldValue>Cambria hotel &amp; suites</controllingFieldValue>
+            <controllingFieldValue>Clarion</controllingFieldValue>
+            <controllingFieldValue>Clarion Collection</controllingFieldValue>
+            <controllingFieldValue>MainStay Suites</controllingFieldValue>
+            <controllingFieldValue>Comfort</controllingFieldValue>
+            <controllingFieldValue>Comfort Inn</controllingFieldValue>
+            <controllingFieldValue>Comfort Suites</controllingFieldValue>
+            <controllingFieldValue>Econo Lodge</controllingFieldValue>
+            <controllingFieldValue>Quality</controllingFieldValue>
+            <controllingFieldValue>Quality Inn</controllingFieldValue>
+            <controllingFieldValue>Quality Resort</controllingFieldValue>
+            <controllingFieldValue>Rodeway Inn</controllingFieldValue>
+            <controllingFieldValue>Sleep Inn</controllingFieldValue>
+            <controllingFieldValue>Suburban Extended Stay</controllingFieldValue>
+            <valueName>Choice Hotels International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trident Hotel</controllingFieldValue>
+            <controllingFieldValue>Oberoi</controllingFieldValue>
+            <valueName>The Oberoi Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Trump Hotel Collection</controllingFieldValue>
+            <valueName>Trump Hotel Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21c Museum Hotel</controllingFieldValue>
+            <valueName>21c Museum Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Uptown Suites</controllingFieldValue>
+            <controllingFieldValue>InTown Suites</controllingFieldValue>
+            <valueName>InTown Suites</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ace Hotel</controllingFieldValue>
+            <valueName>Ace Hotel Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vacation Condos by Outrigger</controllingFieldValue>
+            <controllingFieldValue>OHANA</controllingFieldValue>
+            <controllingFieldValue>Outrigger Resorts</controllingFieldValue>
+            <valueName>Outrigger Hotels Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vagabond Inn</controllingFieldValue>
+            <valueName>Vagabond Inn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Affinia Hotel</controllingFieldValue>
+            <valueName>Affinia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Affordable Suites of America</controllingFieldValue>
+            <valueName>Affordable Suites of America</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vib</controllingFieldValue>
+            <controllingFieldValue>Best Western</controllingFieldValue>
+            <controllingFieldValue>Best Western Plus</controllingFieldValue>
+            <controllingFieldValue>Best Western Premier</controllingFieldValue>
+            <controllingFieldValue>BW Premier Collection</controllingFieldValue>
+            <controllingFieldValue>Glo Hotel</controllingFieldValue>
+            <controllingFieldValue>SureStay</controllingFieldValue>
+            <controllingFieldValue>SureStay Plus</controllingFieldValue>
+            <controllingFieldValue>SureStay Signature Collection</controllingFieldValue>
+            <valueName>Best Western Hotels &amp; Resorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bilderberg</controllingFieldValue>
+            <controllingFieldValue>Crossland Economy Studios</controllingFieldValue>
+            <controllingFieldValue>Red Roof Inn</controllingFieldValue>
+            <valueName>Westmont Hospitality Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Budget Host</controllingFieldValue>
+            <valueName>Budget Host</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Budget Suites of America</controllingFieldValue>
+            <valueName>Budget Suites of America</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wanda Realm</controllingFieldValue>
+            <controllingFieldValue>Wanda Reign</controllingFieldValue>
+            <controllingFieldValue>Wanda Vista</controllingFieldValue>
+            <valueName>Wanda Hotels &amp; Resorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Warwick Hotel</controllingFieldValue>
+            <valueName>Warwick Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Innside by Melia</controllingFieldValue>
+            <controllingFieldValue>ME</controllingFieldValue>
+            <controllingFieldValue>Melia</controllingFieldValue>
+            <controllingFieldValue>Melia Boutique</controllingFieldValue>
+            <controllingFieldValue>Paradisus</controllingFieldValue>
+            <controllingFieldValue>Gran Melia</controllingFieldValue>
+            <controllingFieldValue>Sol</controllingFieldValue>
+            <valueName>Grupo Sol Melia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>InnSuites Hotel</controllingFieldValue>
+            <valueName>InnSuites Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Westmark</controllingFieldValue>
+            <valueName>Westmark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cabot Lodge</controllingFieldValue>
+            <valueName>Cabot Lodge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Carlton</controllingFieldValue>
+            <controllingFieldValue>Carlton Hotel</controllingFieldValue>
+            <valueName>Carlton Hotel Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kempinski</controllingFieldValue>
+            <valueName>Kempinski Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wyndham Vacation Resort</controllingFieldValue>
+            <valueName>Wyndham Vacation Resort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kingsgate</controllingFieldValue>
+            <controllingFieldValue>Copthorne</controllingFieldValue>
+            <controllingFieldValue>Millennium</controllingFieldValue>
+            <valueName>Millennium &amp; Copthorne Global</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Yotel</controllingFieldValue>
+            <controllingFieldValue>YotelAir</controllingFieldValue>
+            <valueName>Yotel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Langham</controllingFieldValue>
+            <controllingFieldValue>Cordis</controllingFieldValue>
+            <controllingFieldValue>Eaton</controllingFieldValue>
+            <valueName>Langham Hotels International</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Loews</controllingFieldValue>
+            <valueName>Loews Hotels Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>citizenM</controllingFieldValue>
+            <valueName>citizenM Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Club Med</controllingFieldValue>
+            <valueName>Club Med</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Club Quarters</controllingFieldValue>
+            <valueName>Club Quarters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coast Hotels USA</controllingFieldValue>
+            <valueName>Coast Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cobblestone</controllingFieldValue>
+            <valueName>Cobblestone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mama Shelter</controllingFieldValue>
+            <valueName>Mama Shelter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mandarin Oriental</controllingFieldValue>
+            <valueName>Mandarin Oriental Hotel Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Country Garden Phoenix Hotel</controllingFieldValue>
+            <valueName>Country Garden Phoenix Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mokara</controllingFieldValue>
+            <controllingFieldValue>OMNI</controllingFieldValue>
+            <valueName>OMNI Hotels &amp; Resorts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montage</controllingFieldValue>
+            <valueName>Montage Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Motel 6</controllingFieldValue>
+            <controllingFieldValue>Studio 6</controllingFieldValue>
+            <valueName>G6 Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New World</controllingFieldValue>
+            <controllingFieldValue>Penta</controllingFieldValue>
+            <controllingFieldValue>Rosewood</controllingFieldValue>
+            <valueName>Rosewood Hotel Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Disney Hotels</controllingFieldValue>
+            <valueName>Disney Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distinction</controllingFieldValue>
+            <valueName>Distinction Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nobu Hotels</controllingFieldValue>
+            <valueName>Nobu Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NYLO Hotel</controllingFieldValue>
+            <valueName>NYLO Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Drury Inn</controllingFieldValue>
+            <controllingFieldValue>Drury Inn &amp; Suites</controllingFieldValue>
+            <controllingFieldValue>Drury Plaza Hotel</controllingFieldValue>
+            <controllingFieldValue>Drury Suites</controllingFieldValue>
+            <controllingFieldValue>Pear Tree Inn</controllingFieldValue>
+            <valueName>Drury Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Evergreen</controllingFieldValue>
+            <valueName>Evergreen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Extended Stay America</controllingFieldValue>
+            <valueName>Extended Stay Hotels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Graduate Hotel</controllingFieldValue>
+            <valueName>AJ Capital Partners</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grand America</controllingFieldValue>
+            <valueName>Grand America Hotels &amp; Resort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sandals</controllingFieldValue>
+            <valueName>Sandals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shell Vacations Club</controllingFieldValue>
+            <valueName>Wyndham Extra Holidays</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shilo Inn</controllingFieldValue>
+            <valueName>Shilo Inn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Silver Cloud</controllingFieldValue>
+            <valueName>Silver Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sonesta ES Suites</controllingFieldValue>
+            <controllingFieldValue>Sonesta Hotel</controllingFieldValue>
+            <valueName>Sonesta International Hotels Corporation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Great Wolf Lodge</controllingFieldValue>
+            <valueName>Great Wolf Lodge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hampshire</controllingFieldValue>
+            <controllingFieldValue>Hampshire Classic</controllingFieldValue>
+            <valueName>Hampshire Hospitality</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hard Rock</controllingFieldValue>
+            <valueName>Hard Rock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>The Peninsula</controllingFieldValue>
+            <valueName>The Peninsula Hotel</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

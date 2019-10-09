@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Team__c</fullName>
+    <externalId>false</externalId>
+    <label>Team</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CA - Claims and Collections</fullName>
+                <default>false</default>
+                <label>CA - Claims and Collections</label>
+            </value>
+            <value>
+                <fullName>CA - Customer Care</fullName>
+                <default>false</default>
+                <label>CA - Customer Care</label>
+            </value>
+            <value>
+                <fullName>CA - Master Data</fullName>
+                <default>false</default>
+                <label>CA - Master Data</label>
+            </value>
+            <value>
+                <fullName>CA - Pricing</fullName>
+                <default>false</default>
+                <label>CA - Pricing</label>
+            </value>
+            <value>
+                <fullName>CA - Product Management</fullName>
+                <default>false</default>
+                <label>CA - Product Management</label>
+            </value>
+            <value>
+                <fullName>CA -Tech Support</fullName>
+                <default>false</default>
+                <label>CA -Tech Support</label>
+            </value>
+            <value>
+                <fullName>Claims and Collections</fullName>
+                <default>false</default>
+                <label>Claims and Collections</label>
+            </value>
+            <value>
+                <fullName>Customer Care</fullName>
+                <default>false</default>
+                <label>Customer Care</label>
+            </value>
+            <value>
+                <fullName>Distribution Center</fullName>
+                <default>false</default>
+                <label>Distribution Center</label>
+            </value>
+            <value>
+                <fullName>Master Data</fullName>
+                <default>false</default>
+                <label>Master Data</label>
+            </value>
+            <value>
+                <fullName>Order Entry</fullName>
+                <default>false</default>
+                <label>Order Entry</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Product Management</fullName>
+                <default>false</default>
+                <label>Product Management</label>
+            </value>
+            <value>
+                <fullName>SOIP</fullName>
+                <default>false</default>
+                <label>SOIP</label>
+            </value>
+            <value>
+                <fullName>CA - Distribution Center</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA - Distribution Center</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

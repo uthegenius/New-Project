@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Search_Address</fullName>
+    <availability>online</availability>
+    <description>This button will be used to search address and update the project address accordingly.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Search Address</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>{!URLFOR( Project__c.Site_URL__c + &#39;apex/AddFin__Select_Address_Mapping?id=&#39;+Project__c.Id)}</url>
+</WebLink>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Prevent_special_ch_in_Add_Name</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( 
+NOT(REGEX( Name , &quot;^(?!.*//)[a-zA-Z0-9&#39;-*,-/\r\n ]+$&quot;)), 
+AND(NOT(ISBLANK(Street__c )), 
+NOT(REGEX( Street__c , &quot;^(?!.*//)[a-zA-Z0-9&#39;-*,-/\r\n ]+$&quot;))), 
+AND(NOT(ISBLANK(City__c )),
+NOT(REGEX( City__c , &quot;^(?!.*//)[a-zA-Z0-9&#39;-*,-/\r\n ]+$&quot;))), 
+AND(NOT(ISBLANK(Country__c )),
+NOT(REGEX( Country__c , &quot;^(?!.*//)[a-zA-Z0-9&#39;-*,-/\r\n ]+$&quot;))), 
+AND(NOT(ISBLANK(State__c )),
+NOT(REGEX( State__c , &quot;^(?!.*//)[a-zA-Z0-9&#39;-*,-/\r\n ]+$&quot;))), 
+AND(NOT(ISBLANK(Postal_Code__c )),
+NOT(REGEX( Postal_Code__c , &quot;^(?!.*//)[a-zA-Z0-9&#39;-*,-/\r\n ]+$&quot;))))</errorConditionFormula>
+    <errorMessage>The special characters are not allowed in Project Name and Address.</errorMessage>
+</ValidationRule>

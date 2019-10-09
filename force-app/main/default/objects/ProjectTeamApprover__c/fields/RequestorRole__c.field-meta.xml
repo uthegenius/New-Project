@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequestorRole__c</fullName>
+    <externalId>false</externalId>
+    <label>Requestor Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agency</fullName>
+                <default>false</default>
+                <label>Agency</label>
+            </value>
+            <value>
+                <fullName>Business Development Manager</fullName>
+                <default>false</default>
+                <label>Business Development Manager</label>
+            </value>
+            <value>
+                <fullName>National Account Manager</fullName>
+                <default>false</default>
+                <label>National Account Manager</label>
+            </value>
+            <value>
+                <fullName>National Project Manager</fullName>
+                <default>false</default>
+                <label>National Project Manager</label>
+            </value>
+            <value>
+                <fullName>Regional Project Manager</fullName>
+                <default>false</default>
+                <label>Regional Project Manager</label>
+            </value>
+            <value>
+                <fullName>Sales Support</fullName>
+                <default>false</default>
+                <label>Sales Support</label>
+            </value>
+            <value>
+                <fullName>Vertical Team</fullName>
+                <default>false</default>
+                <label>Vertical Team</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

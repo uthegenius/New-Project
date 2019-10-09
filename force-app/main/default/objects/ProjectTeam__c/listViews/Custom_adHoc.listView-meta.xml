@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_adHoc</fullName>
+    <columns>NAME</columns>
+    <columns>AgencyAccount__c</columns>
+    <columns>AmountOver__c</columns>
+    <columns>ProjectType__c</columns>
+    <columns>Region__c</columns>
+    <columns>Requestor__c</columns>
+    <columns>RequestorRole__c</columns>
+    <columns>RequestorType__c</columns>
+    <columns>TeamMember__c</columns>
+    <columns>TeamRole__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Requestor__c</field>
+        <operation>equals</operation>
+        <value>Steve Grande</value>
+    </filters>
+    <label>Custom adHoc</label>
+</ListView>

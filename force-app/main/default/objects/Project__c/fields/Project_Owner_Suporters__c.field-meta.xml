@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Owner_Suporters__c</fullName>
+    <externalId>false</externalId>
+    <formula>Owner:User.FirstName &amp;&quot; &quot;&amp;Owner:User.LastName &amp; 
+IF(  ISBLANK(Project_Supporter_1__c ) , &quot;&quot;, &quot;, &quot;&amp;Project_Supporter_1__r.FirstName&amp;&quot; &quot;&amp; Project_Supporter_1__r.LastName) &amp; 
+IF(  ISBLANK(Project_Supporter_2__c ) , &quot;&quot;, &quot;, &quot;&amp;Project_Supporter_2__r.FirstName&amp;&quot; &quot;&amp; Project_Supporter_2__r.LastName) &amp; 
+IF(  ISBLANK(Project_Supporter_3__c ) , &quot;&quot;, &quot;, &quot;&amp;Project_Supporter_3__r.FirstName&amp;&quot; &quot;&amp; Project_Supporter_3__r.LastName) &amp; 
+IF(  ISBLANK(Project_Supporter_4__c ) , &quot;&quot;, &quot;, &quot;&amp;Project_Supporter_4__r.FirstName&amp;&quot; &quot;&amp; Project_Supporter_4__r.LastName)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Project Owner/Suporters</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

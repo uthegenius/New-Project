@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductSegment__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Segment</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BASIC</fullName>
+                <default>false</default>
+                <label>BASIC</label>
+            </value>
+            <value>
+                <fullName>COMMERCIAL</fullName>
+                <default>false</default>
+                <label>COMMERCIAL</label>
+            </value>
+            <value>
+                <fullName>CORE</fullName>
+                <default>false</default>
+                <label>CORE</label>
+            </value>
+            <value>
+                <fullName>ECONOMY</fullName>
+                <default>false</default>
+                <label>ECONOMY</label>
+            </value>
+            <value>
+                <fullName>GRAND LUXURY</fullName>
+                <default>false</default>
+                <label>GRAND LUXURY</label>
+            </value>
+            <value>
+                <fullName>LUXURY</fullName>
+                <default>false</default>
+                <label>LUXURY</label>
+            </value>
+            <value>
+                <fullName>MASS LUXURY</fullName>
+                <default>false</default>
+                <label>MASS LUXURY</label>
+            </value>
+            <value>
+                <fullName>Not assigned</fullName>
+                <default>false</default>
+                <label>Not assigned</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>PROJECT</fullName>
+                <default>false</default>
+                <label>PROJECT</label>
+            </value>
+            <value>
+                <fullName>REPAIR PARTS</fullName>
+                <default>false</default>
+                <label>REPAIR PARTS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

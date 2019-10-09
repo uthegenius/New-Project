@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Supporter_3__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Please add your name if you are facilitating the lead, supporting the effort and calling on influencers.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please add your name if you are facilitating the lead, supporting the effort and calling on influencers.</inlineHelpText>
+    <label>Project Supporter 3</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Projects8</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

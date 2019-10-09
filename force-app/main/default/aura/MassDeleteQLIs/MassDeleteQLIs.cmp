@@ -1,0 +1,73 @@
+<aura:component implements="force:appHostable,force:lightningQuickActionWithoutHeader,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes"  access="global" controller="QLIListClass" >
+    <ltng:require styles="{!$Resource.popupCSS}"/>
+    <aura:attribute name="isLoading" type="boolean" default="false"/>
+    
+    <aura:attribute name="account" type="List"></aura:attribute>
+    <aura:handler name="init" value="{!this}" action="{!c.quoteQLIList}"></aura:handler>
+    <aura:handler name="init" value="{!this}" action="{!c.quoteName}"></aura:handler>
+    <aura:attribute name="massDeleteList" type="String[]"/>
+    <aura:attribute name="quoteName" type="String"/>
+    <aura:attribute name="quoteURL" type="String"/>
+    <aura:attribute name="isSelectAll" type="boolean" default="false"/>
+    <aura:attribute name="quoteLineItemList" type="QuoteLineItem[]" access='global'/>
+    <aura:if isTrue="{!v.isLoading}">
+        <lightning:spinner aura:id="mySpinner" variant="brand" />
+    </aura:if>
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <legend> <a href="#">Quote </a> > <a href="{!v.quoteURL}">  {!v.quoteName}</a></legend> 
+                    
+                    <h1 style="font-size:20px; font-weigth:bold"> Quote Line Items </h1>
+                </div>
+            </header>
+        </div>
+        <div class="slds-card__body slds-card__body_inner">
+            <div class="slds-table--header-fixed_container" style="height:250px;">
+                <div class="slds-scrollable_y" style="height:100%;">
+                    <table class="slds-table slds-table_bordered  slds-table_cell-buffer slds-table--header-fixed">
+                        <thead>
+                            <tr class="slds-text-title--caps">
+                                <th scope="col" class="slds-size_1-of-8">
+                                    <div class="slds-truncate slds-cell-fixed slds-grid slds-grid_vertical-align-center" title="Select All">
+                                    <ui:inputCheckbox aura:id="SelectAll" class="cBox" change="{!c.checkAllCheckboxes}"/>
+                                    </div></th>
+                                <th scope="col" class="slds-size_1-of-8"><div class="slds-truncate slds-cell-fixed slds-grid slds-grid_vertical-align-center" title="Line #">Line #</div></th>
+                                <th scope="col" class="slds-size_4-of-8"><div class="slds-truncate slds-col slds-cell-fixed slds-grid slds-grid_vertical-align-center" title="Product Name">Product Name</div></th>
+                                <th scope="col" class="slds-size_1-of-8"><div class="slds-truncate slds-cell-fixed slds-grid slds-grid_vertical-align-center slds-align_absolute-center" title="Quantity">Quantity</div></th>
+                                <th scope="col" class="slds-size_1-of-8"><div class="slds-truncate slds-cell-fixed slds-grid slds-grid_vertical-align-center slds-float_right" title="Unit Price">Unit Price</div></th>
+                            </tr>
+                        </thead>
+                        <aura:iteration items="{!v.quoteLineItemList}" var="qliList" indexVar="index">
+                            <tr>
+                                <td class="slds-size_1-of-8">
+                                    <div class="slds-truncate" data-label="Select All">
+                                    <ui:inputCheckbox aura:id="dependent" text="{!qliList.Id}" class="cBox"/>
+                                    </div>
+                                    </td>
+                                <td class="slds-size_1-of-8">
+                                    <div class="slds-truncate" title="{!qliList.Line_Number__c}" data-label="Line #"> {!qliList.Line_Number__c} </div>
+                                </td>
+                                <td class="slds-size_4-of-8">
+                                    <div class="slds-truncate slds-col" title="{!qliList.Product2.Name}" data-label="Product Name">{!qliList.Product2.Name}</div>
+                                    </td>
+                                <td class="slds-size_1-of-8">
+                                    <div class="slds-truncate slds-align_absolute-center" title="{!qliList.Quantity}" data-label="Quanity">{!qliList.Quantity}</div>
+                                </td>
+                                <td class="slds-size_1-of-8">
+                                    <div class="slds-truncate slds-float_right" title="{!qliList.UnitPrice}" data-label="Unit Price">{!qliList.UnitPrice}</div>
+                                </td>
+                            </tr>
+                        </aura:iteration>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <footer class="slds-card__footer">
+            <lightning:button label="Delete" onclick="{!c.DeleteQLI}" variant="brand" class="slds-m-top--medium"/>
+            <lightning:button label="Cancel" onclick="{!c.CancelDeleteQLI}" variant="brand" class="slds-m-top--medium"/>
+        </footer>
+    </div>
+    
+</aura:component>

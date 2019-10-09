@@ -1,0 +1,10 @@
+.THIS .slds-modal__content {
+    width: 90% !important;
+}
+.THIS .slds-spinner_container  {    
+   	margin-top: 230px;
+    margin-bottom: 230px;
+}
+.THIS .ui-error-message{
+  width:105%;  
+}

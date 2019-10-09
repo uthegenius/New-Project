@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Defect_Code__c</fullName>
+    <externalId>false</externalId>
+    <label>Defect Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Component Missing (986)</fullName>
+                <default>false</default>
+                <label>Component Missing (986)</label>
+            </value>
+            <value>
+                <fullName>Defective Part (308)</fullName>
+                <default>false</default>
+                <label>Defective Part (308)</label>
+            </value>
+            <value>
+                <fullName>Finish (991)</fullName>
+                <default>false</default>
+                <label>Finish (991)</label>
+            </value>
+            <value>
+                <fullName>Leaks (985)</fullName>
+                <default>false</default>
+                <label>Leaks (985)</label>
+            </value>
+            <value>
+                <fullName>Others (999)</fullName>
+                <default>false</default>
+                <label>Others (999)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

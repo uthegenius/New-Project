@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CORE IND</fullName>
+                <default>false</default>
+                <label>CORE IND</label>
+            </value>
+            <value>
+                <fullName>FERGUSON</fullName>
+                <default>false</default>
+                <label>FERGUSON</label>
+            </value>
+            <value>
+                <fullName>WINSUPPLY</fullName>
+                <default>false</default>
+                <label>WINSUPPLY</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

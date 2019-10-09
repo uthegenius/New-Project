@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_the_Approver_Before_Submission</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( 
+
+OR(RecordType.DeveloperName=&#39;Reimbursement_US&#39;|| 
+RecordType.DeveloperName=&#39;Payment_US&#39;), 
+
+Ready_for_Approval__c, 
+ISBLANK(US_Process_Approver__c))</errorConditionFormula>
+    <errorMessage>Please Select the Approver .</errorMessage>
+</ValidationRule>

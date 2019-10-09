@@ -1,0 +1,117 @@
+<apex:page showheader="false" sidebar="false" standardController="Order" extensions="OrderExt" showQuickActionVfHeader="false" lightningStylesheets="true">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <apex:includeScript value="/canvas/sdk/js/publisher.js" />
+    <apex:slds />
+            
+    <script>
+        var $ = jQuery.noConflict();
+    
+        $( document ).ready(function() {
+      
+        });
+    
+       function cancel() {
+            Sfdc.canvas.publisher.publish({
+                name: "publisher.close",
+                payload: { refresh: "true" }
+            });     
+        }
+    
+        function submitToSAP() {
+                callJSSubmit();
+                console.log('calling action function');
+            return false;
+        }
+    </script>    
+    <style>
+        .clsButton {
+            color: #ffffff !important;
+            background: #0070d2  !important;
+            float: right;
+            width: 120px;
+            height: 35px;
+            border-radius: 5px !important;
+            font-size: 13px !important;
+            font-family: 'Salesforce Sans', sans-serif, Arial;
+            text-decoration: none !important;
+            font-weight: 100 !important;
+            border: 1px solid rgb(221, 219, 218) !important;
+        }
+        
+        .clsButton:hover {
+            background: rgba(27, 82, 151, 1.0) !important;
+        }
+        
+        .clsMessageBody {
+            color: #6d5d5d !important;
+            font-size: 15px !important;
+            font-family: 'Salesforce Sans', sans-serif, Arial;
+            text-decoration: none !important;
+            font-weight: 100 !important;
+            position: absolute;
+            top: 75px;
+            text-align: center !important;
+            width: 100%;        
+        }        
+        
+        .clsCancelButton {
+            color: rgba(27, 82, 151, 1.0)  !important;
+            background: #ffffff !important;
+            float: right;
+            width: 70px;
+            height: 35px;
+            border-radius: 5px !important;
+            font-size: 13px !important;
+            font-family: 'Salesforce Sans', sans-serif, Arial;
+            text-decoration: none !important;
+            font-weight: 100 !important;
+            border: 1px solid rgb(221, 219, 218) !important;
+        }
+        
+        .clsCancelButton:hover {
+            background: #f7f1f1 !important;
+        }        
+        
+        .message {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            font-family: 'Salesforce Sans', sans-serif, Arial;
+            font-size: 13px;
+            margin-top: 10px;        
+        }
+    </style>
+    <apex:form id="ecForm">
+        <div style="display: block;">
+            <apex:pageMessages id="showmsg"></apex:pageMessages>
+        </div>
+        
+        <apex:actionFunction action="{!submitTOSAP}" status="loading" name="callJSSubmit" oncomplete="callPageRefresh();" reRender="ecForm"/>
+        <apex:actionFunction action="{!orderRefresh}" name="callPageRefresh"/>
+        <div class="clsMessageBody" id="divConfirmation" style="display: block;">
+            Are you sure you want to send order to SAP?
+        </div>
+        <!-- Spinner start-->
+        
+        <apex:actionStatus id="loading">
+            
+            <apex:facet name="start">
+                <div class="spinner" style="height: 195px;">
+                    <div class="slds-spinner_container slds-is-fixed">
+                    <div role="status" class="slds-spinner slds-spinner_medium">
+                        <span class="slds-assistive-text">Loading</span>
+                        <div class="slds-spinner__dot-a"></div>
+                        <div class="slds-spinner__dot-b"></div>
+                    </div>
+                    </div>
+                </div>
+            </apex:facet> 
+        </apex:actionStatus>
+        <!-- Spinner end -->
+        <div id="" style="width: 100%; height: 35px; background: #ffffff; position:absolute; bottom: 15px; float: right;">
+            <apex:commandButton value="Yes" onclick="submitToSAP();return false;" styleClass="clsButton"/>
+            <apex:commandButton value="No" onclick="cancel();" styleClass="clsCancelButton"/>   
+        </div>
+		
+    </apex:form>
+    
+</apex:page>

@@ -1,0 +1,22 @@
+<aura:component controller="Recent_Cases_Controller"  implements="flexipage:availableForAllPageTypes">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="sub" type="map" />    
+    <lightning:empApi aura:id="empApi" />	
+	<lightning:notificationsLibrary aura:id="notifLib"/>
+    
+    <lightning:utilityBarAPI aura:id="utilitybar" />
+    <aura:attribute name="Emails" type="EmailMessage[]"/>    
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div class="container">  
+        <aura:if isTrue="{!empty(v.Emails)}">
+            You do not have any unread emails!
+            <aura:set attribute="else">
+                <aura:iteration aura:id="iteratorEmail" items="{!v.Emails}" var="anEmail">
+                    <c:EmailCase onclick="{!c.doInit}" email="{!anEmail}"/>
+                </aura:iteration>
+            </aura:set>
+        </aura:if>        
+    </div>
+</aura:component>

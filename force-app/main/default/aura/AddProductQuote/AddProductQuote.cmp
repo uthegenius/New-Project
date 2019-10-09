@@ -1,0 +1,224 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="AddProductQuoteCtrl">
+
+    <ltng:require scripts="{!$Resource.jQuery331+'/jquery-3.3.1.js'}" afterScriptsLoaded="{!c.LoadJS}"  />	
+	<aura:attribute name="QuoteProductlist" type="object[]"/>
+	<aura:attribute name="QuoteProductCopyPastedlist" type="object[]"/>
+
+	<aura:attribute name="errorMessage" type="String"/>
+	<aura:attribute name="errorMessagePastedSection" type="String"/>
+
+	<aura:attribute name="PastedData" type="String"/>
+
+	<aura:attribute name="PriceBookName" type="String" default="Standard Price Book"/>
+    
+    <aura:attribute name="ShowPasteSection" type="boolean" default="true"/>
+    <aura:attribute name="ShowProcessedData" type="boolean" default="false"/>
+    <aura:attribute name="ShowProcessedDataBtn" type="boolean" default="true"/>
+
+
+	<!-- For loading Spinner -->
+    <aura:attribute name="isLoading" type="boolean" default="false"/>
+	
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+	
+	<!-- <force:recordData aura:id="recordLoader"
+	                    recordId="{!v.recordId}"
+	                    fields="Name"
+	                    layoutType="FULL"
+	                    targetRecord="{!v.accRec}"
+	                    targetFields="{!v.accRecField}"
+	                    targetError="{!v.errorMessage}"
+	                    mode="EDIT" /> -->
+    
+    <aura:if isTrue="{!v.isLoading}">
+        <lightning:spinner aura:id="mySpinner" variant="brand" />
+    </aura:if>
+
+
+	<div class="slds-m-around--medium">
+		<div class="slds-tabs--default">
+			<ul class="slds-tabs--default__nav" role="tablist">
+				<li aura:id="AddProducId" class="slds-tabs--default__item slds-text-title--caps slds-active" title="Add Products" role="presentation" >
+					<a class="slds-tabs--default__link" href="javascript:void(0);" onclick="{!c.AddProductTab}" role="tab" tabindex="0" aria-selected="false" aria-controls="tab-default-1" id="AddProduct_linking">
+						Add Product Manually 
+					</a>
+				</li>
+			    <aura:if isTrue="{!and( $Browser.formFactor != 'TABLET', $Browser.formFactor != 'PHONE' )}">
+					<li aura:id="CopyPasteId" class="slds-tabs--default__item slds-text-title--caps " title="Copy Paste Products" role="presentation">
+						<a class="slds-tabs--default__link" href="javascript:void(0);" onclick="{!c.CopyPasteTab}" role="tab" tabindex="-1" aria-selected="true" aria-controls="tab-default-2" id="CopyPaste_linking">
+							Paste Excel Products
+						</a>
+					</li>
+			    </aura:if>
+			</ul>
+			<div aura:id="AddProductTabDataId" id="tab-default-1" class="slds-tabs--default__content slds-show" role="tabpanel" aria-labelledby="AddProduct_linking">
+				
+				<aura:if isTrue="{!not(empty(v.errorMessage))}">
+        	    	<ui:message title="Error" severity="error" closable="true">
+                		{!v.errorMessage}
+            		</ui:message>
+        		</aura:if>
+				
+				<table class="slds-table slds-table slds-max-medium-table_stacked"  role="grid">
+                    <thead>
+                        <tr class="slds-text-title_caps" style="height: 20px;" >
+                            <th scope="col"><div class="slds-truncate" title="Sr.">Sr.</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Product Code">Product Code</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Product Quantity">Product Quantity</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Alternate Product">Alternate Product</div></th>
+                            <th scope="col"><div class="slds-truncate" title="Location">Location</div></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+		    			<aura:iteration var="varQuoteProduct" items="{!v.QuoteProductlist}">
+                        	<tr>
+                        		<td data-label="Sr.">
+                        			<p>{!varQuoteProduct.Serial}</p>
+	                        	</td>
+                        		<td data-label="Product Code">
+                        			<lightning:input variant="label-hidden" name="ProductCode" value="{!varQuoteProduct.ProductCode}"/>
+	                        	</td>
+                        		<td data-label="Product Quantity">
+                        			<lightning:input variant="label-hidden" type="Number" name="ProductQuantity" min="1" formatter="Number" step="1" value="{!varQuoteProduct.ProductQuantity}" messageWhenRangeUnderflow="Enter an Quantity that's at least 1."/>
+	                        	</td>
+                        		<td data-label="Alternate Product">
+                        			<lightning:input variant="label-hidden" type="Number" name="AlterNameProductNumber" min="1" formatter="Number" step="1" value="{!varQuoteProduct.ProductAlterNumber}" messageWhenRangeUnderflow="Enter an Alternate Product that's at least 10."/>
+	                        	</td>
+                                <td data-label="Alternate Product">
+                        			<lightning:input variant="label-hidden" name="Location" value="{!varQuoteProduct.Location}"/>
+	                        	</td>
+                        	</tr>
+                			<aura:if isTrue="{!!varQuoteProduct.IsValid}">
+	                        	<tr>
+	                        		<td colspan="4">
+	                        			<aura:if isTrue="{!!varQuoteProduct.IsValidProduct}">
+	                        				<ui:message title="Error" severity="error" closable="true">
+						                		Product not found/or is in-active
+						            		</ui:message>
+	                        			</aura:if>
+                                        
+	                        			<aura:if isTrue="{!!varQuoteProduct.IsNotaComboProduct}">
+	                        				<ui:message title="Error" severity="error" closable="true" class="ui1-error-message">
+                        						<p> Kits/Combos products are not allowed on quotes, please enter </p><p> Kits/Combos'  components instead.</p>
+						            		</ui:message>
+                                             <!--<aura:set attribute="else">
+                                                <aura:if isTrue="{!!varQuoteProduct.FinalAllowedProduct}">
+	                        				<ui:message title="Error" severity="error" closable="true">
+                        						Product is not found in existing quote line items.
+						            		</ui:message>
+                                           
+	                        			</aura:if>
+                                            </aura:set>-->
+	                        			</aura:if>
+	                        			<aura:if isTrue="{!!varQuoteProduct.IsValidQuantity}">
+	                        				<ui:message title="Error" severity="error" closable="true">
+						                		Quantity should be more than 0
+						            		</ui:message>
+	                        			</aura:if>
+					            		<aura:if isTrue="{!!varQuoteProduct.IsProductAllowed}">
+	                        				<ui:message title="Error" severity="error" closable="true">
+						                		{!varQuoteProduct.NotAllowedReason}
+						            		</ui:message>
+	                        			</aura:if>
+	                        		</td>
+	                        	</tr>
+	                        </aura:if>
+                        </aura:iteration>
+                    </tbody>
+                </table>
+            	
+            	<lightning:button label="Add More" onclick="{!c.AddProduct}" variant="brand" class="slds-m-top--medium"/>
+            	<lightning:button label="Save and Close" onclick="{!c.SaveProduct}" variant="brand" class="slds-m-top--medium"/>
+            	<lightning:button label="Close" onclick="{!c.closeComponent}" variant="brand" class="slds-m-top--medium"/>
+
+			</div>
+			<div aura:id="CopyPasteTabDataId" id="tab-default-2" class="slds-tabs--default__content slds-hide" role="tabpanel" aria-labelledby="CopyPaste_linking">
+			    <aura:if isTrue="{!not(empty(v.errorMessagePastedSection))}">
+        	    	<ui:message title="Error" severity="error" closable="true">
+                		{!v.errorMessagePastedSection}
+            		</ui:message>
+        		</aura:if>
+			    <aura:if isTrue="{!v.ShowPasteSection}">
+					<ui:inputTextArea aura:id="TextAreaCopyPasteProduct" label="Paste Copied Product from Excel, Format: Product Code, Quantity, Alternate Number and Location"  value="{!v.PastedData}" rows="5"/>
+			    </aura:if>
+			    <aura:if isTrue="{!v.ShowProcessedData}">
+			    	<div aura:id="DivShowProcessedData" id="tab-default-1" class="slds-tabs--default__content slds-show" role="tabpanel" aria-labelledby="AddProduct_linking">
+						<table class="slds-table slds-table slds-table_resizable-cols slds-no-cell-focus slds-table_edit" role="grid">
+		                    <thead>
+		                        <tr class="slds-text-title--caps" style="height: 20px;">
+		                            <th scope="col"><div class="slds-truncate" title="First Name">Sr.</div></th>
+		                            <th scope="col"><div class="slds-truncate" title="Product Code">Product Code</div></th>
+		                            <th scope="col"><div class="slds-truncate" title="Product Quantity">Product Quantity</div></th>
+		                            <th scope="col"><div class="slds-truncate" title="Alternate Product">Alternate Product</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Location">Location</div></th>
+		                        </tr>
+		                    </thead>
+		                    <tbody>
+				    			<aura:iteration var="varQuoteProduct" items="{!v.QuoteProductCopyPastedlist}">
+		                        	<tr>
+		                        		<td>
+		                        			<p>{!varQuoteProduct.Serial}</p>
+			                        	</td>
+		                        		<td>
+		                        			<p>{!varQuoteProduct.ProductCode}</p>
+			                        	</td>
+		                        		<td>
+		                        			<p>{!varQuoteProduct.ProductQuantity}</p>
+			                        	</td>
+		                        		<td>
+		                        			<p>{!varQuoteProduct.ProductAlterNumber}</p>
+			                        	</td>
+                                        <td>
+		                        			<p>{!varQuoteProduct.Location}</p>
+			                        	</td>
+		                        	</tr>
+		                        	<aura:if isTrue="{!!varQuoteProduct.IsValid}">
+			                        	<tr>
+			                        		<td colspan="4">
+			                        			<aura:if isTrue="{!!varQuoteProduct.IsValidProduct}">
+			                        				<ui:message title="Error" severity="error" closable="true">
+								                		Product not found/or is in-active
+								            		</ui:message>
+			                        			</aura:if>
+			                        			<aura:if isTrue="{!!varQuoteProduct.FinalAllowedProduct}">
+			                        				<ui:message title="Error" severity="error" closable="true">
+		                        						Product not found in the exisiting quote line items
+								            		</ui:message>
+			                        			</aura:if>
+			                        			<aura:if isTrue="{!!varQuoteProduct.IsNotaComboProduct}">
+			                        				<ui:message title="Error" severity="error" closable="true">
+		                        						Please quote combo as components
+								            		</ui:message>
+			                        			</aura:if>
+			                        			<aura:if isTrue="{!!varQuoteProduct.IsValidQuantity}">
+			                        				<ui:message title="Error" severity="error" closable="true">
+								                		Quantity should be more than 0
+								            		</ui:message>
+			                        			</aura:if>
+			                        			<aura:if isTrue="{!!varQuoteProduct.IsProductAllowed}">
+			                        				<ui:message title="Error" severity="error" closable="true">
+								                		<aura:unescapedHtml value="{!varQuoteProduct.NotAllowedReason}" />
+								            		</ui:message>
+			                        			</aura:if>
+			                        		</td>
+			                        	</tr>
+		                        	</aura:if>
+		                        </aura:iteration>
+		                    </tbody>
+		                </table>
+					</div>
+			    </aura:if>
+			    <aura:if isTrue="{!v.ShowProcessedDataBtn}">
+					<lightning:button label="Process Data" onclick="{!c.CheckPastedDate}" variant="brand" class="slds-m-top--medium"/>
+				</aura:if>
+				<aura:if isTrue="{!!v.ShowProcessedDataBtn}">
+					<lightning:button label="Update Pasted Data" onclick="{!c.ResetPasteSection}" variant="brand" class="slds-m-top--medium"/>
+					<lightning:button label="Save and Close" onclick="{!c.SaveProductPasted}" variant="brand" class="slds-m-top--medium"/>
+				</aura:if>
+				<lightning:button label="Close" onclick="{!c.closeComponent}" variant="brand" class="slds-m-top--medium"/>
+			</div>
+		</div>
+
+	</div>
+</aura:component>

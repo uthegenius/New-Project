@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Verification_of_Corrective_Action__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Has the issue been turned on and off?  How?  Verification through statistical evidence / hypothesis testing. Verification of corrective action for each why made and why shipped is required.</inlineHelpText>
+    <label>Verification of Corrective Action</label>
+    <length>1000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

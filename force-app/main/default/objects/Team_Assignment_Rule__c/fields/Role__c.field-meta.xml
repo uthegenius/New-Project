@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role__c</fullName>
+    <externalId>false</externalId>
+    <label>Role</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business Development Manager</fullName>
+                <default>false</default>
+                <label>Business Development Manager</label>
+            </value>
+            <value>
+                <fullName>Channel Manager</fullName>
+                <default>false</default>
+                <label>Channel Manager</label>
+            </value>
+            <value>
+                <fullName>Chief Sales Officer</fullName>
+                <default>false</default>
+                <label>Chief Sales Officer</label>
+            </value>
+            <value>
+                <fullName>Director National Accounts MRO</fullName>
+                <default>false</default>
+                <label>Director National Accounts MRO</label>
+            </value>
+            <value>
+                <fullName>General Manager</fullName>
+                <default>false</default>
+                <label>General Manager</label>
+            </value>
+            <value>
+                <fullName>Managing Director Projects</fullName>
+                <default>false</default>
+                <label>Managing Director Projects</label>
+            </value>
+            <value>
+                <fullName>MRO National Account Manage</fullName>
+                <default>false</default>
+                <label>MRO National Account Manage</label>
+            </value>
+            <value>
+                <fullName>National Account Manager</fullName>
+                <default>false</default>
+                <label>National Account Manager</label>
+            </value>
+            <value>
+                <fullName>National Showroom Manager</fullName>
+                <default>false</default>
+                <label>National Showroom Manager</label>
+            </value>
+            <value>
+                <fullName>Regional Project Manager</fullName>
+                <default>false</default>
+                <label>Regional Project Manager</label>
+            </value>
+            <value>
+                <fullName>Regional Showroom Manager</fullName>
+                <default>false</default>
+                <label>Regional Showroom Manager</label>
+            </value>
+            <value>
+                <fullName>Sales Support Manager</fullName>
+                <default>false</default>
+                <label>Sales Support Manager</label>
+            </value>
+            <value>
+                <fullName>Sales Support Specialist</fullName>
+                <default>false</default>
+                <label>Sales Support Specialist</label>
+            </value>
+            <value>
+                <fullName>Showroom Manager</fullName>
+                <default>false</default>
+                <label>Showroom Manager</label>
+            </value>
+            <value>
+                <fullName>VP Sales</fullName>
+                <default>false</default>
+                <label>VP Sales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

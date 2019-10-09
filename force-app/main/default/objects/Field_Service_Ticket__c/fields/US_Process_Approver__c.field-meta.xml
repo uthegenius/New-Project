@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US_Process_Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field is used to select user for custom approval for the US process flow.</description>
+    <externalId>false</externalId>
+    <label>Choose Next Approver</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Field_Service_Tickets3</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GroheRep__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field will be used to show which Account is the GroheRep for the current zip code and region</description>
+    <externalId>false</externalId>
+    <inlineHelpText>GroheRep Account</inlineHelpText>
+    <label>GroheRep</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>GroheRe_Account</relationshipLabel>
+    <relationshipName>GroheRep_Account</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

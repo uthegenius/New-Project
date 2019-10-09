@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Order_Record_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Order Record  Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Warranty Order</fullName>
+                <default>false</default>
+                <label>Warranty Order</label>
+            </value>
+            <value>
+                <fullName>Credit Card Sales</fullName>
+                <default>false</default>
+                <label>Credit Card Sales</label>
+            </value>
+            <value>
+                <fullName>Good Will</fullName>
+                <default>false</default>
+                <label>Good Will</label>
+            </value>
+            <value>
+                <fullName>Credit_Card_Sales</fullName>
+                <default>false</default>
+                <label>Credit_Card_Sales</label>
+            </value>
+            <value>
+                <fullName>Good_Will_Order</fullName>
+                <default>false</default>
+                <label>Good_Will_Order</label>
+            </value>
+            <value>
+                <fullName>Orders</fullName>
+                <default>false</default>
+                <label>Orders</label>
+            </value>
+            <value>
+                <fullName>Warranty_Replacement_Order</fullName>
+                <default>false</default>
+                <label>Warranty_Replacement_Order</label>
+            </value>
+            <value>
+                <fullName>FOC</fullName>
+                <default>false</default>
+                <label>FOC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

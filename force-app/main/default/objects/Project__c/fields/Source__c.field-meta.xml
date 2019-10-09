@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <description>Project source</description>
+    <externalId>false</externalId>
+    <label>Lead Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BUILDCENTRAL</fullName>
+                <default>false</default>
+                <label>BUILDCENTRAL</label>
+            </value>
+            <value>
+                <fullName>Channel Partner</fullName>
+                <default>false</default>
+                <label>Channel Partner</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>Existing Customer</fullName>
+                <default>false</default>
+                <label>Existing Customer</label>
+            </value>
+            <value>
+                <fullName>Lead</fullName>
+                <default>false</default>
+                <label>Lead</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Personal Network</fullName>
+                <default>false</default>
+                <label>Personal Network</label>
+            </value>
+            <value>
+                <fullName>Prospecting/Campaign</fullName>
+                <default>false</default>
+                <label>Prospecting/Campaign</label>
+            </value>
+            <value>
+                <fullName>SAP CRM</fullName>
+                <default>false</default>
+                <label>SAP CRM</label>
+            </value>
+            <value>
+                <fullName>Initial Load</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Initial Load</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

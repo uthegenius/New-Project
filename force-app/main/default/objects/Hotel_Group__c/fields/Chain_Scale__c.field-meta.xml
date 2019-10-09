@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chain_Scale__c</fullName>
+    <externalId>false</externalId>
+    <label>Chain Scale</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Economy Chains</fullName>
+                <default>false</default>
+                <label>Economy Chains</label>
+            </value>
+            <value>
+                <fullName>Luxury Chains</fullName>
+                <default>false</default>
+                <label>Luxury Chains</label>
+            </value>
+            <value>
+                <fullName>Midscale Chains</fullName>
+                <default>false</default>
+                <label>Midscale Chains</label>
+            </value>
+            <value>
+                <fullName>Upper Midscale Chains</fullName>
+                <default>false</default>
+                <label>Upper Midscale Chains</label>
+            </value>
+            <value>
+                <fullName>Upper Upscale Chains</fullName>
+                <default>false</default>
+                <label>Upper Upscale Chains</label>
+            </value>
+            <value>
+                <fullName>Upscale Chains</fullName>
+                <default>false</default>
+                <label>Upscale Chains</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

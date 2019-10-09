@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Agency_Profile_user_cant_change_owner</fullName>
+    <active>true</active>
+    <description>System should allow users to update owner field except users with Agency profile.</description>
+    <errorConditionFormula>AND( LOWER($Profile.Name) = &quot;agency&quot;, ISCHANGED( OwnerId ) )</errorConditionFormula>
+    <errorMessage>You cannot change the owner of the project. Please contact the administrator.</errorMessage>
+</ValidationRule>

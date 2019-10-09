@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Type__c</fullName>
+    <description>Type of property on this project</description>
+    <externalId>false</externalId>
+    <label>Project Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>EDUCATION</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>GOVERNMENT/MILITARY</fullName>
+                <default>false</default>
+                <label>Government/Military</label>
+            </value>
+            <value>
+                <fullName>HEALTHCARE</fullName>
+                <default>false</default>
+                <label>Healthcare</label>
+            </value>
+            <value>
+                <fullName>HOSPITALITY</fullName>
+                <default>false</default>
+                <label>Hospitality</label>
+            </value>
+            <value>
+                <fullName>MIXED USE DEV</fullName>
+                <default>false</default>
+                <label>Mixed Use Dev</label>
+            </value>
+            <value>
+                <fullName>MULTI FAMILY</fullName>
+                <default>false</default>
+                <label>Multi Family</label>
+            </value>
+            <value>
+                <fullName>OFFICE BUILDING</fullName>
+                <default>false</default>
+                <label>Office Building</label>
+            </value>
+            <value>
+                <fullName>PRISON</fullName>
+                <default>false</default>
+                <label>Prison</label>
+            </value>
+            <value>
+                <fullName>RELIGIOUS/CULTURAL FACILITIES</fullName>
+                <default>false</default>
+                <label>Religious/Cultural Facilities</label>
+            </value>
+            <value>
+                <fullName>RESTAURANT/RETAIL</fullName>
+                <default>false</default>
+                <label>Restaurant/Retail</label>
+            </value>
+            <value>
+                <fullName>SHIP</fullName>
+                <default>false</default>
+                <label>Ship</label>
+            </value>
+            <value>
+                <fullName>SINGLE FAMILY</fullName>
+                <default>false</default>
+                <label>Single Family</label>
+            </value>
+            <value>
+                <fullName>STADIUM/ENTERTAINMENT</fullName>
+                <default>false</default>
+                <label>Stadium/Entertainment</label>
+            </value>
+            <value>
+                <fullName>Student Housing</fullName>
+                <default>false</default>
+                <label>Student Housing</label>
+            </value>
+            <value>
+                <fullName>Airport</fullName>
+                <default>false</default>
+                <label>Airport</label>
+            </value>
+            <value>
+                <fullName>Amusement Park</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AMUSEMENT PARK</label>
+            </value>
+            <value>
+                <fullName>Barracks/Army</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BARRACKS/ARMY</label>
+            </value>
+            <value>
+                <fullName>Buss/Comm Build/Comp</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BUSS/COMM BUILD/COMP</label>
+            </value>
+            <value>
+                <fullName>City/Public Sector</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CITY/PUBLIC SECTOR</label>
+            </value>
+            <value>
+                <fullName>Cultural Facilities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CULTURAL FACILITIES</label>
+            </value>
+            <value>
+                <fullName>Dept Store/Shopping</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DEPT STORE/SHOPPING</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GOVERNMENT</label>
+            </value>
+            <value>
+                <fullName>Government Building</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GOVERNMENT BUILDING</label>
+            </value>
+            <value>
+                <fullName>Green Buildings</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>GREEN BUILDINGS</label>
+            </value>
+            <value>
+                <fullName>HOSPITAL/MEDICAL CARE</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HOSPITAL/MEDICAL CARE</label>
+            </value>
+            <value>
+                <fullName>Hospitals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HOSPITALS</label>
+            </value>
+            <value>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>HOTEL</label>
+            </value>
+            <value>
+                <fullName>Hospital/Medical Car</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hospital/Medical Car</label>
+            </value>
+            <value>
+                <fullName>Hotel / Motel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hotel / Motel</label>
+            </value>
+            <value>
+                <fullName>Hotel 4/5 Stars</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hotel 4/5 Stars</label>
+            </value>
+            <value>
+                <fullName>Industry</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>INDUSTRY</label>
+            </value>
+            <value>
+                <fullName>Low Cost Houses</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>LOW COST HOUSES</label>
+            </value>
+            <value>
+                <fullName>Multi Family Housing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MULTI FAMILY HOUSING</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>Public Building</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>PUBLIC BUILDING</label>
+            </value>
+            <value>
+                <fullName>Religious Building</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RELIGIOUS BUILDING</label>
+            </value>
+            <value>
+                <fullName>Residential And Comm</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RESIDENTIAL AND COMM</label>
+            </value>
+            <value>
+                <fullName>Residential House</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RESIDENTIAL HOUSE</label>
+            </value>
+            <value>
+                <fullName>RESTAURANT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RESTAURANT</label>
+            </value>
+            <value>
+                <fullName>Restaurant/Roadhouse</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RESTAURANT/ROADHOUSE</label>
+            </value>
+            <value>
+                <fullName>Retirement Home</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>RETIREMENT HOME</label>
+            </value>
+            <value>
+                <fullName>Row House</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>ROW HOUSE</label>
+            </value>
+            <value>
+                <fullName>School</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SCHOOL</label>
+            </value>
+            <value>
+                <fullName>SINGLE FAMILY HOUSING</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SINGLE FAMILY HOUSING</label>
+            </value>
+            <value>
+                <fullName>Sports Center/Spa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SPORTS CENTER/SPA</label>
+            </value>
+            <value>
+                <fullName>Sports Stadium</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SPORTS STADIUM</label>
+            </value>
+            <value>
+                <fullName>Single Family Housin</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Single Family Housin</label>
+            </value>
+            <value>
+                <fullName>Transportation Secto</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TRANSPORTATION SECTO</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTATION SECTOR</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TRANSPORTATION SECTOR</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

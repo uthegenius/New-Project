@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recalculate_Assignment__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field will be used to recalculate the agencies, and will update the record under the account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this box if recalculation required. 
+NOTE: recalculation may take time to be completely processed due to volume of data.</inlineHelpText>
+    <label>Recalculate Assignment</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

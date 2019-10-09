@@ -1,0 +1,56 @@
+<apex:page lightningStylesheets="true" controller="sampleChatButtons_Ctl">
+    <apex:slds />
+    
+         
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered">
+        <thead>
+            <tr class="slds-line-height_reset">
+            <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate" title="S. No.">S. No.</div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate" title="Name">Name</div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate" title="Status">Status</div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate" title="Date">Last Update Date</div>
+                </th>
+                
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate" title="Date">Deployment Code</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="ChatButtonList">
+            
+            
+            <apex:repeat value="{!Rec}" var="r">
+                <tr>
+                    <td>{!r.SR}</td>
+                    <td>{!r.MasterLabel}</td>
+                    <td><div>
+                        <apex:outputText escape="false" value="{!r.Status}"/></div></td>
+                    <td>{!r.LastModifiedDate}</td>
+                    <td>
+                        <textarea name="post" maxLength="5000" cols="50" rows="3" height="200" readOnly="readonly" onfocus="this.select();">{!substitute(substitute(r.DeploymentCode,'c.la2-c2cs-iad.salesforceliveagent.com','c.la1-c1-iad.salesforceliveagent.com'),'https://d.la2-c2cs-iad.salesforceliveagent.com/chat','https://d.la1-c1-iad.salesforceliveagent.com/chat')}</textarea>
+                    </td>                   
+                   </tr>
+                <script type="text/javascript">
+                debugger;
+                if (!window._laq) { window._laq = []; }
+                    window._laq.push(function(){liveagent.showWhenOnline('{!r.ChatId}', document.getElementById('liveagent_button_online_{!r.ChatId}'));
+                                                liveagent.showWhenOffline('{!r.ChatId}', document.getElementById('liveagent_button_offline_{!r.ChatId}'));
+                                               });
+                </script>
+            </apex:repeat>
+        </tbody>
+    </table>
+    <script type='text/javascript' src='https://c.la1-c1-iad.salesforceliveagent.com/content/g/js/45.0/deployment.js'></script>    
+    <script>    
+        debugger;
+        liveagent.init('https://d.la1-c1-iad.salesforceliveagent.com/chat', '{!DepId}', '{!orgId}');   
+    </script>
+
+</apex:page>

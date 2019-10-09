@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Project__c</columns>
+    <columns>User__c</columns>
+    <columns>Role__c</columns>
+    <columns>IsApprover__c</columns>
+    <columns>IsProjectTeam__c</columns>
+    <columns>isQuotePDFEmail__c</columns>
+    <columns>CURRENCY_ISO_CODE</columns>
+    <columns>UPDATEDBY_USER</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Project__c</field>
+        <operation>contains</operation>
+        <value>Western</value>
+    </filters>
+    <label>All</label>
+</ListView>

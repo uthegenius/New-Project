@@ -1,0 +1,39 @@
+<apex:page showHeader="false" applyBodyTag="false" applyHtmlTag="false" >
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>SLDS ResponsiveDesign Visualforce Page in Salesforce Mobile</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <apex:slds />
+    </head>
+    
+    <iframe name="myiframe" height="490px" width="100%" frameborder="0" allowfullscreen="1">                           
+    </iframe>
+    <a id="liveagent_button_online_{!$CurrentPage.parameters.id}" style="display: none; border: 0px none; cursor: pointer" onclick="liveagent.startChatWithWindow('{!$CurrentPage.parameters.id}','myiframe');"></a>
+    <a id="liveagent_button_offline_{!$CurrentPage.parameters.id}" style="display: none; border: 0px none;"></a>
+    <script type="text/javascript">
+        if (!window._laq) { window._laq = []; }
+    window._laq.push(function(){liveagent.showWhenOnline('{!$CurrentPage.parameters.id}', document.getElementById('liveagent_button_online_{!$CurrentPage.parameters.id}'));
+                                liveagent.showWhenOffline('{!$CurrentPage.parameters.id}', document.getElementById('liveagent_button_offline_{!$CurrentPage.parameters.id}'));
+                               });
+    </script>
+    <script type='text/javascript' src='https://c.la2-c2cs-iad.salesforceliveagent.com/content/g/js/45.0/deployment.js'></script>
+    
+    <script type="text/javascript">
+    liveagent.init('https://d.la2-c2cs-iad.salesforceliveagent.com/chat', '{!$CurrentPage.parameters.wdepid}', '{!$CurrentPage.parameters.orgid}');
+    document.title = '{!$CurrentPage.parameters.wtitle}';
+    var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+    link.type = 'image/x-icon';
+    link.rel = 'shortcut icon';
+    link.href = '{!$CurrentPage.parameters.wfavicon}';
+    document.getElementsByTagName('head')[0].appendChild(link);
+     setTimeout(function(){                     
+                document.getElementById('liveagent_button_online_{!$CurrentPage.parameters.id}').click();
+                        }, 1000);
+        
+    </script>
+    
+    
+    
+    
+</apex:page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Owner_Int_Name_Ext_Acc__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(  !CONTAINS( UPPER( Owner:User.Email ) , &#39;LIXIL&#39;) , Owner:User.Contact.Account.Name , &#39;LIXIL&#39;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Project Owner Int Name/Ext Acc</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Project_Length_shouldnot_be_more_than_35</fullName>
+    <active>true</active>
+    <errorConditionFormula>LEN(Name) &gt; 35</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>Project Name should be less or equal to 35 characters.</errorMessage>
+</ValidationRule>

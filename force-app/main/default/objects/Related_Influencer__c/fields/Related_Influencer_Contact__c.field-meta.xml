@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Related_Influencer_Contact__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This field will be used to related contact of influncer account</description>
+    <externalId>false</externalId>
+    <label>Related Influencer Contact</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.RelatedInfluencerAccount__c</field>
+            <operation>equals</operation>
+            <valueField>Contact.AccountId</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Related Influencers</relationshipLabel>
+    <relationshipName>Related_Influencers_Contact</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

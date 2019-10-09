@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Material_Number_Mappings</fullName>
+    <columns>NAME</columns>
+    <columns>Queue_Category__c</columns>
+    <columns>Division__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>All Material Number Mappings</label>
+</ListView>

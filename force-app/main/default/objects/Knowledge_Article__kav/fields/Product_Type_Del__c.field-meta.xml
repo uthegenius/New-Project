@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type_Del__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Type Deleted</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Centerset</fullName>
+                <default>false</default>
+                <label>Centerset</label>
+            </value>
+            <value>
+                <fullName>Widespread</fullName>
+                <default>false</default>
+                <label>Widespread</label>
+            </value>
+            <value>
+                <fullName>Edgemere</fullName>
+                <default>false</default>
+                <label>Edgemere</label>
+            </value>
+            <value>
+                <fullName>Colony/ Reliant/ Mainstream</fullName>
+                <default>false</default>
+                <label>Colony/ Reliant/ Mainstream</label>
+            </value>
+            <value>
+                <fullName>Cadet</fullName>
+                <default>false</default>
+                <label>Cadet</label>
+            </value>
+            <value>
+                <fullName>Champion</fullName>
+                <default>false</default>
+                <label>Champion</label>
+            </value>
+            <value>
+                <fullName>VorMax</fullName>
+                <default>false</default>
+                <label>VorMax</label>
+            </value>
+            <value>
+                <fullName>VorMax Plus</fullName>
+                <default>false</default>
+                <label>VorMax Plus</label>
+            </value>
+            <value>
+                <fullName>ActiClean</fullName>
+                <default>false</default>
+                <label>ActiClean</label>
+            </value>
+            <value>
+                <fullName>ActiVate</fullName>
+                <default>false</default>
+                <label>ActiVate</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

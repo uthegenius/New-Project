@@ -1,0 +1,106 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global" controller="CreditCardAuthorizationController">
+    
+    <ltng:require styles="{!$Resource.jqueryui + '/jquery-ui-1.12.1.custom/jquery-ui.min.css'}" />
+    <ltng:require scripts="{!join(',',$Resource.jQuery331 + '/jquery-3.3.1.js', $Resource.jqueryui + '/jquery-ui-1.12.1.custom/jquery-ui.js')}" afterScriptsLoaded="{!c.doInit}"/>
+    
+    <!-- create 2 aura handler with waiting and donewaiting events--> 
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    
+    <aura:attribute name="recordId" type="String" /> 
+    <!-- For loading Spinner -->
+    <aura:attribute name="Spinner" type="boolean" default="false"/>
+    <aura:attribute name="OrderRecord" type="object"/>
+    <aura:attribute name="sObjectName" type="String" default="Order" />
+    <aura:attribute name="fieldName" type="String" default="Card_Type__c" />
+    <aura:attribute name="picklistValues" type="Object" />
+    <aura:attribute name="counter" type="Integer" default="0" />
+    <aura:attribute name="Currency" type="String" default="" />
+    
+    <header class="slds-modal__header">
+        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Credit Card Authorization</h2>
+    </header>
+    
+    <!--this div will hold any warning and error messages-->
+    <div class="slds-notify_container clsTop clsAlertMessage" id="idAlertMessage" style=" display: none; z-index: 9050;">
+        <div class="slds-notify slds-notify--toast slds-theme--alert-texture" role="alert" style="background: #c23934 !important;">
+            
+            <span class="slds-assistive-text">Info</span>
+            <h2><div id="divAlertMessage" class="clsAlertMessage" style="white-space: initial;"></div></h2>
+        </div>
+    </div>
+    
+    <!--###### MODAL BOX BODY Part Start######-->
+    
+    <div aura:id="CreditCardInformationId" id="tab-default-1" class="slds-tabs--default__content slds-show">
+        
+        <!--loading spinner start-->
+        <aura:if isTrue="{!v.Spinner}">
+            <div aura:id="spinnerId" class="slds-spinner_container">
+                <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                    <span class="slds-assistive-text"></span>
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+            </div>
+        </aura:if>
+        <!-- Loading spinner end-->  
+        
+        <table class="slds-table slds-table slds-max-medium-table_stacked"  role="grid">
+            
+            <tr  style="height: 10px;" >
+                <td data-label="Card Number"> Card Number
+                    <lightning:input  name="CardNumber" value="{!v.OrderRecord.Card_Number__c}"/>
+                </td>
+                <td data-label="Card Type"> Card Type
+                    <lightning:select value="{!v.OrderRecord.Card_Type__c}">       
+                        <option value="">Choose one...</option>
+                        <aura:iteration items="{!v.picklistValues}" var="item">
+                            <option value="{!item.value}">
+                                {!item}
+                            </option>
+                        </aura:iteration>
+                    </lightning:select>
+                </td>
+            </tr>
+            
+            <tr style="height: 10px;" >
+                <td data-label="Card Holder"> Card Holder
+                    <lightning:input  name="CardHolder" value="{!v.OrderRecord.Card_Holder__c}"/>
+                </td>
+                <td data-label="Card Expiry">
+                    <label style="display: block; margin-top: -12px; position: relative; top: 12px;"> 
+                        Card Expiry
+                    </label>
+                    <input type="text" id="expirymonth" value="{!v.expirymonth}" class="slds-input" placeholder="MM" style="margin-top: 18px;width: 55px;" maxlength="2"/> /
+                    <input type="text" id="expiryyear" value="{!v.expiryyear}" class="slds-input" placeholder="YYYY" style="margin-top: 18px;width: 65px;" maxlength="4"/>
+                </td>
+            </tr>
+            
+            <tr style="height: 10px;" >
+                <td data-label="CVV"> CVV No.
+                    <lightning:input  type="number" name="CVV" value="{!v.OrderRecord.CVV__c}"/>
+                </td>
+                <td data-label="Amount" style="display: block;margin-top: -6px;position: relative;top: 12px;"> Amount
+                    <span value="{!v.Currency}" style="position: relative;top: 29px;margin-left: -47px;font-style: italic;color: rgb(0, 109, 204);" >&nbsp;&nbsp;{!v.OrderRecord.Order_Amount__c}&nbsp;&nbsp;{!v.Currency}</span>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    
+    <!--###### MODAL BOX FOOTER Part Start ######-->
+    <footer >
+        <div class="slds-float--right">
+            <lightning:button variant="neutral" 
+                              label="Cancel"
+                              title="No"
+                              onclick="{!c.closeModel }"/>
+            <lightning:button variant="brand" 
+                              label="Authorize"
+                              title="Yes"
+                              onclick="{!c.RequestAuthorization}"/>
+        </div> 
+    </footer>    
+    
+</aura:component>

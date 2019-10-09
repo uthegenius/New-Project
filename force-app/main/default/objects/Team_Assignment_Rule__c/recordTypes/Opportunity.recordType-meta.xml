@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity</fullName>
+    <active>true</active>
+    <description>This record type will be used for creating the assignment rules for the Opportunity Team</description>
+    <label>Opportunity</label>
+    <picklistValues>
+        <picklist>Assignment_Type__c</picklist>
+        <values>
+            <fullName>Initiative</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Showroom%2FDisplay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>MRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Midwest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Northwest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southcentral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southeast</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southwest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer DC Location</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Role__c</picklist>
+        <values>
+            <fullName>General Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regional Showroom Manager</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

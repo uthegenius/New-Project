@@ -1,0 +1,64 @@
+<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global" controller="Order_NewOrderCreationCtrl">
+<!-- <aura:component implements="lightning:actionOverride,flexipage:availableForRecordHome,force:hasRecordId" access="global" controller="Order_NewOrderCreationCtrl"> -->
+
+    <aura:attribute name="isLoading" type="boolean" default="false"/>
+    <aura:attribute name="errorMessage" type="String"/>
+    <aura:attribute name="selectedRecType" type="String" default=""/>
+    <aura:attribute name="CaseRecord" type="object"/>
+    <aura:attribute name="CaseRecordField" type="object"/>
+    <aura:attribute name="lstOfRecordType" type="String[]" />
+    
+    <!--<aura:handler name="init" value="{!this}" action="{!c.init}"/>!-->
+   <!-- <aura:handler name="init"/>-->
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!v.recordId}"
+                      fields="Id,AccountId,Contact.AccountId"
+                      layoutType="FULL"
+                      targetRecord="{!v.CaseRecord}"
+                      targetFields="{!v.CaseRecordField}"
+                      targetError="{!v.errorMessage}"
+                      />
+    
+    <div>
+        
+        <!-- To show the error message if any-->
+        <aura:if isTrue="{!not(empty(v.errorMessage))}">
+            <ui:message title="Error" severity="error" closable="true">
+                {!v.errorMessage}
+            </ui:message>
+        </aura:if>
+        
+        <!--<aura:if isTrue="!not(empty(v.errorMessage))}"></aura:if>-->
+        
+        <aura:if isTrue="{!v.isLoading}">
+            <lightning:spinner aura:id="mySpinner" variant="brand" />
+        </aura:if>
+        
+        
+        <div class="slds-grid slds-wrap">
+            <div class="slds-size--1-of-2 slds-large-size--1-of-2">
+                <div class="slds-align--absolute-center">Select a Record Type</div>                            
+            </div>
+            <div class="slds-size--1-of-2 slds-large-size--1-of-2">
+                
+                <!-- <aura:iteration items="{!v.lstOfRecordType}" var="retType"> -->
+                    <!-- <lightning:radioGroup name="rgRecType" options="{! v.options }" value="{!retType}" type="radio"/> -->
+                    <!-- <c:sldsRadioButton name="" value="{!retType}" label="{!retType}" checked="{!v.selectedRecType == retType}" optionSelected="{!c.handleChange}"/> -->
+                <!-- </aura:iteration> -->
+                <lightning:select aura:id="OrderField" name="RecordType" label="Record Type" value="{!v.selectedRecType}">
+                    <aura:iteration items="{!v.lstOfRecordType}" var="value">
+                        <option value="{!value}">{!value}</option>
+                    </aura:iteration>
+                </lightning:select>
+                
+                <br></br>
+                
+                <lightning:button class="slds-button slds-button--brand" onclick="{!c.createRecord}" >Next</lightning:button>
+                
+            </div>&nbsp; &nbsp;
+        </div>                   
+        
+    </div>
+</aura:component>

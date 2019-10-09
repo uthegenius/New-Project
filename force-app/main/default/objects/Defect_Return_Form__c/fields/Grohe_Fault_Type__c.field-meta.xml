@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grohe_Fault_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Grohe Fault Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>00 - No Fault</fullName>
+                <default>false</default>
+                <label>00 - No Fault</label>
+            </value>
+            <value>
+                <fullName>01 - Surface Finish faults</fullName>
+                <default>false</default>
+                <label>01 - Surface Finish faults</label>
+            </value>
+            <value>
+                <fullName>03 - Incomplete</fullName>
+                <default>false</default>
+                <label>03 - Incomplete</label>
+            </value>
+            <value>
+                <fullName>04 - Breaks/Cracks</fullName>
+                <default>false</default>
+                <label>04 - Breaks/Cracks</label>
+            </value>
+            <value>
+                <fullName>05 - Restricted flow / flow Time</fullName>
+                <default>false</default>
+                <label>05 - Restricted flow / flow Time</label>
+            </value>
+            <value>
+                <fullName>06 - Control function faulty</fullName>
+                <default>false</default>
+                <label>06 - Control function faulty</label>
+            </value>
+            <value>
+                <fullName>07 - Seized / stiff / jammed</fullName>
+                <default>false</default>
+                <label>07 - Seized / stiff / jammed</label>
+            </value>
+            <value>
+                <fullName>08 - Leakage</fullName>
+                <default>false</default>
+                <label>08 - Leakage</label>
+            </value>
+            <value>
+                <fullName>09 - Corrosion</fullName>
+                <default>false</default>
+                <label>09 - Corrosion</label>
+            </value>
+            <value>
+                <fullName>11 - Noisy</fullName>
+                <default>false</default>
+                <label>11 - Noisy</label>
+            </value>
+            <value>
+                <fullName>12 - Packaging and transport damage</fullName>
+                <default>false</default>
+                <label>12 - Packaging and transport damage</label>
+            </value>
+            <value>
+                <fullName>13 - Cannot be assembled</fullName>
+                <default>false</default>
+                <label>13 - Cannot be assembled</label>
+            </value>
+            <value>
+                <fullName>14 - Wrong parts supplied</fullName>
+                <default>false</default>
+                <label>14 - Wrong parts supplied</label>
+            </value>
+            <value>
+                <fullName>15 - Fault caused by 3rd party</fullName>
+                <default>false</default>
+                <label>15 - Fault caused by 3rd party</label>
+            </value>
+            <value>
+                <fullName>16 - Parameter settings</fullName>
+                <default>false</default>
+                <label>16 - Parameter settings</label>
+            </value>
+            <value>
+                <fullName>17 - Electrical faults</fullName>
+                <default>false</default>
+                <label>17 - Electrical faults</label>
+            </value>
+            <value>
+                <fullName>18 - Exchanged due to recall</fullName>
+                <default>false</default>
+                <label>18 - Exchanged due to recall</label>
+            </value>
+            <value>
+                <fullName>19 - Loose / Not fixable</fullName>
+                <default>false</default>
+                <label>19 - Loose / Not fixable</label>
+            </value>
+            <value>
+                <fullName>20 - Clearance</fullName>
+                <default>false</default>
+                <label>20 - Clearance</label>
+            </value>
+            <value>
+                <fullName>21 - Reaction Time / Response Characteristics</fullName>
+                <default>false</default>
+                <label>21 - Reaction Time / Response Characteristics</label>
+            </value>
+            <value>
+                <fullName>22 - Continuous Flow</fullName>
+                <default>false</default>
+                <label>22 - Continuous Flow</label>
+            </value>
+            <value>
+                <fullName>23 - Unclear / Cloudy</fullName>
+                <default>false</default>
+                <label>23 - Unclear / Cloudy</label>
+            </value>
+            <value>
+                <fullName>24 - Synchronization fault</fullName>
+                <default>false</default>
+                <label>24 - Synchronization fault</label>
+            </value>
+            <value>
+                <fullName>25 - Color Deviation</fullName>
+                <default>false</default>
+                <label>25 - Color Deviation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

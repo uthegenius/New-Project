@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_Make_Changes</fullName>
+    <active>true</active>
+    <description>This validation rule will make sure that the user is not able to make changes to the record</description>
+    <errorConditionFormula>AND(
+	NOT( ISNEW() ),
+	OR(ISCHANGED(Role__c),ISCHANGED(User__c)),
+	$Profile.Name &lt;&gt; &#39;System Administrator&#39;,
+	OR( IsProjectTeam__c, IsApprover__c  )
+)</errorConditionFormula>
+    <errorMessage>This record is locked and cannot be modified.</errorMessage>
+</ValidationRule>

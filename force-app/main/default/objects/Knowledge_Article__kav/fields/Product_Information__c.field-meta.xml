@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Information__c</fullName>
+    <defaultValue>&quot;MATERIAL NUMBER:&quot;&amp; BR() &amp;
+&quot;Description:&quot;&amp; BR() &amp;
+&quot;Marketing Description:&quot;&amp; BR() &amp;
+&quot;Brand:&quot;&amp; BR() &amp;
+&quot;MODEL NUMBER:&quot;&amp; BR() &amp;
+&quot;Family:&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Product Information</label>
+    <length>32768</length>
+    <type>LongTextArea</type>
+    <visibleLines>15</visibleLines>
+</CustomField>

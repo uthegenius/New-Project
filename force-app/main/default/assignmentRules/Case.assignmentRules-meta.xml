@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Queue Assigned Rule</fullName>
+        <active>true</active>
+        <ruleEntry>
+            <assignedTo>webhostapp</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Domain__c</field>
+                <operation>equals</operation>
+                <value>000webhostapp.com</value>
+            </criteriaItems>
+            <template>unfiled$public/SUPPORTNewassignmentnotificationSAMPLE</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>China_Assigned_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  OR(RecordType.DeveloperName=&#39;Technical_Support&#39;,     RecordType.DeveloperName=&#39;Customer_Success&#39;),       TEXT(Queue_Category__c ) =&#39;China&#39; )</formula>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>BLS_Assigned_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  OR(RecordType.DeveloperName=&#39;Technical_Support&#39;,     RecordType.DeveloperName=&#39;Customer_Success&#39;),           TEXT(Queue_Category__c ) =&#39;BLS&#39; )</formula>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Fittings_Assigned_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  OR(RecordType.DeveloperName=&#39;Technical_Support&#39;,     RecordType.DeveloperName=&#39;Customer_Success&#39;),      TEXT(Queue_Category__c ) =&#39;Fittings&#39; )</formula>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Grohe_Assigned_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  OR(RecordType.DeveloperName=&#39;Technical_Support&#39;,  RecordType.DeveloperName=&#39;Customer_Success&#39;),  TEXT(Queue_Category__c ) =&#39;GROHE&#39;  )</formula>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>INAX_Assigned_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  OR(RecordType.DeveloperName=&#39;Technical_Support&#39;,  RecordType.DeveloperName=&#39;Customer_Success&#39;),  TEXT(Queue_Category__c ) =&#39;INAX&#39;  )</formula>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Safety_Tubs_Assigned_Queue</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>AND(  OR(RecordType.DeveloperName=&#39;Technical_Support&#39;,  RecordType.DeveloperName=&#39;Customer_Success&#39;),  TEXT(Queue_Category__c ) =&#39;Safety Tubs&#39;  )</formula>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>web_to_Case_americanstandard_us_com</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName =&#39;Technical_Support&#39; &amp;&amp;  TEXT(Origin)=&#39;Web&#39; &amp;&amp;  Domain__c =&#39;americanstandard-us.com&#39;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>web_to_case_americanstandard_ca</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName =&#39;Technical_Support&#39;  &amp;&amp;  TEXT(Origin)=&#39;Web&#39;  &amp;&amp;  Domain__c =&#39;americanstandard.ca&#39;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>web_to_case_grohe_com</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName =&#39;Technical_Support&#39;  &amp;&amp;  TEXT(Origin)=&#39;Web&#39;  &amp;&amp;  Domain__c =&#39;grohe.com&#39;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>web_to_case_grohe_ca</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName =&#39;Technical_Support&#39;  &amp;&amp;  TEXT(Origin)=&#39;Web&#39;  &amp;&amp;  Domain__c =&#39;grohe.ca&#39;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>web_to_case_dxv_com</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <formula>RecordType.DeveloperName =&#39;Technical_Support&#39;  &amp;&amp;  TEXT(Origin)=&#39;Web&#39;  &amp;&amp;  Domain__c =&#39;dxv.com&#39;</formula>
+        </ruleEntry>
+        <ruleEntry>
+            <formula>true</formula>
+        </ruleEntry>
+    </assignmentRule>
+    <assignmentRule>
+        <fullName>Web-to-Case Assigned to the Queue</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>web_to_case_dxv_com</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Language__c</field>
+                <operation>equals</operation>
+                <value>French</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Country__c</field>
+                <operation>equals</operation>
+                <value>Canada,United States</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Web_to_Case_URL__c</field>
+                <operation>equals</operation>
+                <value>www.dxv.com</value>
+            </criteriaItems>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>web_to_case_americanstandard_ca</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Web_to_Case_URL__c</field>
+                <operation>equals</operation>
+                <value>www.americanstandard.ca</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Country__c</field>
+                <operation>equals</operation>
+                <value>Canada</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Language__c</field>
+                <operation>equals</operation>
+                <value>French</value>
+            </criteriaItems>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>web_to_case_grohe_ca</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Origin</field>
+                <operation>equals</operation>
+                <value>Web</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Country__c</field>
+                <operation>equals</operation>
+                <value>Canada</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Language__c</field>
+                <operation>equals</operation>
+                <value>English</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Web_to_Case_URL__c</field>
+                <operation>equals</operation>
+                <value>www.grohe.ca</value>
+            </criteriaItems>
+            <template>unfiled$public/Case_Assignment</template>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

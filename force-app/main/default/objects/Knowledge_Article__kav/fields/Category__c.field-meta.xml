@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Category Deleted</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Warranty</fullName>
+                <default>false</default>
+                <label>Warranty</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>Components</fullName>
+                <default>false</default>
+                <label>Components</label>
+            </value>
+            <value>
+                <fullName>Dimensions</fullName>
+                <default>false</default>
+                <label>Dimensions</label>
+            </value>
+            <value>
+                <fullName>Function and Features</fullName>
+                <default>false</default>
+                <label>Function and Features</label>
+            </value>
+            <value>
+                <fullName>How to Use</fullName>
+                <default>false</default>
+                <label>How to Use</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Fittings</fullName>
+                <default>false</default>
+                <label>Fittings</label>
+            </value>
+            <value>
+                <fullName>Flushing System</fullName>
+                <default>false</default>
+                <label>Flushing System</label>
+            </value>
+            <value>
+                <fullName>Drainline Carry</fullName>
+                <default>false</default>
+                <label>Drainline Carry</label>
+            </value>
+            <value>
+                <fullName>Dual-Injection Flush Valves</fullName>
+                <default>false</default>
+                <label>Dual-Injection Flush Valves</label>
+            </value>
+            <value>
+                <fullName>Rough-In with Tiled Wall</fullName>
+                <default>false</default>
+                <label>Rough-In with Tiled Wall</label>
+            </value>
+            <value>
+                <fullName>Water Spot</fullName>
+                <default>false</default>
+                <label>Water Spot</label>
+            </value>
+            <value>
+                <fullName>Mixing Cleaner/Fresh Infuser/Lysol Cleaner</fullName>
+                <default>false</default>
+                <label>Mixing Cleaner/Fresh Infuser/Lysol Cleaner</label>
+            </value>
+            <value>
+                <fullName>Cleaner Swallowed</fullName>
+                <default>false</default>
+                <label>Cleaner Swallowed</label>
+            </value>
+            <value>
+                <fullName>Cleaner in Eyes</fullName>
+                <default>false</default>
+                <label>Cleaner in Eyes</label>
+            </value>
+            <value>
+                <fullName>Cleaner on Skin</fullName>
+                <default>false</default>
+                <label>Cleaner on Skin</label>
+            </value>
+            <value>
+                <fullName>Cleaner Life</fullName>
+                <default>false</default>
+                <label>Cleaner Life</label>
+            </value>
+            <value>
+                <fullName>Cleaner Level</fullName>
+                <default>false</default>
+                <label>Cleaner Level</label>
+            </value>
+            <value>
+                <fullName>Cleaner Scent</fullName>
+                <default>false</default>
+                <label>Cleaner Scent</label>
+            </value>
+            <value>
+                <fullName>Cleaner - Safe Septic System</fullName>
+                <default>false</default>
+                <label>Cleaner - Safe Septic System</label>
+            </value>
+            <value>
+                <fullName>Toilet Cleaning</fullName>
+                <default>false</default>
+                <label>Toilet Cleaning</label>
+            </value>
+            <value>
+                <fullName>Cleaner Fragrance Does&#39;nt Last</fullName>
+                <default>false</default>
+                <label>Cleaner Fragrance Does&#39;nt Last</label>
+            </value>
+            <value>
+                <fullName>Low Flow Faucets</fullName>
+                <default>false</default>
+                <label>Low Flow Faucets</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

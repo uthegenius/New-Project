@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grohe_Fault_Location__c</fullName>
+    <externalId>false</externalId>
+    <label>Grohe Fault Location</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>001-body</fullName>
+                <default>false</default>
+                <label>001-body</label>
+            </value>
+            <value>
+                <fullName>002-spout/outlet</fullName>
+                <default>false</default>
+                <label>002-spout/outlet</label>
+            </value>
+            <value>
+                <fullName>003-seals</fullName>
+                <default>false</default>
+                <label>003-seals</label>
+            </value>
+            <value>
+                <fullName>004-tailpipes/inlets/flex hoses</fullName>
+                <default>false</default>
+                <label>004-tailpipes/inlets/flex hoses</label>
+            </value>
+            <value>
+                <fullName>005-remote actuation control/Puck</fullName>
+                <default>false</default>
+                <label>005-remote actuation control/Puck</label>
+            </value>
+            <value>
+                <fullName>006-mousseur/sistra</fullName>
+                <default>false</default>
+                <label>006-mousseur/sistra</label>
+            </value>
+            <value>
+                <fullName>007-fixation set</fullName>
+                <default>false</default>
+                <label>007-fixation set</label>
+            </value>
+            <value>
+                <fullName>008-Aqua-Dimmer</fullName>
+                <default>false</default>
+                <label>008-Aqua-Dimmer</label>
+            </value>
+            <value>
+                <fullName>009-dirt Strainer</fullName>
+                <default>false</default>
+                <label>009-dirt Strainer</label>
+            </value>
+            <value>
+                <fullName>010-headpart</fullName>
+                <default>false</default>
+                <label>010-headpart</label>
+            </value>
+            <value>
+                <fullName>011-diverter</fullName>
+                <default>false</default>
+                <label>011-diverter</label>
+            </value>
+            <value>
+                <fullName>012-handle/lever/button</fullName>
+                <default>false</default>
+                <label>012-handle/lever/button</label>
+            </value>
+            <value>
+                <fullName>014-pop-up-waste</fullName>
+                <default>false</default>
+                <label>014-pop-up-waste</label>
+            </value>
+            <value>
+                <fullName>015-pop-up-rod/bowden cable</fullName>
+                <default>false</default>
+                <label>015-pop-up-rod/bowden cable</label>
+            </value>
+            <value>
+                <fullName>016-seatings</fullName>
+                <default>false</default>
+                <label>016-seatings</label>
+            </value>
+            <value>
+                <fullName>018-cover/rosette</fullName>
+                <default>false</default>
+                <label>018-cover/rosette</label>
+            </value>
+            <value>
+                <fullName>019-installation box in the wall</fullName>
+                <default>false</default>
+                <label>019-installation box in the wall</label>
+            </value>
+            <value>
+                <fullName>021-not return valves/vacuum breaker</fullName>
+                <default>false</default>
+                <label>021-not return valves/vacuum breaker</label>
+            </value>
+            <value>
+                <fullName>022-stop valves</fullName>
+                <default>false</default>
+                <label>022-stop valves</label>
+            </value>
+            <value>
+                <fullName>023-pressure balance valve</fullName>
+                <default>false</default>
+                <label>023-pressure balance valve</label>
+            </value>
+            <value>
+                <fullName>024-thermoelement / thermostat cartridge</fullName>
+                <default>false</default>
+                <label>024-thermoelement / thermostat cartridge</label>
+            </value>
+            <value>
+                <fullName>030-glass / glass plate / mirror</fullName>
+                <default>false</default>
+                <label>030-glass / glass plate / mirror</label>
+            </value>
+            <value>
+                <fullName>031-Lights</fullName>
+                <default>false</default>
+                <label>031-Lights</label>
+            </value>
+            <value>
+                <fullName>032-shelves / holders</fullName>
+                <default>false</default>
+                <label>032-shelves / holders</label>
+            </value>
+            <value>
+                <fullName>033-soap dish</fullName>
+                <default>false</default>
+                <label>033-soap dish</label>
+            </value>
+            <value>
+                <fullName>043-one hand mixture cartridge</fullName>
+                <default>false</default>
+                <label>043-one hand mixture cartridge</label>
+            </value>
+            <value>
+                <fullName>046-temperature limiter</fullName>
+                <default>false</default>
+                <label>046-temperature limiter</label>
+            </value>
+            <value>
+                <fullName>047-snap coupling</fullName>
+                <default>false</default>
+                <label>047-snap coupling</label>
+            </value>
+            <value>
+                <fullName>050-showers / spray head</fullName>
+                <default>false</default>
+                <label>050-showers / spray head</label>
+            </value>
+            <value>
+                <fullName>052-shower hose / pull out hose</fullName>
+                <default>false</default>
+                <label>052-shower hose / pull out hose</label>
+            </value>
+            <value>
+                <fullName>053-soap dispenser</fullName>
+                <default>false</default>
+                <label>053-soap dispenser</label>
+            </value>
+            <value>
+                <fullName>060-flushing  valve piston</fullName>
+                <default>false</default>
+                <label>060-flushing  valve piston</label>
+            </value>
+            <value>
+                <fullName>061-sleeve</fullName>
+                <default>false</default>
+                <label>061-sleeve</label>
+            </value>
+            <value>
+                <fullName>062-membrane</fullName>
+                <default>false</default>
+                <label>062-membrane</label>
+            </value>
+            <value>
+                <fullName>063-flushing valve housing</fullName>
+                <default>false</default>
+                <label>063-flushing valve housing</label>
+            </value>
+            <value>
+                <fullName>064-flow restrictor</fullName>
+                <default>false</default>
+                <label>064-flow restrictor</label>
+            </value>
+            <value>
+                <fullName>065-flushing tube</fullName>
+                <default>false</default>
+                <label>065-flushing tube</label>
+            </value>
+            <value>
+                <fullName>066-flushing valves for cisterns</fullName>
+                <default>false</default>
+                <label>066-flushing valves for cisterns</label>
+            </value>
+            <value>
+                <fullName>067-filling valves for cisterns</fullName>
+                <default>false</default>
+                <label>067-filling valves for cisterns</label>
+            </value>
+            <value>
+                <fullName>068-WC cistern</fullName>
+                <default>false</default>
+                <label>068-WC cistern</label>
+            </value>
+            <value>
+                <fullName>069-cover plate</fullName>
+                <default>false</default>
+                <label>069-cover plate</label>
+            </value>
+            <value>
+                <fullName>070-frame</fullName>
+                <default>false</default>
+                <label>070-frame</label>
+            </value>
+            <value>
+                <fullName>071-fixing components</fullName>
+                <default>false</default>
+                <label>071-fixing components</label>
+            </value>
+            <value>
+                <fullName>072-actuation plate</fullName>
+                <default>false</default>
+                <label>072-actuation plate</label>
+            </value>
+            <value>
+                <fullName>080-filter</fullName>
+                <default>false</default>
+                <label>080-filter</label>
+            </value>
+            <value>
+                <fullName>081-cooling unit / carbonisator</fullName>
+                <default>false</default>
+                <label>081-cooling unit / carbonisator</label>
+            </value>
+            <value>
+                <fullName>082-boiler</fullName>
+                <default>false</default>
+                <label>082-boiler</label>
+            </value>
+            <value>
+                <fullName>083-display</fullName>
+                <default>false</default>
+                <label>083-display</label>
+            </value>
+            <value>
+                <fullName>084-marking / logo</fullName>
+                <default>false</default>
+                <label>084-marking / logo</label>
+            </value>
+            <value>
+                <fullName>085-CO2 bottle</fullName>
+                <default>false</default>
+                <label>085-CO2 bottle</label>
+            </value>
+            <value>
+                <fullName>090-electronic control unit</fullName>
+                <default>false</default>
+                <label>090-electronic control unit</label>
+            </value>
+            <value>
+                <fullName>091-solenoid/magnet valve</fullName>
+                <default>false</default>
+                <label>091-solenoid/magnet valve</label>
+            </value>
+            <value>
+                <fullName>092-transmitter/reciever</fullName>
+                <default>false</default>
+                <label>092-transmitter/reciever</label>
+            </value>
+            <value>
+                <fullName>093-servo motor/actuator</fullName>
+                <default>false</default>
+                <label>093-servo motor/actuator</label>
+            </value>
+            <value>
+                <fullName>094-circulation pump</fullName>
+                <default>false</default>
+                <label>094-circulation pump</label>
+            </value>
+            <value>
+                <fullName>095-temperature feeler</fullName>
+                <default>false</default>
+                <label>095-temperature feeler</label>
+            </value>
+            <value>
+                <fullName>096-radar transmitter/receiver</fullName>
+                <default>false</default>
+                <label>096-radar transmitter/receiver</label>
+            </value>
+            <value>
+                <fullName>097-timer</fullName>
+                <default>false</default>
+                <label>097-timer</label>
+            </value>
+            <value>
+                <fullName>098-transformer/battery</fullName>
+                <default>false</default>
+                <label>098-transformer/battery</label>
+            </value>
+            <value>
+                <fullName>099-cable/ plug in connectors</fullName>
+                <default>false</default>
+                <label>099-cable/ plug in connectors</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

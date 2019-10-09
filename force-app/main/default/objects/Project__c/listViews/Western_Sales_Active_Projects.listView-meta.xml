@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Western_Sales_Active_Projects</fullName>
+    <columns>CREATEDBY_USER</columns>
+    <columns>NAME</columns>
+    <columns>Project_Owner__c</columns>
+    <columns>State__c</columns>
+    <columns>City__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Project_Owner_Int_Name_Ext_Acc__c</field>
+        <operation>equals</operation>
+        <value>WESTERN SALES</value>
+    </filters>
+    <filters>
+        <field>Stage__c</field>
+        <operation>equals</operation>
+        <value>Open,In Progress</value>
+    </filters>
+    <label>Western Sales Active Projects</label>
+    <sharedTo>
+        <portalRole>WESTERNSALESPartnerUser</portalRole>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Non_Agency</fullName>
+    <columns>NAME</columns>
+    <columns>Region__c</columns>
+    <columns>RequestorType__c</columns>
+    <columns>Requestor__c</columns>
+    <columns>AgencyAccount__c</columns>
+    <columns>AmountOver__c</columns>
+    <columns>ParentAccount__c</columns>
+    <columns>ProjectType__c</columns>
+    <columns>TeamMember__c</columns>
+    <columns>TeamRole__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RequestorType__c</field>
+        <operation>equals</operation>
+        <value>Non Agency</value>
+    </filters>
+    <label>Non Agency</label>
+</ListView>

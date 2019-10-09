@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Category_Charge__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Category Charge</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Region__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A/S Acrylics</fullName>
+                <default>false</default>
+                <label>A/S Acrylics</label>
+            </value>
+            <value>
+                <fullName>A/S Chinaware</fullName>
+                <default>false</default>
+                <label>A/S Chinaware</label>
+            </value>
+            <value>
+                <fullName>A/S Fittings/Repair Parts</fullName>
+                <default>false</default>
+                <label>A/S Fittings/Repair Parts</label>
+            </value>
+            <value>
+                <fullName>A/S Furnitures</fullName>
+                <default>false</default>
+                <label>A/S Furnitures</label>
+            </value>
+            <value>
+                <fullName>A/S Metals &amp; Americast</fullName>
+                <default>false</default>
+                <label>A/S Metals &amp; Americast</label>
+            </value>
+            <value>
+                <fullName>ACRYLIC</fullName>
+                <default>false</default>
+                <label>ACRYLIC</label>
+            </value>
+            <value>
+                <fullName>All Grohe</fullName>
+                <default>false</default>
+                <label>All Grohe</label>
+            </value>
+            <value>
+                <fullName>AMERICAST</fullName>
+                <default>false</default>
+                <label>AMERICAST</label>
+            </value>
+            <value>
+                <fullName>AMERICAST  (LABOR)</fullName>
+                <default>false</default>
+                <label>AMERICAST  (LABOR)</label>
+            </value>
+            <value>
+                <fullName>AMERICAST  (MISC)</fullName>
+                <default>false</default>
+                <label>AMERICAST  (MISC)</label>
+            </value>
+            <value>
+                <fullName>CHAMPION TOILETS (LABOR)</fullName>
+                <default>false</default>
+                <label>CHAMPION TOILETS (LABOR)</label>
+            </value>
+            <value>
+                <fullName>CHINA AFWALLS (LABOR)</fullName>
+                <default>false</default>
+                <label>CHINA AFWALLS (LABOR)</label>
+            </value>
+            <value>
+                <fullName>CHINAWARE - TIFFIN</fullName>
+                <default>false</default>
+                <label>CHINAWARE - TIFFIN</label>
+            </value>
+            <value>
+                <fullName>Crane Acrylics</fullName>
+                <default>false</default>
+                <label>Crane Acrylics</label>
+            </value>
+            <value>
+                <fullName>Crane Chinaware</fullName>
+                <default>false</default>
+                <label>Crane Chinaware</label>
+            </value>
+            <value>
+                <fullName>Crane ES</fullName>
+                <default>false</default>
+                <label>Crane ES</label>
+            </value>
+            <value>
+                <fullName>DXV Acrylics</fullName>
+                <default>false</default>
+                <label>DXV Acrylics</label>
+            </value>
+            <value>
+                <fullName>DXV Chinaware</fullName>
+                <default>false</default>
+                <label>DXV Chinaware</label>
+            </value>
+            <value>
+                <fullName>DXV Fittings</fullName>
+                <default>false</default>
+                <label>DXV Fittings</label>
+            </value>
+            <value>
+                <fullName>ENAMEL STEEL</fullName>
+                <default>false</default>
+                <label>ENAMEL STEEL</label>
+            </value>
+            <value>
+                <fullName>Fiat</fullName>
+                <default>false</default>
+                <label>Fiat</label>
+            </value>
+            <value>
+                <fullName>FITTINGS/REPAIR PARTS</fullName>
+                <default>false</default>
+                <label>FITTINGS/REPAIR PARTS</label>
+            </value>
+            <value>
+                <fullName>Grohe Plumbing</fullName>
+                <default>false</default>
+                <label>Grohe Plumbing</label>
+            </value>
+            <value>
+                <fullName>Grohe Warranty</fullName>
+                <default>false</default>
+                <label>Grohe Warranty</label>
+            </value>
+            <value>
+                <fullName>SOURCEDWARE</fullName>
+                <default>false</default>
+                <label>SOURCEDWARE</label>
+            </value>
+            <value>
+                <fullName>STEEL TUBS (LABOR)</fullName>
+                <default>false</default>
+                <label>STEEL TUBS (LABOR)</label>
+            </value>
+            <value>
+                <fullName>STEEL TUBS (MISC)</fullName>
+                <default>false</default>
+                <label>STEEL TUBS (MISC)</label>
+            </value>
+            <value>
+                <fullName>Walk In Bath</fullName>
+                <default>false</default>
+                <label>Walk In Bath</label>
+            </value>
+            <value>
+                <fullName>Shower Door</fullName>
+                <default>false</default>
+                <label>Shower Door</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>ACRYLIC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>AMERICAST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>FITTINGS/REPAIR PARTS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Grohe Plumbing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Grohe Warranty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>SOURCEDWARE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>USA</controllingFieldValue>
+            <valueName>Shower Door</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>A/S Acrylics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>A/S Chinaware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>A/S Fittings/Repair Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>A/S Furnitures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>A/S Metals &amp; Americast</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>All Grohe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Crane Acrylics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Crane Chinaware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Crane ES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>DXV Acrylics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>DXV Chinaware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>DXV Fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Fiat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Walk In Bath</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,152 @@
+<apex:page standardController="Quote" Extensions="BoxIntegrationUtil"  showHeader="false" sidebar="false" standardStylesheets="false" applyHtmlTag="false" applyBodyTag="false" renderAs="PDF">
+    <body>
+        <apex:outputText value="{!Quote.Final_Quote__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Opportunity.Account.Brand__c}" rendered="false"></apex:outputText>
+    
+        
+        <apex:image value="{!if(strLogoType='ALL', URLFOR($Resource.Brand_logos, '/FQ_TriBrandedImage.jpg'), if(strLogoType='GROHE', URLFOR($Resource.Brand_logos, '/FQ_GroheLogo.jpg'), ''))}" style="text-align: center;}" />        
+        <br/>
+        <table width="100%" style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+            <tr>
+                <td width="35%"><b>Quote Number</b></td>
+                <!-- feedback day 3, 78 switch from QuoteNumber to Unique_ID__c -->
+                <td><b>: {!Quote.Unique_ID__c}</b></td>
+            </tr>
+            <tr>
+                <td width="35%"><b>Quote Version</b></td>
+                <!-- feedback day 3, 78 switch from QuoteNumber to Unique_ID__c -->
+                <td><b>: {!Quote.Version__c}</b></td>
+            </tr>            
+            <tr><td>&nbsp;</td></tr>   
+            <tr>
+                <td><b>Job Name</b></td>
+                <td>: {!Quote.Opportunity.Name} </td>
+            </tr>
+            <tr>
+                <td><b>City/State </b></td>
+                <td>: {!Quote.Opportunity.Project__r.City__c}, {!Quote.Opportunity.Project__r.State__c}</td>
+            </tr>
+            <tr>
+                <td><b>Job Type</b></td>
+                <td>: {!Quote.Opportunity.Project__r.Project_Type__c}</td> 
+            </tr>    
+
+            <tr><td>&nbsp;</td></tr>   
+            <tr>            
+                <td><b>Submit Date</b></td>
+                <td>: <apex:outputText value="{0,date,dd' 'MMMMM' 'yyyy}">
+                        <apex:param value="{!Quote.CreatedDate}" /> 
+                      </apex:outputText>
+                </td>
+            </tr>
+            <tr>                
+                <td><b>Expire Date</b></td>
+                <td>: <apex:outputText value="{0,date,dd' 'MMMMM' 'yyyy}">
+                        <apex:param value="{!Quote.ExpirationDate}" />
+                      </apex:outputText>
+                </td>
+            </tr>
+            
+
+            <tr><td>&nbsp;</td></tr>
+            <tr>                
+                <td><b>Customer Name</b></td>
+                <td>: {!Quote.Account_Name__c}</td>
+            </tr>
+            
+            <tr><td>&nbsp;</td></tr>
+            <tr>                
+                <td><b>Submitter</b></td>
+                <td>: {!Quote.Opportunity.Owner.Name}</td> 
+            </tr>
+
+            <tr><td>&nbsp;</td></tr>
+            <tr>                
+                <td><b>Specified Fixture Manufacturer</b></td>
+                <td>: {!Quote.Opportunity.Project__r.Initial_Specification_Fixtures__c}</td>
+            </tr>
+            <tr>                
+                <td><b>Specified Fixture Competition </b></td>
+                <td>: {!Quote.Opportunity.Project__r.Fixture_Competitor__c}</td>     
+            </tr>
+            <tr>                
+                <td><b>Specified Faucet Manufacturer </b></td>
+                <td>: {!Quote.Opportunity.Project__r.Initial_Specification_Faucets__c}</td>
+            </tr>
+            <tr>                
+                <td><b>Specified Faucet Competition </b></td>
+                <td>: {!Quote.Opportunity.Project__r.Faucet_Competitor__c}</td>             
+            </tr>
+               
+        </table>
+        
+        <br/><br/>
+        <p style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+            <b>TERMS OF QUOTATION:</b>
+        </p>
+        <p style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+            &#42;&#42;&#42;&#42;Quoted job prices are based on ORIGINAL ship-to location &#38; pricing markets. CHANGES in ship-to locations outside of an original
+            ship-to pricing market MUST be re-quoted &#38; submitted to Lixil for approval and appropriate re-pricing &#42;&#42;&#42;&#42;.            
+        </p>       
+        <p style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+            &#42;&#42;&#42;&#42;&#42;Project Pricing is not to be used for redistribution&#42;&#42;&#42;&#42;&#42;            
+        </p>
+        <p style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+            Standard freight terms apply.
+        </p>        
+        <p style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+            Lixil quotes this job based upon competitive conditions and the materials listed in the previous pages. Any changes made to these lists
+            will affect our quotation as a whole. We must be advised of any changes, substitutions, additions, or deletions, so that a revised quote
+            can be issued. You agree that by placing an order for any one of the items at the quoted price, you are agreeing and obligating yourself
+            to purchase all items covered by this quote. Should you fail to do so, Lixil will bill you additional amounts based on what you have actually
+            ordered.
+        </p>
+        <p style="font-size: 12px; font-family: Sans-Serif, Courier, Arial">
+            Any releases off this quote must include the above approved quote number in order to be valid. Failure to provide the quote number on a
+            release will result in regular stock order pricing and no debits will be allowed.             
+        </p>
+        <br/>
+        <table width="100%" border="0" cellspadding="0" cellspacing="0" style="font-size: 11px; font-family: Sans-Serif, Arial">
+            <tr>
+                <td style="white-space:pre; text-align: center; vertical-align: top; border: 1px solid #000000;">
+Location 
+Code
+                </td>
+                <td style="text-align: center; border: 1px solid #000000;">Line No.</td>
+                <td style="text-align: center; border: 1px solid #000000;">Brand</td>
+                <td style="text-align: center; border: 1px solid #000000;">Material</td>
+                <td style="text-align: center; border: 1px solid #000000;">Material Description</td>
+                <td style="text-align: center; border: 1px solid #000000;">Quantity</td>
+                <td style="text-align: center; border: 1px solid #000000;">Quoted Price</td>
+                <td style="text-align: center; border: 1px solid #000000;">Ext. Amount</td>
+               
+            </tr> 
+            
+            <apex:repeat value="{!listFQLI}" var="fqli">
+                <tr>
+                    <td style="border: 1px solid #000000;">{!fqli.Location__c}</td>
+                    <td style="border: 1px solid #000000;">{!fqli.Line_Number__c}</td>
+                    <td style="border: 1px solid #000000;">{!fqli.Product2.Brand__c}</td>
+                    <td style="border: 1px solid #000000;">{!fqli.Product2.ProductCode}</td>
+                    <td style="border: 1px solid #000000;">{!fqli.Product2.Description}</td>
+                    <td style="border: 1px solid #000000; text-align: left !important;">{!ROUND(fqli.Quantity,0)}</td>
+                    <td style="border: 1px solid #000000; text-align: left !important;">&#36; {!fqli.Quoted_Price__c}</td>
+                    <td style="border: 1px solid #000000; text-align: left !important;">&#36; {!if(isNull(fqli.Total__c),0, fqli.Total__c)}</td>
+
+                </tr>    
+            </apex:repeat>
+            <tr>
+                <td colspan="9">&nbsp;</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ffffff">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td colspan="4" style="text-align: right;"><b>Total Quoted Value:</b>  &#36; {!if(isNull(totalQuotedValue),0, totalQuotedValue)}</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </body>
+</apex:page>

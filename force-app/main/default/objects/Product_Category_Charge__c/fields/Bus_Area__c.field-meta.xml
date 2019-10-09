@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bus_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Bus. Area</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product_Category_Charge__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>21</fullName>
+                <default>false</default>
+                <label>21</label>
+            </value>
+            <value>
+                <fullName>22</fullName>
+                <default>false</default>
+                <label>22</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>40</label>
+            </value>
+            <value>
+                <fullName>42</fullName>
+                <default>false</default>
+                <label>42</label>
+            </value>
+            <value>
+                <fullName>43</fullName>
+                <default>false</default>
+                <label>43</label>
+            </value>
+            <value>
+                <fullName>44</fullName>
+                <default>false</default>
+                <label>44</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>45</label>
+            </value>
+            <value>
+                <fullName>BA301</fullName>
+                <default>false</default>
+                <label>BA301</label>
+            </value>
+            <value>
+                <fullName>BA302</fullName>
+                <default>false</default>
+                <label>BA302</label>
+            </value>
+            <value>
+                <fullName>BA303</fullName>
+                <default>false</default>
+                <label>BA303</label>
+            </value>
+            <value>
+                <fullName>BA306</fullName>
+                <default>false</default>
+                <label>BA306</label>
+            </value>
+            <value>
+                <fullName>BA82</fullName>
+                <default>false</default>
+                <label>BA82</label>
+            </value>
+            <value>
+                <fullName>BA84</fullName>
+                <default>false</default>
+                <label>BA84</label>
+            </value>
+            <value>
+                <fullName>BA85</fullName>
+                <default>false</default>
+                <label>BA85</label>
+            </value>
+            <value>
+                <fullName>BA86</fullName>
+                <default>false</default>
+                <label>BA86</label>
+            </value>
+            <value>
+                <fullName>BA87</fullName>
+                <default>false</default>
+                <label>BA87</label>
+            </value>
+            <value>
+                <fullName>BA88</fullName>
+                <default>false</default>
+                <label>BA88</label>
+            </value>
+            <value>
+                <fullName>BA89</fullName>
+                <default>false</default>
+                <label>BA89</label>
+            </value>
+            <value>
+                <fullName>BA93</fullName>
+                <default>false</default>
+                <label>BA93</label>
+            </value>
+            <value>
+                <fullName>BA94</fullName>
+                <default>false</default>
+                <label>BA94</label>
+            </value>
+            <value>
+                <fullName>BA95</fullName>
+                <default>false</default>
+                <label>BA95</label>
+            </value>
+            <value>
+                <fullName>102</fullName>
+                <default>false</default>
+                <label>102</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>FITTINGS/REPAIR PARTS</controllingFieldValue>
+            <valueName>21</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Grohe Plumbing</controllingFieldValue>
+            <controllingFieldValue>Grohe Warranty</controllingFieldValue>
+            <valueName>22</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOURCEDWARE</controllingFieldValue>
+            <controllingFieldValue>CHAMPION TOILETS (LABOR)</controllingFieldValue>
+            <controllingFieldValue>CHINA AFWALLS (LABOR)</controllingFieldValue>
+            <valueName>43</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>STEEL TUBS (LABOR)</controllingFieldValue>
+            <controllingFieldValue>STEEL TUBS (MISC)</controllingFieldValue>
+            <valueName>40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Walk In Bath</controllingFieldValue>
+            <valueName>BA88</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Shower Door</controllingFieldValue>
+            <valueName>102</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AMERICAST  (MISC)</controllingFieldValue>
+            <controllingFieldValue>AMERICAST</controllingFieldValue>
+            <controllingFieldValue>AMERICAST  (LABOR)</controllingFieldValue>
+            <controllingFieldValue>ENAMEL STEEL</controllingFieldValue>
+            <valueName>44</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHINAWARE - TIFFIN</controllingFieldValue>
+            <valueName>42</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crane Acrylics</controllingFieldValue>
+            <valueName>BA302</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crane Chinaware</controllingFieldValue>
+            <valueName>BA301</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crane ES</controllingFieldValue>
+            <valueName>BA303</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DXV Acrylics</controllingFieldValue>
+            <valueName>BA95</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DXV Chinaware</controllingFieldValue>
+            <valueName>BA93</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>DXV Fittings</controllingFieldValue>
+            <valueName>BA94</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A/S Acrylics</controllingFieldValue>
+            <valueName>BA86</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A/S Chinaware</controllingFieldValue>
+            <valueName>BA84</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A/S Fittings/Repair Parts</controllingFieldValue>
+            <valueName>BA82</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A/S Furnitures</controllingFieldValue>
+            <valueName>BA87</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>A/S Metals &amp; Americast</controllingFieldValue>
+            <valueName>BA85</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ACRYLIC</controllingFieldValue>
+            <valueName>45</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>All Grohe</controllingFieldValue>
+            <valueName>BA89</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Fiat</controllingFieldValue>
+            <valueName>BA306</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

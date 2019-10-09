@@ -1,0 +1,39 @@
+<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId" controller="Opportuinty_CreateQuoteCtrl" >
+        
+    <!-- component attributs -->
+    <aura:attribute name="CreateQuoteId" type="String" />
+    
+    <aura:attribute name="options" type="List" default="[
+        {'label': 'Standard', 'value': 'Standard_Quote'},
+        {'label': 'Influencer', 'value': 'Influencer_Quote'}
+        ]"/>
+    <aura:attribute name="value" type="String" default="Standard_Quote"/>
+    
+    <aura:attribute name="isLoading" type="boolean" default="false"/>
+
+    <aura:if isTrue="{!v.isLoading}">
+        <lightning:spinner aura:id="mySpinner" variant="brand" />
+    </aura:if>
+    
+    <div class="modal-header slds-modal__header">
+        <h2 class="title slds-text-heading--medium" >Create Quote Confirm</h2>
+    </div>
+    <div class="scrollable slds-modal__content slds-p-around--medium">
+        <div class="changeRecordTypeRow">
+            <fieldset class="slds-form-element">
+                <div class="changeRecordTypeLeftColumn">
+                    <legend class="form-element__legend slds-form-element__label">Select a record type</legend>
+                </div>
+                <div class="changeRecordTypeRightColumn slds-form-element__control">
+                    <lightning:radioGroup aura:id="rgRecTypeID" name="rgRecType" options="{! v.options }" value="{! v.value }" type="radio"/>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <div class="modal-footer slds-modal__footer">
+        <div class="forceChangeRecordTypeFooter">
+            <lightning:button variant="brand" label="Cancel" title="Cancel" onclick="{! c.cancel }" />
+            <lightning:button variant="brand" label="Create" title="Create" onclick="{! c.doCreateQuote }" />
+        </div>
+    </div>
+</aura:component>

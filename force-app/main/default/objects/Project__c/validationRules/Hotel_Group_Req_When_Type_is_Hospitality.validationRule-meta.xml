@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hotel_Group_Req_When_Type_is_Hospitality</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				ISPICKVAL(Project_Type__c, &quot;Hospitality&quot;),
+				ISBLANK( Hotel_Group__c )
+)</errorConditionFormula>
+    <errorDisplayField>HotelGroup__c</errorDisplayField>
+    <errorMessage>Hotel Group is required when Project Type is Hospitality</errorMessage>
+</ValidationRule>

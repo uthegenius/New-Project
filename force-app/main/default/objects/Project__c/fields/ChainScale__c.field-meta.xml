@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChainScale__c</fullName>
+    <description>Project chain scale</description>
+    <externalId>false</externalId>
+    <label>ChainScale</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>HotelBrand__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Economy Chains</fullName>
+                <default>false</default>
+                <label>Economy Chains</label>
+            </value>
+            <value>
+                <fullName>Luxury Chains</fullName>
+                <default>false</default>
+                <label>Luxury Chains</label>
+            </value>
+            <value>
+                <fullName>Midscale Chains</fullName>
+                <default>false</default>
+                <label>Midscale Chains</label>
+            </value>
+            <value>
+                <fullName>Upper Midscale Chains</fullName>
+                <default>false</default>
+                <label>Upper Midscale Chains</label>
+            </value>
+            <value>
+                <fullName>Upper Upscale Chains</fullName>
+                <default>false</default>
+                <label>Upper Upscale Chains</label>
+            </value>
+            <value>
+                <fullName>Upscale Chains</fullName>
+                <default>false</default>
+                <label>Upscale Chains</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Kempinski Hotels</controllingFieldValue>
+            <controllingFieldValue>Outrigger Hotels Company</controllingFieldValue>
+            <controllingFieldValue>Langham Hotels International</controllingFieldValue>
+            <controllingFieldValue>Best Western Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Radisson Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Accor Company</controllingFieldValue>
+            <controllingFieldValue>Red Lion Hotels Company</controllingFieldValue>
+            <controllingFieldValue>AJ Capital Partners</controllingFieldValue>
+            <controllingFieldValue>Sandals</controllingFieldValue>
+            <controllingFieldValue>Choice Hotels International</controllingFieldValue>
+            <controllingFieldValue>citizenM Hotels</controllingFieldValue>
+            <controllingFieldValue>Shangri-La Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Sonesta International Hotels Corporation</controllingFieldValue>
+            <controllingFieldValue>Club Med</controllingFieldValue>
+            <controllingFieldValue>Coast Hotels</controllingFieldValue>
+            <controllingFieldValue>Travel Inn Hotels</controllingFieldValue>
+            <controllingFieldValue>Disney Hotels</controllingFieldValue>
+            <controllingFieldValue>Wanda Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Westmark</controllingFieldValue>
+            <controllingFieldValue>Westmont Hospitality Group</controllingFieldValue>
+            <controllingFieldValue>Wyndham Extra Holidays</controllingFieldValue>
+            <controllingFieldValue>Wyndham Vacation Resort</controllingFieldValue>
+            <controllingFieldValue>Wyndham Worldwide</controllingFieldValue>
+            <controllingFieldValue>Grand America Hotels &amp; Resort</controllingFieldValue>
+            <controllingFieldValue>Great Wolf Lodge</controllingFieldValue>
+            <controllingFieldValue>Grupo Sol Melia</controllingFieldValue>
+            <controllingFieldValue>Hampshire Hospitality</controllingFieldValue>
+            <controllingFieldValue>Hilton Worldwide</controllingFieldValue>
+            <controllingFieldValue>Hyatt</controllingFieldValue>
+            <controllingFieldValue>Marriott International</controllingFieldValue>
+            <controllingFieldValue>Millennium &amp; Copthorne Global</controllingFieldValue>
+            <controllingFieldValue>NYLO Hotels</controllingFieldValue>
+            <controllingFieldValue>Intercontinental Hotels Group</controllingFieldValue>
+            <valueName>Upscale Chains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OMNI Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Langham Hotels International</controllingFieldValue>
+            <controllingFieldValue>Loews Hotels Company</controllingFieldValue>
+            <controllingFieldValue>21c Museum Hotels</controllingFieldValue>
+            <controllingFieldValue>Accor Company</controllingFieldValue>
+            <controllingFieldValue>Rosewood Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Shangri-La Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>The Oberoi Group</controllingFieldValue>
+            <controllingFieldValue>The Peninsula Hotel</controllingFieldValue>
+            <controllingFieldValue>Trump Hotel Collection</controllingFieldValue>
+            <controllingFieldValue>Two Roads Hospitality</controllingFieldValue>
+            <controllingFieldValue>Wanda Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Grupo Sol Melia</controllingFieldValue>
+            <controllingFieldValue>Hilton Worldwide</controllingFieldValue>
+            <controllingFieldValue>Hyatt</controllingFieldValue>
+            <controllingFieldValue>Mandarin Oriental Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Marriott International</controllingFieldValue>
+            <controllingFieldValue>Montage Hotels</controllingFieldValue>
+            <controllingFieldValue>Nobu Hotels</controllingFieldValue>
+            <controllingFieldValue>Intercontinental Hotels Group</controllingFieldValue>
+            <valueName>Luxury Chains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OMNI Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Outrigger Hotels Company</controllingFieldValue>
+            <controllingFieldValue>Radisson Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Accor Company</controllingFieldValue>
+            <controllingFieldValue>Ace Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Affinia</controllingFieldValue>
+            <controllingFieldValue>Rosewood Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Carlton Hotel Collection</controllingFieldValue>
+            <controllingFieldValue>Silver Cloud</controllingFieldValue>
+            <controllingFieldValue>Club Quarters</controllingFieldValue>
+            <controllingFieldValue>The Oberoi Group</controllingFieldValue>
+            <controllingFieldValue>Distinction Hotels</controllingFieldValue>
+            <controllingFieldValue>Dream Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Two Roads Hospitality</controllingFieldValue>
+            <controllingFieldValue>Wanda Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Warwick Hotels</controllingFieldValue>
+            <controllingFieldValue>Wyndham Worldwide</controllingFieldValue>
+            <controllingFieldValue>Grupo Sol Melia</controllingFieldValue>
+            <controllingFieldValue>Hard Rock</controllingFieldValue>
+            <controllingFieldValue>Hilton Worldwide</controllingFieldValue>
+            <controllingFieldValue>Hyatt</controllingFieldValue>
+            <controllingFieldValue>Marriott International</controllingFieldValue>
+            <controllingFieldValue>Millennium &amp; Copthorne Global</controllingFieldValue>
+            <controllingFieldValue>Intercontinental Hotels Group</controllingFieldValue>
+            <valueName>Upper Upscale Chains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Outrigger Hotels Company</controllingFieldValue>
+            <controllingFieldValue>Mama Shelter</controllingFieldValue>
+            <controllingFieldValue>Best Western Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Radisson Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Accor Company</controllingFieldValue>
+            <controllingFieldValue>Red Lion Hotels Company</controllingFieldValue>
+            <controllingFieldValue>Rosewood Hotel Group</controllingFieldValue>
+            <controllingFieldValue>Carlton</controllingFieldValue>
+            <controllingFieldValue>Choice Hotels International</controllingFieldValue>
+            <controllingFieldValue>Shilo Inn</controllingFieldValue>
+            <controllingFieldValue>Sonesta International Hotels Corporation</controllingFieldValue>
+            <controllingFieldValue>Cobblestone</controllingFieldValue>
+            <controllingFieldValue>Country Garden Phoenix Hotels</controllingFieldValue>
+            <controllingFieldValue>Drury Hotels</controllingFieldValue>
+            <controllingFieldValue>Wyndham Worldwide</controllingFieldValue>
+            <controllingFieldValue>Yotel</controllingFieldValue>
+            <controllingFieldValue>Hilton Worldwide</controllingFieldValue>
+            <controllingFieldValue>Marriott International</controllingFieldValue>
+            <controllingFieldValue>Intercontinental Hotels Group</controllingFieldValue>
+            <valueName>Upper Midscale Chains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Best Western Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Best Western Premier</controllingFieldValue>
+            <controllingFieldValue>Budget Suites of America</controllingFieldValue>
+            <controllingFieldValue>Accor Company</controllingFieldValue>
+            <controllingFieldValue>Red Lion Hotels Company</controllingFieldValue>
+            <controllingFieldValue>Affordable Suites of America</controllingFieldValue>
+            <controllingFieldValue>Choice Hotels International</controllingFieldValue>
+            <controllingFieldValue>Drury Hotels</controllingFieldValue>
+            <controllingFieldValue>Westmont Hospitality Group</controllingFieldValue>
+            <controllingFieldValue>Edition</controllingFieldValue>
+            <controllingFieldValue>Extended Stay Hotels</controllingFieldValue>
+            <controllingFieldValue>Wyndham Worldwide</controllingFieldValue>
+            <controllingFieldValue>G6 Hospitality</controllingFieldValue>
+            <controllingFieldValue>InTown Suites</controllingFieldValue>
+            <valueName>Economy Chains</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Best Western Hotels &amp; Resorts</controllingFieldValue>
+            <controllingFieldValue>Cabot Lodge</controllingFieldValue>
+            <controllingFieldValue>Accor Company</controllingFieldValue>
+            <controllingFieldValue>Red Lion Hotels Company</controllingFieldValue>
+            <controllingFieldValue>Choice Hotels International</controllingFieldValue>
+            <controllingFieldValue>Vagabond Inn</controllingFieldValue>
+            <controllingFieldValue>Wyndham Worldwide</controllingFieldValue>
+            <controllingFieldValue>Yotel</controllingFieldValue>
+            <controllingFieldValue>Grupo Sol Melia</controllingFieldValue>
+            <controllingFieldValue>Hilton Worldwide</controllingFieldValue>
+            <controllingFieldValue>Millennium &amp; Copthorne Global</controllingFieldValue>
+            <controllingFieldValue>InnSuites Hotels</controllingFieldValue>
+            <controllingFieldValue>Intercontinental Hotels Group</controllingFieldValue>
+            <controllingFieldValue>InTown Suites</controllingFieldValue>
+            <valueName>Midscale Chains</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

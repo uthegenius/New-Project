@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TeamRole__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Role of the Team Member, it will be assigned to the Team Member in Project Team</inlineHelpText>
+    <label>Team Role</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ferguson Builder Manager</fullName>
+                <default>false</default>
+                <label>Ferguson Builder Manager</label>
+            </value>
+            <value>
+                <fullName>Healthcare Project Manager</fullName>
+                <default>false</default>
+                <label>Healthcare Project Manager</label>
+            </value>
+            <value>
+                <fullName>Hospitality Project Director</fullName>
+                <default>false</default>
+                <label>Hospitality Project Director</label>
+            </value>
+            <value>
+                <fullName>Hospitality Project Manager</fullName>
+                <default>false</default>
+                <label>Hospitality Project Manager</label>
+            </value>
+            <value>
+                <fullName>Multi-Family Project Manager</fullName>
+                <default>false</default>
+                <label>Multi-Family Project Manager</label>
+            </value>
+            <value>
+                <fullName>National Account Manager</fullName>
+                <default>false</default>
+                <label>National Account Manager</label>
+            </value>
+            <value>
+                <fullName>Projects Director</fullName>
+                <default>false</default>
+                <label>Projects Director</label>
+            </value>
+            <value>
+                <fullName>Regional Projects Director</fullName>
+                <default>false</default>
+                <label>Regional Projects Director</label>
+            </value>
+            <value>
+                <fullName>Regional Sales Manager</fullName>
+                <default>false</default>
+                <label>Regional Sales Manager</label>
+            </value>
+            <value>
+                <fullName>VP of Channel Sales</fullName>
+                <default>false</default>
+                <label>VP of Channel Sales</label>
+            </value>
+            <value>
+                <fullName>Regional Project Manager</fullName>
+                <default>false</default>
+                <label>Regional Project Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Construction_Type__c</fullName>
+    <description>Construction Type</description>
+    <externalId>false</externalId>
+    <label>Construction Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>New Construction</fullName>
+                <default>false</default>
+                <label>New Construction</label>
+            </value>
+            <value>
+                <fullName>Renovation</fullName>
+                <default>false</default>
+                <label>Renovation</label>
+            </value>
+            <value>
+                <fullName>Annual Contract</fullName>
+                <default>false</default>
+                <label>Annual Contract</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

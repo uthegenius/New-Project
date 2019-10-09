@@ -1,0 +1,28 @@
+<apex:page controller="SFSupportDSR_Controller" lightningStylesheets="true" docType="html-5.0">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:input type="date" value="{!DSRDate}" id="DSRDate"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:commandButton value="Fetch" action="{!fetchDSR}" />
+    </apex:form>
+    
+    <apex:pageBlock title="Cases" rendered="{!ListDSRData.size>0}">
+        <apex:pageBlockTable value="{!ListDSRData}" var="dsr" >
+            <apex:column headerValue="TimeEntryDate" style="width:75px">       
+                <apex:outputText value="{0,date,MM-dd-yyyy}">
+                    <apex:param value="{!dsr.DSRDate}" />
+                </apex:outputText>
+            </apex:column>
+            <apex:column value="{!'Lixil: Post project support Project'}" headerValue="ProjectName"/>
+            <apex:column value="{!'Development'}" headerValue="TaskName"/>
+            <apex:column value="{!dsr.CaseNumber} - {!dsr.Subject}" headerValue="Description"/>
+            <apex:column headerValue="StartTime"/>
+            <apex:column headerValue="EndTime"/>
+            <apex:column value="{!dsr.DSPhours}" headerValue="TotalTime"/>
+            <apex:column value="{!dsr.DevName}" headerValue="DevName"/>
+            
+        </apex:pageBlockTable>
+    </apex:pageBlock> 
+</apex:page>

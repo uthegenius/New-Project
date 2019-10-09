@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grohe_Goods_Associate_Defect_Return_Form</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Grohe Goods Associate</label>
+    <queue>Grohe_Goods_Associate</queue>
+    <sharedTo>
+        <allInternalUsers/>
+    </sharedTo>
+</ListView>

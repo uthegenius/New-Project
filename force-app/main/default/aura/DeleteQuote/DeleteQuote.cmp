@@ -1,0 +1,36 @@
+<aura:component implements="force:lightningQuickActionwithoutHeader,force:hasRecordId" controller='DeleteQuoteExt'>
+    <!--use boolean attribute for Store true/false value,
+    make default to "false" so modal box are not display on the load of component. 
+    -->
+    
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    
+                    <!--###### MODAL BOX BODY Part Start######-->
+                              <div class="modal-header slds-modal__header">
+        <h2 class="title slds-text-heading--medium" >Delete Quote</h2>
+    </div>
+                         <br></br>
+
+                        <p style="align-text:center;"><b>Are you sure you want to delete the Quote?
+                            </b>
+                        </p>
+                         <br></br>
+        <aura:attribute name="Spinner"  type="boolean" default="false"/>
+
+    <!--loading spinner start-->
+    <aura:if isTrue="{!v.Spinner}">
+      <div class="slds-spinner_container" >
+    <div class="slds-spinner--brand slds-spinner slds-spinner--large" role="alert">
+      <span class="slds-assistive-text">Loading, Please Wait...</span>
+      <div class="slds-spinner__dot-a"></div>
+      <div class="slds-spinner__dot-b"></div>
+    </div>
+  </div>
+    </aura:if>
+    
+    <div class="modal-footer slds-modal__footer" >                
+                <lightning:button variant="neutral" label="Cancel" onclick="{!c.cancelBtn}" />
+                <lightning:button variant="brand" label="Delete" onclick="{!c.deleteQuote}" />
+            </div>
+</aura:component>

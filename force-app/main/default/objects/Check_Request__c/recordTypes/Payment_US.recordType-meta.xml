@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_US</fullName>
+    <active>true</active>
+    <description>For making payment to Field Service Agent</description>
+    <label>Payment US</label>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>American</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

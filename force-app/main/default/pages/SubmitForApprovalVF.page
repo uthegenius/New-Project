@@ -1,0 +1,101 @@
+<apex:page showheader="false" sidebar="false" standardController="Quote" extensions="QuoteExt" showQuickActionVfHeader="false" lightningStylesheets="true">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <apex:includeScript value="/canvas/sdk/js/publisher.js" />
+
+    <script>
+        var $ = jQuery.noConflict();
+    
+        $( document ).ready(function() {
+      
+        });
+    
+       function cancel() {
+            Sfdc.canvas.publisher.publish({
+                name: "publisher.close",
+                payload: { refresh: "true" }
+            });     
+        }
+    
+        function submitForApproval() {
+                callJSSubmitForApproval();
+                console.log('calling action function');
+            return false;
+        }
+    </script>    
+    <style>
+        .clsButton {
+            color: #ffffff !important;
+            background: #0070d2  !important;
+            float: right;
+            width: 70px;
+            height: 35px;
+            border-radius: 5px !important;
+            font-size: 13px !important;
+            font-family: 'Salesforce Sans', sans-serif, Arial;
+            text-decoration: none !important;
+            font-weight: 100 !important;
+            border: 1px solid rgb(221, 219, 218) !important;
+        }
+        
+        .clsButton:hover {
+            background: rgba(27, 82, 151, 1.0) !important;
+        }
+        
+        .clsMessageBody {
+            color: #6d5d5d !important;
+            font-size: 15px !important;
+            font-family: 'Salesforce Sans', sans-serif, Arial;
+            text-decoration: none !important;
+            font-weight: 100 !important;
+            position: absolute;
+            top: 75px;
+            text-align: center !important;
+            width: 100%;        
+        }        
+        
+        .clsCancelButton {
+            color: rgba(27, 82, 151, 1.0)  !important;
+            background: #ffffff !important;
+            float: right;
+            width: 70px;
+            height: 35px;
+            border-radius: 5px !important;
+            font-size: 13px !important;
+            font-family: 'Salesforce Sans', sans-serif, Arial;
+            text-decoration: none !important;
+            font-weight: 100 !important;
+            border: 1px solid rgb(221, 219, 218) !important;
+        }
+        
+        .clsCancelButton:hover {
+            background: #f7f1f1 !important;
+        }        
+        
+        .message {
+            background-color: #ffffff;
+            border-color: #ffffff;
+            font-family: 'Salesforce Sans', sans-serif, Arial;
+            font-size: 13px;
+            margin-top: 10px;        
+        }
+    </style>
+    <apex:form id="ecForm">
+        <apex:outputText value="{!Quote.Num_Approvals__c}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.ExpirationDate}" rendered="false"></apex:outputText>
+        <apex:outputText value="{!Quote.Review_Price__c}" rendered="false"></apex:outputText>
+        <div style="display: block;">
+            <apex:pageMessages id="showmsg" escape="false"></apex:pageMessages>
+            
+        </div>
+        <apex:actionFunction action="{!submitForApproval}" name="callJSSubmitForApproval" oncomplete="" reRender="ecForm"/>
+        <div class="clsMessageBody" id="divConfirmation" style="display: block;">
+            Are you sure you want to submit this quote for approval?
+        </div>
+        <div id="footer" style="width: 100%; height: 35px; background: #ffffff; position:absolute; bottom: 15px; float: right;">
+            <apex:commandButton value="Submit" onclick="submitForApproval();return false;"  styleClass="clsButton"/>
+            <apex:commandButton value="Cancel" onclick="cancel();" styleClass="clsCancelButton"/>   
+        </div>
+
+    </apex:form>
+    
+</apex:page>

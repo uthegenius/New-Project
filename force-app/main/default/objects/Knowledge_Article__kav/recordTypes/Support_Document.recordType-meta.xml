@@ -1,0 +1,3129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Document</fullName>
+    <active>true</active>
+    <description>FAQs, Solution Articles</description>
+    <label>Support Document</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Published</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Article_Type__c</picklist>
+        <values>
+            <fullName>General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technical</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Cleaner - Safe Septic System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaner Fragrance Does%27nt Last</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaner Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaner Life</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaner Scent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaner Swallowed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaner in Eyes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaner on Skin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dimensions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drainline Carry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dual-Injection Flush Valves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fittings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flushing System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Function and Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to Use</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Faucets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixing Cleaner%2FFresh Infuser%2FLysol Cleaner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rough-In with Tiled Wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toilet Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Spot</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Classification__c</picklist>
+        <values>
+            <fullName>Bath</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bazaar Voice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen Faucet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toilet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_Type__c</picklist>
+        <values>
+            <fullName>001-body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>002-spout%2Foutlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>003-seals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>004-tailpipes%2Finlets%2Fflex hoses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>005-remote actuation control%2FPuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>006-mousseur%2Fsistra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>007-fixation set</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>008-Aqua-Dimmer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>009-dirt Strainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>010-headpart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>011-diverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>012-handle%2Flever%2Fbutton</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>014-pop-up-waste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>015-pop-up-rod%2Fbowden cable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>016-seatings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>018-cover%2Frosette</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>019-installation box in the wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>021-not return valves%2Fvacuum breaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>022-stop valves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>023-pressure balance valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>024-thermoelement %2F thermostat cartridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>030-glass %2F glass plate %2F mirror</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>031-Lights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>032-shelves %2F holders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>033-soap dish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>043-one hand mixture cartridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>046-temperature limiter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>047-snap coupling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>050-showers %2F spray head</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>052-shower hose %2F pull out hose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>053-soap dispenser</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>060-flushing valve piston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>061-sleeve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>062-membrane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>063-flushing valve housing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>064-flow restrictor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>065-flushing tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>066-flushing valves for cisterns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>067-filling valves for cisterns</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>068-WC cistern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>069-cover plate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>070-frame</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>071-fixing components</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>072-actuation plate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>080-filter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>081-cooling unit %2F carbonisator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>082-boiler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>083-display</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>084-marking %2F logo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>085-CO2 bottle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>090-electronic control unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>091-solenoid%2Fmagnet valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>092-transmitter%2Freciever</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>093-servo motor%2Factuator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>094-circulation pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>095-temperature feeler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>096-radar transmitter%2Freceiver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>097-timer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>098-transformer%2Fbattery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>099-cable%2F plug in connectors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access Door</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access Door%2FApron off Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Access%2FApron UV Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accs Door too Large</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actuator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actuator %2F Old Version Firmware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Actuator %2F Running On %2F Rusty Pin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adapters</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerator Leaking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerator leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Actuator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Controls below O%2FF hole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Hose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Manifold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Port</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air Void in Fiberglass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apron Clips Falling off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apron Out of Plum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Control Board</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Base Plate Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basket Strainer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery Charger Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery Department Wet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery Holder Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery Life too short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery Pack Electronics Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery Pack Fitment Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery Pack%2FPower Supply</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Battery terminals%2Fgasket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Big Jet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Big Nozzle Blows Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blemish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blister</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blower Blows Cold Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blower trips Breaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Blue Control Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Body - Pinhole Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bottle leak in box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bottle pops out during operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bowl %2F Trap Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bowl Air Leak - Not Priming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bowl Siphons during cleaning dwell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bowl Spud Hole Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bowl Water Supply Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Breakage from Wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Chains</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Clip Ring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Drawer %2F Broken Drawer Slide</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Handle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Handle%2FStems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Handles%2FStems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Handshower Diverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Index Buttons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Piston</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Seat %2F Seat MTG%2E Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Spray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken Trip Lever</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Broken quarter turn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bumps%2FDivots</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Button</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Button - Doorbell Style</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Button - White</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buttons do not operate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable Wrong Length</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadet 3 Red Flapper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cannot install tank top</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cartridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cartridge Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cartridge Leaking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Center Spray is Clogged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Champion White Tower Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Champion4 Flush Valve Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Champion4 Seal Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chip</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chip in Acrylic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chipped %2F Scratched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chips</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chrome Grab Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chrome Plated Finish issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clevis Pins Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clip Ring Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Cartridge - Freddy%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Cartridge - Tony%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Valve - Freddy%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cold Valve - Tony%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Color Doesn%27t Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Concealed Arm Holes off Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Contamination%2FAcrylic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Board Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Pad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Pad - Round</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Pad for Blower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cover Tube Too Short for Inlet Piping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Acrylic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Body Cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Bowl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Composite Backing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Seat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracked Tank Lid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crazing Acrylic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cut %2F Spliced Wires</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged %2F crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged Finish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dead Battery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deep Rough-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Defective</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delamination</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delamination %2F Cracked Backing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deodorizer Cartridge Cover Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deodorizer Cartridge Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deodorizer Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dezincification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Didn%27t Use Supplied Wiring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discharge Tee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discoloration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discoloring In Tub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diverter - Freddy%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diverter - Tony%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diverter Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diverter not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doesn%E2%80%99t Flush Using Manual Button</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doesn%E2%80%99t Flush Using Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Doesn%E2%80%99t Flush with Button or Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door Seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Double %28or Multiple%29 Flushes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Cable Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Drilled off Center</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Issue %2F ICH Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Plug Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Socket Mounting Hardware Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Socket Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Socket Seal at Bowl Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Stopper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain Will Not Seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain ground Uneven</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dryer Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dryer Shutter Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOL Indicator not Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entire bottle emptys when inserted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Erratic %2F Inconsistent %2F Short Flush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extension Kit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FV Cover Interferes With Grab Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>False Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fan Shroud Unit w%2FRefill Tube Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Does Not Turn On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Holes Off Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Leaks at Water Connections</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Mounting Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Thumping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet leaks with cartridge turned off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet leaks with water turned off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet making noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faulty%2FDefective Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finish Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finish issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fissures%2Fcracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fitment w%2FSupply Line</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fittings Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flapper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flapper Assembly Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Float w%2F Seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flooding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Floor holds Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flush Tower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flush Valve Adjustment Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flush Valve Mounting Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Frame%2FTub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FreshInfuser Cleaner Pack Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ghost Flush %2F False Activation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glazing Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glazing issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glue on Acrylic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Shower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Shower Glide Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Spray Will Not Divert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Spray leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hand Spray trigger Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handle - ST - BC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handle - ST - WH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handle - Tear Drop - BC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handle - Tear Drop - WH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handle Wobble</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handshower Falls off Magnet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heater Blank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heater Leaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heater Washer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heater Won%27t Function</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hinges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holes off Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hollow Bottom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hose %26 Tee Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hose Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Cartridge - Freddy%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Cartridge - Tony%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Valve - Freddy%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot Valve - Tony%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Housing Cover Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Line Heater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incomplete Flush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Escutcheons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Flapper Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Hole Misdirected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Nozzle Blows Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Nozzles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Part Off Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet Water Supply Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K2 Light Control Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K2 Lights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen Faucet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leak %2F Tank to Bowl Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leak Flush Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaking Jet - Back</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaking Jet - Leg Jet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaking Jet - Ozone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaks - Outlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Leaks - Vent Holes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legs Only Knob</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lid Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lift Rod Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Literature Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locknut</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loose %2F Broken Spout Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Loose Spout Neck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lower Body Sensor Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Valve Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Valve Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manifold Leaking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Button Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Override - Button Blew Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Override - Button Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Override - Button Sticks Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Override - Button Sticks Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Override Button Loose %28Conc Only%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manuals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marble top issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Melted %2F Scorched Battery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering Cartridge Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minute Drain Instructions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Fiber Washer For Junction Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Floor Mounting Base</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Floor Mounting Base Adhesive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Index Buttons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Lid Bumper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Mtg%2E Hardware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Seat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Seat Bumper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing%2FDamaged Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixing Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mixing Valve Not Working Properly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mold Marks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mood Lights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Humms</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Noisy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Overheats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Past Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Switch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor Trips Breaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Motor%2FPump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mounting Bolt Well Nuts Will Not Tighten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mounting Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mounting Plate Will Not Attach To Toilet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need Template ahead of tub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Needs Wiring Adapter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Night Light Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Access to Air Actuator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Heated Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Part Number in System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nozzle Does Not Extend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nozzle Does Not Retract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nozzle Guard Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nozzle Tip Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nozzle leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%2FF Holes Drilled Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Color</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Colour</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Dimension %2F Rough-in</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Dimension Punchings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Transformer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Close Motor Housing Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Entry Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order Shipped to Wrong Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other %2F Describe Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Round Drain Opening</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outlet Off Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Overage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner%27s Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ozone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PBV Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PVD Finish Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Packaging Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paper Shredding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Past Due More Than 7 Days</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Shower %2FHose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pillow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinhole</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pinhole Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe Past Edge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe Plugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipe in way of O%2FF Tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piston - Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piston - Dislocated O-Ring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pod - Cartridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Finish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Flush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pop Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Powder Coated Finish Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Power on %28operates%29 but no lights</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puddling %2F Holds Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Puddling %2F Won%27t Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pull Out Spray Button Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pull out Spray %26 Hose broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pull out Spray %26 Hose leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Cavitates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Leaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Suction Fitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump Union %22O%22 Ring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pump suction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purge Cycle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push button Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range Too Short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reciever Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Refill Tube</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Control Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Fell off Wall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote Wet Internally</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Remote will not Change Spray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rim Flapper Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rim Holes Clogged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rotating Trip Lever Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runs Continuously - After Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runs Continuously - After Working</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runs for 1 Minute then Stops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Runs for 1 Minute%2C Stops%2C Doesn%27t Reset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rusting Rims</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sales Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Says tub comes w%2F heater</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scratched %2F General Wear and Tear %2F C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scratches</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Screws missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scuff Marks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sealing issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Cracked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Does Not Get Warm</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Lid Color Match</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Lid Crack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Lid Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Locking Lever Does Not Move</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Mounting Bolt Set Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Not Heating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Nut Set Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seat Open Close Motor Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Send Free Part-No Part %23</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensor - No Flash When Power Connected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sensor Continuously Double Flashes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shortage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Hose - Freddy%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Hose - Tony%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Hose leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Rise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Wand - Freddy%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Wand - Tony%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Will Not Divert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower will not Change Spray</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Showerhead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side Panel Hardware Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side Panel Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side Panel Velcro Bracket Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side Spray Hose Leaking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side Spray Leaking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Side Spray Trigger Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silicone Flapper Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silicone in Air Port</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silicone in Large Jet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silicone in Small Jet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silicone on Acrylic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Jet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Nozzle Blows Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smell %2F Odor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solenoid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spacer Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Splashes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spout - Pinhole Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spout Seal Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spray Holder Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spray Holder Finish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spray Toggle is Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sprays %2F Splashes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spring Clip for Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spud Off Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spuds</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stansure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stem on A%2FC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stiff Spout Rotation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stop Valve Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strainer Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Strainer Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stuck Check Valves %28605XTMV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stuck Trip Lever to Swivel Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suction Adaptor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Hoses Kinked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Line Kinked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Line Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweat Solder Adapter Too Small</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System II Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System II On%2FOff Button</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System will not power up- magnet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>System will not power up-all others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tailpiece to Short</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Takes Too Long to Get Hot Water</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank Top Lid Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank to Bowl Gasket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank top comes off during operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tape glue Ruined Acc</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Temperature Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Template</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Template Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thermostats</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thin FRP Backing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tile Flange</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiling Flange Off Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toe Tap Mechanism</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toilet Bowl Mounting Hardware Replacement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Touch Ring not Working Correctly</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trap Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trip Lever %2F Linkage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trip Lever Slow Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tub Drillings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tub Trimmed Wrong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UL Label</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Units Not Working in Multi-AC Install</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upeer Body Sensor Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacuum Breaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacuum Breaker Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacuum Breaker Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vacuum Breaker Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve Doesn%E2%80%99t Flush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve Nut Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve Nut Failure %28PD%29 Property Damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WDI Actuator Hose Kinked</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Walls Off Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wants new style LT jets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm Air Dryer Non Operational</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warpage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warped</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warped Apron</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warped Back - Wall Hung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warped Deck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warped Floor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warped Rim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste%2FOverflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Control %2F Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Control %2F Makes Noise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Dripping From VB Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Dripping from Aerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leaking from Angle Stop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leaking from Control Box Inlet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leaking from Cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leaking from Faucet Body</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leaking from Handle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leaking from Inlet Hose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leaking from Tailpiece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Leaking from Thermo Mixing Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Trickling into Fixture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water in Control Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water in FV Cover</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water runs during cleaning dwell -cam stuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water runs during cleaning dwell -lever stuck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waterhammer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Weak Water Stream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wet Resin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Color in Box</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Item Shipped on Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Parts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong Product in Right Carton</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Issue_Type_del__c</picklist>
+        <values>
+            <fullName>Find Repair Part</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Installation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Sub_Type__c</picklist>
+        <values>
+            <fullName>00 - No Fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>01 - Surface Finish faults</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>03 - Incomplete</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>04 - Breaks%2FCracks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>05 - Restricted flow %2F flow Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>06 - Control function faulty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07 - Seized %2F stiff %2F jammed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08 - Leakage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>09 - Corrosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 - Noisy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 - Packaging and transport damage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>13 - Cannot be assembled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - Wrong parts supplied</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 - Fault caused by 3rd party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>16 - Parameter settings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>17 - Electrical faults</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>18 - Exchanged due to recall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>19 - Loose %2F Not fixable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20 - Clearance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21 - Reaction Time %2F Response Characteristics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22 - Continuous Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23 - Unclear %2F Cloudy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 - Synchronization fault</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>25 - Color Deviation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accessories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Acrylic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ActiClean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ActiFresh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ActiVate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Air System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bad Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bath Tub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bath%2FShower</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bidet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bridgeford</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commercial Bowls and PA Tanks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Conglom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DMTF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Damaged</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Door System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Furniture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gel Coat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glue Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glued Jet Nozzle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grohe blue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Wall valves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jet System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>K7 Kitchen Faucets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kinked Pipe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kitchen Sink</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LAVY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ladylux</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Large Access Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lavatory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Flush FV%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minute Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Out of Dimension</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parkfield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPALET Bowl Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPALET Seat Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seal Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selectronic Faucets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selectronic Flush Valves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shower Enclosures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silicone Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Small Access Panels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Smart Toilet Seat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spectra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Surface Problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank Trim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toilet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Touch Faucet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tub Design%2FLayout %2FAdvertising Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Urinal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Velcro Not Sticking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VorMax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vormax Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WHL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste %2F Overflow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Type_Del__c</picklist>
+        <values>
+            <fullName>ActiClean</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ActiVate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cadet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Centerset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Champion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colony%2F Reliant%2F Mainstream</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgemere</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VorMax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VorMax Plus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Widespread</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product_Type__c</picklist>
+        <values>
+            <fullName>DXV AT100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DXV AT200</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fittings</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fixtures</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grohe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Tubs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Selectronic Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whirlpool</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Specific_Issue__c</picklist>
+        <values>
+            <fullName>8%22 Centers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Adjust Teeter Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Backsplash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ceramic Disk Valves</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Blue Seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change Flush Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check Valve Cleaning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Counter Thickness</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Leak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Loose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faucet Material</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gasket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handle Rotating</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Handle Rotating - Faucet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How do you clean%3F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to Flush out Water Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to change a one piece Flush Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to change a two piece Flush Valve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to change cartridge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to change diverter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to change handle rotation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to change seal on dual flush toilet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to change spout seal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>How to change the flapper</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low Flow Faucet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Diverting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operating Pressure %28PSI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plumber%2FDIY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Flush</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prime Toilet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Product Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replace Pull Out Hose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Replace Quick Coupler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shank Extensions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Speed Connect Hoses</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spray head won%27t retract</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supply Lines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toilet Bowl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toilet Leaks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toilet Tank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trip Lever Loose</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water leaks into Bowl</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>What do I clean toilet with%3F</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

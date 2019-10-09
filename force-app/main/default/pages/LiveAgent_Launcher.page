@@ -1,0 +1,106 @@
+<apex:page showHeader="false" applyBodyTag="false" applyHtmlTag="false" >
+    <link REL="SHORTCUT ICON" HREF="{!URLFOR($Resource.lixil_icon)}"/>
+<head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>SLDS ResponsiveDesign Visualforce Page in Salesforce Mobile</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+       <!-- Import the Design System style sheet -->
+       <apex:slds />
+    </head>
+
+      <iframe name="myiframe" height="490px" width="100%" frameborder="0" allowfullscreen="1">                           
+    </iframe>
+    <apex:includeScript value="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"/>  
+    <script type='text/javascript' src='https://c.la1-c1-iad.salesforceliveagent.com/content/g/js/45.0/deployment.js'></script>
+    <apex:remoteObjects >  
+    <!--query records-->  
+     <apex:remoteObjectModel name="LiveChatButton" jsShorthand="lcb" fields="id,DeveloperName,MasterLabel,LastModifiedDate"/>  
+    </apex:remoteObjects>
+    <!-- JavaScript to make Remote Objects calls -->
+    <script>
+    
+        var fetchWarehouses = function(){
+            debugger;
+            var cb = new SObjectModel.lcb();
+            
+            
+            cb.retrieve({ where: { id: {eq: '{!$CurrentPage.parameters.id}'}},
+                          limit: 10}, function(err, records, event){
+                if(err) {
+                    console.log(err.message);
+                                        var div = document.getElementById("ChatButtonList");
+                        var cbId  = '{!$CurrentPage.parameters.id}';
+                        var cbStatus ='<a id="liveagent_button_online_'+cbId +'" href="javascript://Chat"'+
+                     '  style="display: none;" onclick="liveagent.startChatWithWindow(\''+cbId +'\',\'myiframe\')">'+
+                     '   </a>'+
+                   ' <div id="liveagent_button_offline_'+cbId +'" style="display: none;">'+
+                   '     '+
+                   ' </div>';   
+                   div.innerHTML=cbStatus;
+                   loadLiveChat(cbId );                                         
+
+                     liveagent.init('https://d.la1-c1-iad.salesforceliveagent.com/chat', '5721N000000TZem', '00D1N000001UL7U');
+                     setTimeout(function(){ 
+                     
+                document.getElementById('liveagent_button_online_{!$CurrentPage.parameters.id}').click();
+                        }, 1000);
+                }
+
+                else {
+                    var div = document.getElementById("ChatButtonList");
+                    var i = 0;
+                    records.forEach(function(record) {
+                        i++;
+                        var cbLable = record.get("MasterLabel");
+                        var cbId = record.get("Id");
+                        cbId  = cbId.substr(0,15);
+                        if(cbLable=='AS Chat' || cbLable=='AS Chat - Canada' || cbLable=='DXV Chat' || cbLable=='FIAT Chat'){
+                        cbLable = 'American Standard';
+                        }
+                        document.title = 'Welcome to ' + cbLable  + ' help!';
+                        var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                        link.type = 'image/x-icon';
+                        link.rel = 'shortcut icon';
+                        link.href = '{!URLFor($Resource.Chat_Images)}'+'/'+record.get("DeveloperName")+'_favicon.ico';
+                        document.getElementsByTagName('head')[0].appendChild(link);
+    
+                        var cbStatus ='<a id="liveagent_button_online_'+cbId +'" href="javascript://Chat"'+
+                     '  style="display: none;" onclick="liveagent.startChatWithWindow(\''+cbId +'\',\'myiframe\')">'+
+                     '   </a>'+
+                   ' <div id="liveagent_button_offline_'+cbId +'" style="display: none;">'+
+                   '     '+
+                   ' </div>';   
+                   div.innerHTML=cbStatus;
+                   loadLiveChat(cbId );                                         
+                    });
+                     liveagent.init('https://d.la1-c1-iad.salesforceliveagent.com/chat', '5721N000000TZem', '00D1N000001UL7U');
+                     setTimeout(function(){ 
+                     
+                document.getElementById('liveagent_button_online_{!$CurrentPage.parameters.id}').click();
+                        }, 1000);
+                }
+
+            });
+        };
+        
+document.getElementById("ChatButtonList").onload = fetchWarehouses();
+        function loadLiveChat(p1){
+        if (!window._laq) { window._laq = []; }
+                    window._laq.push(function(){liveagent.showWhenOnline(p1, document.getElementById('liveagent_button_online_'+p1));
+                                                liveagent.showWhenOffline(p1, document.getElementById('liveagent_button_offline_'+p1));
+                                               });
+        }
+        
+        
+    </script>
+    
+    
+    
+    <div id="ChatButtonList">
+    
+    </div>
+ 
+    
+</apex:page>

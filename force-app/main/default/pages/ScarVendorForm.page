@@ -1,0 +1,225 @@
+<apex:page Controller="ScarVendorFormController" showHeader="true" sidebar="false" lightningStylesheets="false"> 
+    <apex:form >
+        <apex:pageMessages />
+        <style type="text/css">
+.bPageHeader {
+    display:none;
+  
+}
+            
+#j_id0:j_id1:pageblock:j_id61:cb{
+                display:none;
+
+            
+            }
+            
+            
+#hidecheckbox{
+                display:none;
+
+            
+            }           
+
+</style>
+        
+        
+<script>
+        
+        
+ </script>
+        
+        
+        
+ 
+        
+        <apex:sectionHeader title="Scar Form" />
+        <span style="text-align: right; margin-left:1700px;" >
+              <apex:outputLink value="{!URLFOR($Resource.Instructions)}" target="_blank" id="helpntb" ><b>Help Document</b></apex:outputLink></span>
+        <apex:pageBlock mode="mainDetail" id="pageblock">
+            
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!save}"/>
+
+                                
+
+            </apex:pageBlockButtons>
+              
+
+            <apex:pageBlockSection title="Details">
+               <apex:outputField id="LIXIL_scar" value="{!scar.LIXIL_SCAR__c}"/>
+                <!--<apex:outputField id="Lixil_scar" value"{!}"/>-->
+                <apex:outputField id="name" value="{!scar.Name}"/>
+                <apex:outputField id="case" value="{!scar.Case__c}"/>
+                <apex:outputField id="SCAR_Type" value="{!scar.SCAR_Type__c}"/>
+                <apex:outputField id="Part_Number" value="{!scar.Part_Number__c}"/>
+                <apex:outputField id="Supplier_Location" value="{!scar.Vendor_Shipping_Address__c}"/>
+                <apex:outputField id="Manufacturing_Date" value="{!scar.Manufacturing_Date__c}"/>
+                <apex:outputField id="PO_Number__c" value="{!scar.PO_Number__c}"/>
+                <apex:outputField id="Lot_Number__c" value="{!scar.Lot_Number__c}"/>
+                <apex:outputField id="SCAR_Issue_Date__c" value="{!scar.SCAR_Issue_Date__c}"/>
+                <apex:outputField id="Lot_Quantity__c" value="{!scar.Lot_Quantity__c}"/>
+                <apex:outputField id="Sample_Size_AQL_Level__c" value="{!scar.Sample_Size_AQL_Level__c}"/>
+                <apex:outputField id="X3D_Due_Date__c" value="{!scar.X3D_Due_Date__c}"/>
+                <apex:outputField id="Rejection_Rate_or_Quantity__c" value="{!scar.Rejection_Rate_or_Quantity__c}"/>
+                <apex:outputField id="X8D_Due_Date__c" value="{!scar.X8D_Due_Date__c}"/>
+                 <apex:outputField id="Lixil_Supplier_Quality_Engineer_Name__c" value="{!scar.Lixil_Supplier_Quality_Engineer_Name__c}"/>
+                <apex:outputField id="Lixil_Supplier_Quality_Phone__c" value="{!scar.Lixil_Supplier_Quality_Phone__c}"/>
+                <!--<apex:outputField id="Lixil_Supplier_Quality__c" value="{!scar.Lixil_Supplier_Quality_c}"/>-->
+                
+                
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title=" Section 1 - Scar Team" columns="1">
+                <apex:outputText value="Note: Name and Email is mandatory to add a team member." style="color:red;margin-left: 80px;" />
+                <apex:pageBlockTable value="{!stWrapper}" var="st" id="wtable" title="Scar Team">
+                    <apex:column headerValue="S.No">
+                        <apex:outputText value="{!st.serialNo}"/>
+                    </apex:column>                    
+                    <apex:column headerValue="Team Member Name">
+                        <apex:inputField value="{!st.st.SCAR_Contact_Name__c}" rendered="{!st.IsChampion == 'Team Member'}"/>
+                        <apex:outputField value="{!st.st.SCAR_Contact_Name__c}" rendered="{!st.IsChampion == 'Champion'}"/>
+                    </apex:column>
+                     <apex:column headerValue="Title">
+                        <apex:inputfield value="{!st.st.Title__c}" rendered="{!st.IsChampion == 'Team Member'}"/>
+                        <apex:outputField value="{!st.st.Title__c}" rendered="{!st.IsChampion == 'Champion'}"/>
+                    </apex:column>
+                     <apex:column headerValue="Phone No.">
+                        <apex:inputField value="{!st.st.Phone__c}" rendered="{!st.IsChampion == 'Team Member'}"/>
+                        <apex:outputField value="{!st.st.Phone__c}" rendered="{!st.IsChampion == 'Champion'}"/>
+                    </apex:column>
+                    <apex:column headerValue="Email Address">
+                        <apex:inputField value="{!st.st.Email__c}" rendered="{!st.IsChampion == 'Team Member'}"/>
+                        <apex:outputField value="{!st.st.Email__c}" rendered="{!st.IsChampion == 'Champion'}"/>
+                    </apex:column>
+                    <apex:column headerValue="Role">
+                        <apex:outputText value="{!st.IsChampion}"/>
+                    </apex:column>         
+                </apex:pageBlockTable>
+                <br/>
+                <apex:commandButton value="Add Row" immediate="true" action="{!addRows}" rerender="wtable" >
+                    <apex:param name="addCount" value="1" assignTo="{!addCount}" /> 
+                </apex:commandButton>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Section 2 - Problem Description">
+            <!--   <apex:inputCheckbox value="{!scar.Send_Notification_to_Owner__c}" id="Send_Notification_to_Owner__c" />   -->
+               	 <apex:inputField id="Affected_Sites__c" value="{!scar.Affected_Sites__c}"/>
+                <apex:inputField id="Problem_Description__c" value="{!scar.Problem_Description__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Section 3 - Interim Containments">
+                 <apex:inputField id="What_actions_were_taken_to_Immediately__c" value="{!scar.What_actions_were_taken_to_Immediately__c}"/>
+                 <apex:inputField id="Other_Production_Platform_Risk__c" value="{!scar.Other_Production_Platform_Risk__c}"/>
+                 <apex:inputField id="Supplier_Soring_Results__c" value="{!scar.Supplier_Soring_Results__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Section 4 - Root Cause">
+                <apex:inputField id="How_Made_and_How_Verified__c" value="{!scar.How_Made_and_How_Verified__c}"/>
+                <apex:inputField id="Why_Shipped_and_How_Verified__c" value="{!scar.Why_Shipped_and_How_Verified__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Section 5 - Permanent Corrective Action" collapsible="true">
+                 <apex:inputField id="Corrective_Action_for_Why_Made__c" value="{!scar.Corrective_Action_for_Why_Made__c}"/>
+                 <apex:inputField id="Corrective_Action_Owner_s_Name__c" value="{!scar.Corrective_Action_Owner_s_Name__c}"/>
+                 <apex:inputField id="Corrective_Action_for_Why_Shipped__c" value="{!scar.Corrective_Action_for_Why_Shipped__c}"/>
+                 <apex:inputField id="Corrective_Action_Owner_s_Email__c" value="{!scar.Corrective_Action_Owner_s_Email__c}"/>
+                 <apex:inputField id="Target_Completion_Date__c" value="{!scar.Target_Completion_Date__c}"/>
+                 <apex:inputField id="Corrective_Action_Owner_s_Phone_Number__c" value="{!scar.Corrective_Action_Owner_s_Phone_Number__c}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Section 6 - Verification">
+                 <apex:inputField id="Verification_of_Corrective_Action__c" value="{!scar.Verification_of_Corrective_Action__c}"/>
+                 <apex:inputField id="Build_Date_for_Certified_Marterial__c" value="{!scar.Build_Date_for_Certified_Marterial__c}"/>
+                 <apex:inputField id="How_will_new_parts_be_identified__c" value="{!scar.How_will_new_parts_be_identified__c}"/>
+            </apex:pageBlockSection>
+            
+           <apex:pageBlockSection title="Section 7 - Prevention">
+               <apex:commandButton action="{!method1}" value="Add/Show Affected Documents Details" reRender="block"/>
+
+               <span class="hidecheckbox">
+                     <apex:inputCheckbox selected="true" value="{!scar.Send_Notification_to_Owner__c}" id="cb"  style="display: none ; "/></span>
+
+               <!--<apex:commandbutton onclick="return hidefield();"/>-->
+                 <apex:inputField id="Other_Facilities_or_Platform_at_Risk__c" value="{!scar.Other_Facilities_or_Platform_at_Risk__c}"/>
+                 <apex:inputField id="Other_Facilities_Platform_at_Risk_Part__c" value="{!scar.Other_Facilities_Platform_at_Risk_Part__c}"/>
+                 <apex:inputField id="Other_Facilities_Platform_at_Risk_CA_Own__c" value="{!scar.Other_Facilities_Platform_at_Risk_CA_Own__c}"/>
+                 <apex:inputField id="Other_Facilities_Platform_at_Risk_DueDt__c" value="{!scar.Other_Facilities_Platform_at_Risk_DueDt__c}"/>
+                 <apex:inputField id="How_this_issues_be_avoided_in_the_future__c" value="{!scar.How_this_issues_be_avoided_in_the_future__c}"/>
+
+                 
+            </apex:pageBlockSection>
+                  
+             <apex:pageBlock id="block">
+          <apex:pageBlockSection title="" rendered="{!showSection1}">
+           <apex:inputField id="Affected_Document_1__c" value="{!scar.Affected_Document_1__c}"/>
+                 <apex:inputField id="Affected_Document_1_Owners_to_Update__c" value="{!scar.Affected_Document_1_Owners_to_Update__c}"/>
+                     <apex:inputField id="Affected_Document_1_Date__c" value="{!scar.Affected_Document_1_Date__c}"/>
+                </apex:pageBlockSection>
+                 
+                 <apex:pageBlockSection title="" rendered="{!showSection2}">
+               <apex:inputField id="Affected_Document_2__c" value="{!scar.Affected_Document_2__c}" />
+                     <apex:inputField id="Affected_Document_2_Owners_to_Update__c" value="{!scar.Affected_Document_2_Owners_to_Update__c}"/>
+                     <apex:inputField id="Affected_Document_2_Date__c" value="{!scar.Affected_Document_2_Date__c}"/>
+                    </apex:pageBlockSection>
+             
+                     
+                      
+                 <apex:pageBlockSection title="" rendered="{!showSection3}">
+                     <apex:inputField id="Affected_Document_3__c" value="{!scar.Affected_Document_3__c}"/>
+                     <apex:inputField id="Affected_Document_3_Owners_to_Update__c" value="{!scar.Affected_Document_3_Owners_to_Update__c}"/>
+                     <apex:inputField id="Affected_Document_3_Date__c" value="{!scar.Affected_Document_3_Date__c}"/>
+                 </apex:pageBlockSection>
+                 
+                 
+                 
+                 <apex:pageBlockSection title="" rendered="{!showSection4}">
+                     <apex:inputField id="Affected_Document_4__c" value="{!scar.Affected_Document_4__c}"/>
+                     <apex:inputField id="Affected_Document_4_Owners_to_Update__c" value="{!scar.Affected_Document_4_Owners_to_Update__c}"/>
+                     <apex:inputField id="Affected_Document_4_Date__c" value="{!scar.Affected_Document_4_Date__c}"/>
+                 </apex:pageBlockSection>
+                 
+                 
+                 
+                 <apex:pageBlockSection title="" rendered="{!showSection5}">
+                     <apex:inputField id="Affected_Document_5__c" value="{!scar.Affected_Document_5__c}"/>
+                     <apex:inputField id="Affected_Document_5_Owners_to_Update__c" value="{!scar.Affected_Document_5_Owners_to_Update__c}"/>
+                     <apex:inputField id="Affected_Document_5_Date__c" value="{!scar.Affected_Document_5_Date__c}"/>
+                 </apex:pageBlockSection>
+                 
+                 
+                 
+                 
+                 <apex:pageBlockSection title="" rendered="{!showSection6}">
+                     <apex:inputField id="Affected_Document_6__c" value="{!scar.Affected_Document_6__c}"/>
+                     <apex:inputField id="Affected_Document_6_Owners_to_Update__c" value="{!scar.Affected_Document_6_Owners_to_Update__c}"/>
+                     <apex:inputField id="Affected_Document_6_Date__c" value="{!scar.Affected_Document_6_Date__c}"/>
+                 </apex:pageBlockSection>
+                 
+                 <apex:pageBlockSection title="" rendered="{!showSection7}">
+                     <apex:inputField id="Affected_Document_7__c" value="{!scar.Affected_Document_7__c}"/>
+                 <apex:inputField id="Affected_Document_7_Owners_to_Update__c" value="{!scar.Affected_Document_7_Owners_to_Update__c}"/>
+                 <apex:inputField id="Affected_Document_7_Date__c" value="{!scar.Affected_Document_7_Date__c}"/>
+                 
+                 </apex:pageBlockSection>
+                 
+                 
+                 <apex:pageBlockSection title="" rendered="{!showSection8}">
+                     <apex:inputField id="Affected_Document_8__c" value="{!scar.Affected_Document_8__c}"/>
+                     <apex:inputField id="Affected_Document_8_Owners_to_Update__c" value="{!scar.Affected_Document_8_Owners_to_Update__c}"/>
+                     <apex:inputField id="Affected_Document_8_Date__c" value="{!scar.Affected_Document_8_Date__c}"/>
+                 </apex:pageBlockSection>
+                 
+                 
+            </apex:pageBlock>
+            
+            
+            
+            <apex:pageBlockSection title="Section 8 - Closure">
+                <apex:inputField id="Closure_Statement_Validation__c" value="{!scar.Closure_Statement_Validation__c}"/>
+            </apex:pageBlockSection>
+            
+        </apex:pageBlock>
+    </apex:form>
+    
+    
+</apex:page>

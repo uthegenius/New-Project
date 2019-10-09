@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Team__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub Team</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Team__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bath &amp; Shower - Retail Consumer</fullName>
+                <default>false</default>
+                <label>Bath &amp; Shower - Retail Consumer</label>
+            </value>
+            <value>
+                <fullName>Bath &amp; Shower - Trade</fullName>
+                <default>false</default>
+                <label>Bath &amp; Shower - Trade</label>
+            </value>
+            <value>
+                <fullName>BLS - AS/DXV</fullName>
+                <default>false</default>
+                <label>BLS - AS/DXV</label>
+            </value>
+            <value>
+                <fullName>CA - All Products except Repair Parts</fullName>
+                <default>false</default>
+                <label>CA - All Products except Repair Parts</label>
+            </value>
+            <value>
+                <fullName>CA - Bath Faucets, Bath Accessories</fullName>
+                <default>false</default>
+                <label>CA - Bath Faucets, Bath Accessories</label>
+            </value>
+            <value>
+                <fullName>CA - Customer Master</fullName>
+                <default>false</default>
+                <label>CA - Customer Master</label>
+            </value>
+            <value>
+                <fullName>CA - DC Plant 84</fullName>
+                <default>false</default>
+                <label>CA - DC Plant 84</label>
+            </value>
+            <value>
+                <fullName>CA - DC - Safety Tubs (167)</fullName>
+                <default>false</default>
+                <label>CA - DC - Safety Tubs (167)</label>
+            </value>
+            <value>
+                <fullName>CA - Fiat</fullName>
+                <default>false</default>
+                <label>CA - Fiat</label>
+            </value>
+            <value>
+                <fullName>CA - FIAT, Chinaware, Furniture, commercial chinaware, commercial brass</fullName>
+                <default>false</default>
+                <label>CA - FIAT, Chinaware, Furniture, commercial chinaware, commercial brass</label>
+            </value>
+            <value>
+                <fullName>CA - Order Management - Central</fullName>
+                <default>false</default>
+                <label>CA - Order Management - Central</label>
+            </value>
+            <value>
+                <fullName>CA - Order Management - East</fullName>
+                <default>false</default>
+                <label>CA - Order Management - East</label>
+            </value>
+            <value>
+                <fullName>CA - Order Management - GROHE</fullName>
+                <default>false</default>
+                <label>CA - Order Management - GROHE</label>
+            </value>
+            <value>
+                <fullName>CA - Order Management - Retail</fullName>
+                <default>false</default>
+                <label>CA - Order Management - Retail</label>
+            </value>
+            <value>
+                <fullName>CA - Order Management - West</fullName>
+                <default>false</default>
+                <label>CA - Order Management - West</label>
+            </value>
+            <value>
+                <fullName>CA - Pricing</fullName>
+                <default>false</default>
+                <label>CA - Pricing</label>
+            </value>
+            <value>
+                <fullName>CA - Quotes</fullName>
+                <default>false</default>
+                <label>CA - Quotes</label>
+            </value>
+            <value>
+                <fullName>CA - Repair Parts</fullName>
+                <default>false</default>
+                <label>CA - Repair Parts</label>
+            </value>
+            <value>
+                <fullName>CA - Shower Products, Valves, Safety Tub</fullName>
+                <default>false</default>
+                <label>CA - Shower Products, Valves, Safety Tub</label>
+            </value>
+            <value>
+                <fullName>CA - Shower Walls, Shower Bases, Bathing, Kitchen Faucet, Kitchen Sinks, Kitchen Accessories</fullName>
+                <default>false</default>
+                <label>CA - Shower Walls, Shower Bases, Bathing, Kitchen Faucet, Kitchen Sinks, Kitchen Accessories</label>
+            </value>
+            <value>
+                <fullName>CA - Special Select</fullName>
+                <default>false</default>
+                <label>CA - Special Select</label>
+            </value>
+            <value>
+                <fullName>CA - Warranty</fullName>
+                <default>false</default>
+                <label>CA - Warranty</label>
+            </value>
+            <value>
+                <fullName>CA - Warranty - American Standard/DXV</fullName>
+                <default>false</default>
+                <label>CA - Warranty - American Standard/DXV</label>
+            </value>
+            <value>
+                <fullName>CA - Warranty - GROHE</fullName>
+                <default>false</default>
+                <label>CA - Warranty - GROHE</label>
+            </value>
+            <value>
+                <fullName>CA - ZClaims / Collections</fullName>
+                <default>false</default>
+                <label>CA - ZClaims / Collections</label>
+            </value>
+            <value>
+                <fullName>Chinaware - AS/DXV</fullName>
+                <default>false</default>
+                <label>Chinaware - AS/DXV</label>
+            </value>
+            <value>
+                <fullName>Chinaware - Retail Consumer</fullName>
+                <default>false</default>
+                <label>Chinaware - Retail Consumer</label>
+            </value>
+            <value>
+                <fullName>Chinaware - Toilet Seats</fullName>
+                <default>false</default>
+                <label>Chinaware - Toilet Seats</label>
+            </value>
+            <value>
+                <fullName>Chinaware - Trade</fullName>
+                <default>false</default>
+                <label>Chinaware - Trade</label>
+            </value>
+            <value>
+                <fullName>Claims</fullName>
+                <default>false</default>
+                <label>Claims</label>
+            </value>
+            <value>
+                <fullName>Commercial Fittings</fullName>
+                <default>false</default>
+                <label>Commercial Fittings</label>
+            </value>
+            <value>
+                <fullName>Commercial Fixtures</fullName>
+                <default>false</default>
+                <label>Commercial Fixtures</label>
+            </value>
+            <value>
+                <fullName>Credit &amp; Collection</fullName>
+                <default>false</default>
+                <label>Credit &amp; Collection</label>
+            </value>
+            <value>
+                <fullName>Credit Card &amp; Warranty Orders</fullName>
+                <default>false</default>
+                <label>Credit Card &amp; Warranty Orders</label>
+            </value>
+            <value>
+                <fullName>Customer Care Central/Menards</fullName>
+                <default>false</default>
+                <label>Customer Care Central/Menards</label>
+            </value>
+            <value>
+                <fullName>Customer Care East/Lowes</fullName>
+                <default>false</default>
+                <label>Customer Care East/Lowes</label>
+            </value>
+            <value>
+                <fullName>Customer Care ETAIL</fullName>
+                <default>false</default>
+                <label>Customer Care ETAIL</label>
+            </value>
+            <value>
+                <fullName>Customer Care Export</fullName>
+                <default>false</default>
+                <label>Customer Care Export</label>
+            </value>
+            <value>
+                <fullName>Customer Care WAYFAIR</fullName>
+                <default>false</default>
+                <label>Customer Care WAYFAIR</label>
+            </value>
+            <value>
+                <fullName>Customer Care West/Home Depot/VOW/AOR</fullName>
+                <default>false</default>
+                <label>Customer Care West/Home Depot/VOW/AOR</label>
+            </value>
+            <value>
+                <fullName>Customer Master</fullName>
+                <default>false</default>
+                <label>Customer Master</label>
+            </value>
+            <value>
+                <fullName>Dallas (Plant 5 &amp; 05A)</fullName>
+                <default>false</default>
+                <label>Dallas (Plant 5 &amp; 05A)</label>
+            </value>
+            <value>
+                <fullName>Dallas Faucets (Plant 23)</fullName>
+                <default>false</default>
+                <label>Dallas Faucets (Plant 23)</label>
+            </value>
+            <value>
+                <fullName>DXV</fullName>
+                <default>false</default>
+                <label>DXV</label>
+            </value>
+            <value>
+                <fullName>Faucets - AS/DXV</fullName>
+                <default>false</default>
+                <label>Faucets - AS/DXV</label>
+            </value>
+            <value>
+                <fullName>FIAT</fullName>
+                <default>false</default>
+                <label>FIAT</label>
+            </value>
+            <value>
+                <fullName>FIAT Products</fullName>
+                <default>false</default>
+                <label>FIAT Products</label>
+            </value>
+            <value>
+                <fullName>Fittings - Bath &amp; Shower Retail Consumer</fullName>
+                <default>false</default>
+                <label>Fittings - Bath &amp; Shower Retail Consumer</label>
+            </value>
+            <value>
+                <fullName>Fittings - Bath &amp; Shower Trade</fullName>
+                <default>false</default>
+                <label>Fittings - Bath &amp; Shower Trade</label>
+            </value>
+            <value>
+                <fullName>Fittings - Bath Rough Valves &amp; Shower Systems</fullName>
+                <default>false</default>
+                <label>Fittings - Bath Rough Valves &amp; Shower Systems</label>
+            </value>
+            <value>
+                <fullName>Fittings - Bath Shower Heads/Hand Showers/Shower Accessories</fullName>
+                <default>false</default>
+                <label>Fittings - Bath Shower Heads/Hand Showers/Shower Accessories</label>
+            </value>
+            <value>
+                <fullName>Fittings - Kitchen</fullName>
+                <default>false</default>
+                <label>Fittings - Kitchen</label>
+            </value>
+            <value>
+                <fullName>Furniture &amp; Cultured Marble</fullName>
+                <default>false</default>
+                <label>Furniture &amp; Cultured Marble</label>
+            </value>
+            <value>
+                <fullName>GROHE</fullName>
+                <default>false</default>
+                <label>GROHE</label>
+            </value>
+            <value>
+                <fullName>GROHE - MTY</fullName>
+                <default>false</default>
+                <label>GROHE - MTY</label>
+            </value>
+            <value>
+                <fullName>Groveport (Plant 10)</fullName>
+                <default>false</default>
+                <label>Groveport (Plant 10)</label>
+            </value>
+            <value>
+                <fullName>JADO (DIBOO)</fullName>
+                <default>false</default>
+                <label>JADO (DIBOO)</label>
+            </value>
+            <value>
+                <fullName>Kitchen Sinks</fullName>
+                <default>false</default>
+                <label>Kitchen Sinks</label>
+            </value>
+            <value>
+                <fullName>Luxury Customer Care</fullName>
+                <default>false</default>
+                <label>Luxury Customer Care</label>
+            </value>
+            <value>
+                <fullName>Mansfield (Plant 512, 513 &amp; 520)</fullName>
+                <default>false</default>
+                <label>Mansfield (Plant 512, 513 &amp; 520)</label>
+            </value>
+            <value>
+                <fullName>MD Fittings, DXV &amp; Repart Parts</fullName>
+                <default>false</default>
+                <label>MD Fittings, DXV &amp; Repart Parts</label>
+            </value>
+            <value>
+                <fullName>MD Fixures &amp; DXV</fullName>
+                <default>false</default>
+                <label>MD Fixures &amp; DXV</label>
+            </value>
+            <value>
+                <fullName>Mexico (Plant 271)</fullName>
+                <default>false</default>
+                <label>Mexico (Plant 271)</label>
+            </value>
+            <value>
+                <fullName>Monterrey (Plant 156, 956)</fullName>
+                <default>false</default>
+                <label>Monterrey (Plant 156, 956)</label>
+            </value>
+            <value>
+                <fullName>Order Entry BP</fullName>
+                <default>false</default>
+                <label>Order Entry BP</label>
+            </value>
+            <value>
+                <fullName>Order Entry Central/Menards</fullName>
+                <default>false</default>
+                <label>Order Entry Central/Menards</label>
+            </value>
+            <value>
+                <fullName>Order Entry East/Lowes</fullName>
+                <default>false</default>
+                <label>Order Entry East/Lowes</label>
+            </value>
+            <value>
+                <fullName>Order Entry EDI</fullName>
+                <default>false</default>
+                <label>Order Entry EDI</label>
+            </value>
+            <value>
+                <fullName>Order Entry ETAIL</fullName>
+                <default>false</default>
+                <label>Order Entry ETAIL</label>
+            </value>
+            <value>
+                <fullName>Order Entry Export</fullName>
+                <default>false</default>
+                <label>Order Entry Export</label>
+            </value>
+            <value>
+                <fullName>Order Entry Luxury</fullName>
+                <default>false</default>
+                <label>Order Entry Luxury</label>
+            </value>
+            <value>
+                <fullName>PORCHER</fullName>
+                <default>false</default>
+                <label>PORCHER</label>
+            </value>
+            <value>
+                <fullName>PORCHER (DIBOO)</fullName>
+                <default>false</default>
+                <label>PORCHER (DIBOO)</label>
+            </value>
+            <value>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+                <label>Pricing</label>
+            </value>
+            <value>
+                <fullName>Quote Admin</fullName>
+                <default>false</default>
+                <label>Quote Admin</label>
+            </value>
+            <value>
+                <fullName>Repair Parts</fullName>
+                <default>false</default>
+                <label>Repair Parts</label>
+            </value>
+            <value>
+                <fullName>Repair Parts - AS/DXV</fullName>
+                <default>false</default>
+                <label>Repair Parts - AS/DXV</label>
+            </value>
+            <value>
+                <fullName>Roselle_Warehouse</fullName>
+                <default>false</default>
+                <label>Roselle_Warehouse</label>
+            </value>
+            <value>
+                <fullName>Salem (Plant 16 &amp; 50)</fullName>
+                <default>false</default>
+                <label>Salem (Plant 16 &amp; 50)</label>
+            </value>
+            <value>
+                <fullName>Somerset (Plant 517, 525)</fullName>
+                <default>false</default>
+                <label>Somerset (Plant 517, 525)</label>
+            </value>
+            <value>
+                <fullName>Plant 23 Dallas</fullName>
+                <default>false</default>
+                <label>Plant 23 Dallas</label>
+            </value>
+            <value>
+                <fullName>Plant 401 Roselle</fullName>
+                <default>false</default>
+                <label>Plant 401 Roselle</label>
+            </value>
+            <value>
+                <fullName>Plant 10 Groveport</fullName>
+                <default>false</default>
+                <label>Plant 10 Groveport</label>
+            </value>
+            <value>
+                <fullName>Plant 756</fullName>
+                <default>false</default>
+                <label>Plant 756</label>
+            </value>
+            <value>
+                <fullName>Plant 82 Mississauga Repair Parts</fullName>
+                <default>false</default>
+                <label>Plant 82 Mississauga Repair Parts</label>
+            </value>
+            <value>
+                <fullName>CA - Chinaware, Furniture, commercial chinaware, commercial brass</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>CA - Chinaware, Furniture, commercial chinaware, commercial brass</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Order Entry</controllingFieldValue>
+            <valueName>Credit Card &amp; Warranty Orders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Entry</controllingFieldValue>
+            <valueName>Order Entry BP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Entry</controllingFieldValue>
+            <valueName>Order Entry Central/Menards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Entry</controllingFieldValue>
+            <valueName>Order Entry East/Lowes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Entry</controllingFieldValue>
+            <valueName>Order Entry EDI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Entry</controllingFieldValue>
+            <valueName>Order Entry ETAIL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Entry</controllingFieldValue>
+            <valueName>Order Entry Export</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Order Entry</controllingFieldValue>
+            <valueName>Order Entry Luxury</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pricing</controllingFieldValue>
+            <valueName>Quote Admin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Bath &amp; Shower - Retail Consumer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Bath &amp; Shower - Trade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Chinaware - Retail Consumer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Chinaware - Toilet Seats</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Chinaware - Trade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Commercial Fittings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Commercial Fixtures</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>DXV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>FIAT Products</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Fittings - Bath &amp; Shower Retail Consumer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Fittings - Bath &amp; Shower Trade</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Fittings - Bath Rough Valves &amp; Shower Systems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Fittings - Bath Shower Heads/Hand Showers/Shower Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Fittings - Kitchen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Furniture &amp; Cultured Marble</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>JADO (DIBOO)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Kitchen Sinks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>PORCHER (DIBOO)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Product Management</controllingFieldValue>
+            <valueName>Repair Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOIP</controllingFieldValue>
+            <valueName>BLS - AS/DXV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOIP</controllingFieldValue>
+            <valueName>Chinaware - AS/DXV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOIP</controllingFieldValue>
+            <valueName>Faucets - AS/DXV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOIP</controllingFieldValue>
+            <valueName>FIAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOIP</controllingFieldValue>
+            <valueName>GROHE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOIP</controllingFieldValue>
+            <valueName>GROHE - MTY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOIP</controllingFieldValue>
+            <valueName>PORCHER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOIP</controllingFieldValue>
+            <valueName>Repair Parts - AS/DXV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Claims and Collections</controllingFieldValue>
+            <valueName>CA - ZClaims / Collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Customer Care</controllingFieldValue>
+            <valueName>CA - Order Management - Central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Customer Care</controllingFieldValue>
+            <valueName>CA - Order Management - East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Customer Care</controllingFieldValue>
+            <valueName>CA - Order Management - GROHE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Customer Care</controllingFieldValue>
+            <valueName>CA - Order Management - Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Customer Care</controllingFieldValue>
+            <valueName>CA - Order Management - West</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Customer Care</controllingFieldValue>
+            <valueName>CA - Special Select</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Master Data</controllingFieldValue>
+            <valueName>CA - All Products except Repair Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Master Data</controllingFieldValue>
+            <valueName>CA - Customer Master</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Master Data</controllingFieldValue>
+            <valueName>CA - Repair Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Pricing</controllingFieldValue>
+            <valueName>CA - Pricing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Pricing</controllingFieldValue>
+            <valueName>CA - Quotes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Product Management</controllingFieldValue>
+            <valueName>CA - Bath Faucets, Bath Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Product Management</controllingFieldValue>
+            <valueName>CA - FIAT, Chinaware, Furniture, commercial chinaware, commercial brass</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Product Management</controllingFieldValue>
+            <valueName>CA - Shower Products, Valves, Safety Tub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA - Product Management</controllingFieldValue>
+            <valueName>CA - Shower Walls, Shower Bases, Bathing, Kitchen Faucet, Kitchen Sinks, Kitchen Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA -Tech Support</controllingFieldValue>
+            <valueName>CA - Warranty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA -Tech Support</controllingFieldValue>
+            <valueName>CA - Warranty - American Standard/DXV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CA -Tech Support</controllingFieldValue>
+            <valueName>CA - Warranty - GROHE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims and Collections</controllingFieldValue>
+            <valueName>Claims</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Claims and Collections</controllingFieldValue>
+            <valueName>Credit &amp; Collection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Care</controllingFieldValue>
+            <valueName>Customer Care Central/Menards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Care</controllingFieldValue>
+            <valueName>Customer Care East/Lowes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Care</controllingFieldValue>
+            <valueName>Customer Care ETAIL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Care</controllingFieldValue>
+            <valueName>Customer Care Export</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Care</controllingFieldValue>
+            <valueName>Customer Care WAYFAIR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Care</controllingFieldValue>
+            <valueName>Customer Care West/Home Depot/VOW/AOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Customer Care</controllingFieldValue>
+            <valueName>Luxury Customer Care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>CA - DC Plant 84</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>CA - DC - Safety Tubs (167)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Dallas (Plant 5 &amp; 05A)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Dallas Faucets (Plant 23)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Groveport (Plant 10)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Mansfield (Plant 512, 513 &amp; 520)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Mexico (Plant 271)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Monterrey (Plant 156, 956)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Roselle_Warehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Salem (Plant 16 &amp; 50)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Somerset (Plant 517, 525)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Plant 23 Dallas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Plant 401 Roselle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Plant 10 Groveport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Plant 756</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distribution Center</controllingFieldValue>
+            <valueName>Plant 82 Mississauga Repair Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Master Data</controllingFieldValue>
+            <valueName>Customer Master</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Master Data</controllingFieldValue>
+            <valueName>MD Fittings, DXV &amp; Repart Parts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Master Data</controllingFieldValue>
+            <valueName>MD Fixures &amp; DXV</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>
